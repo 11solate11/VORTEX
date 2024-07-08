@@ -55,29 +55,31 @@ local nexam = Instance.new("TextButton")
 local UICorner_9 = Instance.new("UICorner")
 local exware = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
-local azuremod = Instance.new("TextButton")
+local zuremod = Instance.new("TextButton")
 local UICorner_11 = Instance.new("UICorner")
-local atitle = Instance.new("TextLabel")
 local UIListLayout = Instance.new("UIListLayout")
 local prisonware = Instance.new("TextButton")
 local UICorner_12 = Instance.new("UICorner")
 local zbloxfruits = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
+local bsearch = Instance.new("TextBox")
+local UICorner_14 = Instance.new("UICorner")
+local ImageLabel_7 = Instance.new("ImageLabel")
+local atitle = Instance.new("TextLabel")
 local taskbar = Instance.new("Frame")
 local title_2 = Instance.new("TextLabel")
 local TextLabel_8 = Instance.new("TextLabel")
 local UIGradient_7 = Instance.new("UIGradient")
 local buttonhold = Instance.new("Frame")
 local febutton = Instance.new("TextButton")
-local UICorner_14 = Instance.new("UICorner")
-local ahomebutton = Instance.new("TextButton")
 local UICorner_15 = Instance.new("UICorner")
-local UIGradient_8 = Instance.new("UIGradient")
-local unibutton = Instance.new("TextButton")
+local ahomebutton = Instance.new("TextButton")
 local UICorner_16 = Instance.new("UICorner")
+local unibutton = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
 local UIListLayout_2 = Instance.new("UIListLayout")
 local open = Instance.new("TextButton")
-local UICorner_17 = Instance.new("UICorner")
+local UICorner_18 = Instance.new("UICorner")
 
 --Properties:
 
@@ -109,6 +111,7 @@ home.BorderColor3 = Color3.fromRGB(27, 42, 53)
 home.BorderSizePixel = 0
 home.Position = UDim2.new(-0.00141023332, 0, 0.00346401287, 0)
 home.Size = UDim2.new(0, 342, 0, 285)
+home.Visible = false
 
 user.Name = "user"
 user.Parent = home
@@ -413,7 +416,6 @@ universal.BorderColor3 = Color3.fromRGB(0, 0, 0)
 universal.BorderSizePixel = 0
 universal.Position = UDim2.new(0.00107793079, 0, 0, 0)
 universal.Size = UDim2.new(0, 342, 0, 285)
-universal.Visible = false
 
 back_2.Name = "back"
 back_2.Parent = universal
@@ -463,8 +465,8 @@ uniscroll.Active = true
 uniscroll.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
 uniscroll.BorderColor3 = Color3.fromRGB(0, 0, 0)
 uniscroll.BorderSizePixel = 0
-uniscroll.Position = UDim2.new(0.023391813, 0, 0.112280704, 0)
-uniscroll.Size = UDim2.new(0, 324, 0, 247)
+uniscroll.Position = UDim2.new(0.023391813, 0, 0.308771938, 0)
+uniscroll.Size = UDim2.new(0, 324, 0, 191)
 uniscroll.CanvasSize = UDim2.new(0, 0, 1, 0)
 uniscroll.ScrollBarThickness = 7
 
@@ -516,34 +518,21 @@ exware.TextWrapped = true
 UICorner_10.CornerRadius = UDim.new(0, 4)
 UICorner_10.Parent = exware
 
-azuremod.Name = "azuremod"
-azuremod.Parent = uniscroll
-azuremod.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-azuremod.BorderColor3 = Color3.fromRGB(0, 0, 0)
-azuremod.BorderSizePixel = 0
-azuremod.Position = UDim2.new(0.0432098769, 0, 0.0617283955, 0)
-azuremod.Size = UDim2.new(0, 267, 0, 23)
-azuremod.Font = Enum.Font.Gotham
-azuremod.Text = "AZURE MODDED - DAHOOD SCRIPT (OP)"
-azuremod.TextColor3 = Color3.fromRGB(255, 255, 255)
-azuremod.TextSize = 12.000
-azuremod.TextWrapped = true
+zuremod.Name = "zuremod"
+zuremod.Parent = uniscroll
+zuremod.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+zuremod.BorderColor3 = Color3.fromRGB(0, 0, 0)
+zuremod.BorderSizePixel = 0
+zuremod.Position = UDim2.new(0.0432098769, 0, 0.0617283955, 0)
+zuremod.Size = UDim2.new(0, 267, 0, 23)
+zuremod.Font = Enum.Font.Gotham
+zuremod.Text = "AZURE MODDED - DAHOOD SCRIPT (OP)"
+zuremod.TextColor3 = Color3.fromRGB(255, 255, 255)
+zuremod.TextSize = 12.000
+zuremod.TextWrapped = true
 
 UICorner_11.CornerRadius = UDim.new(0, 4)
-UICorner_11.Parent = azuremod
-
-atitle.Name = "atitle"
-atitle.Parent = uniscroll
-atitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-atitle.BackgroundTransparency = 1.000
-atitle.BorderColor3 = Color3.fromRGB(0, 0, 0)
-atitle.BorderSizePixel = 0
-atitle.Position = UDim2.new(0.242283955, 0, 0.271604925, 0)
-atitle.Size = UDim2.new(0, 185, 0, 15)
-atitle.Font = Enum.Font.GothamBold
-atitle.Text = "WELCOME TO VORTEXHUB"
-atitle.TextColor3 = Color3.fromRGB(255, 255, 255)
-atitle.TextSize = 14.000
+UICorner_11.Parent = zuremod
 
 UIListLayout.Parent = uniscroll
 UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
@@ -580,6 +569,43 @@ zbloxfruits.TextWrapped = true
 
 UICorner_13.CornerRadius = UDim.new(0, 4)
 UICorner_13.Parent = zbloxfruits
+
+bsearch.Name = "bsearch"
+bsearch.Parent = universal
+bsearch.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+bsearch.BorderColor3 = Color3.fromRGB(0, 0, 0)
+bsearch.BorderSizePixel = 0
+bsearch.Position = UDim2.new(0.200130001, 0, 0.199460208, 0)
+bsearch.Size = UDim2.new(0, 200, 0, 23)
+bsearch.Font = Enum.Font.Gotham
+bsearch.Text = ""
+bsearch.TextColor3 = Color3.fromRGB(255, 255, 255)
+bsearch.TextSize = 14.000
+
+UICorner_14.CornerRadius = UDim.new(0, 4)
+UICorner_14.Parent = bsearch
+
+ImageLabel_7.Parent = bsearch
+ImageLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_7.BackgroundTransparency = 1.000
+ImageLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_7.BorderSizePixel = 0
+ImageLabel_7.Position = UDim2.new(1.02029657, 0, 0.0416666679, 0)
+ImageLabel_7.Size = UDim2.new(0, 23, 0, 21)
+ImageLabel_7.Image = "rbxassetid://18400800878"
+
+atitle.Name = "atitle"
+atitle.Parent = universal
+atitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+atitle.BackgroundTransparency = 1.000
+atitle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+atitle.BorderSizePixel = 0
+atitle.Position = UDim2.new(0.227663994, 0, 0.124236524, 0)
+atitle.Size = UDim2.new(0, 185, 0, 15)
+atitle.Font = Enum.Font.GothamBold
+atitle.Text = "WELCOME TO VORTEXHUB"
+atitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+atitle.TextSize = 14.000
 
 taskbar.Name = "taskbar"
 taskbar.Parent = mainhold
@@ -636,8 +662,8 @@ febutton.Text = "FE SCRIPTS"
 febutton.TextColor3 = Color3.fromRGB(255, 255, 255)
 febutton.TextSize = 14.000
 
-UICorner_14.CornerRadius = UDim.new(0, 4)
-UICorner_14.Parent = febutton
+UICorner_15.CornerRadius = UDim.new(0, 4)
+UICorner_15.Parent = febutton
 
 ahomebutton.Name = "ahomebutton"
 ahomebutton.Parent = buttonhold
@@ -651,10 +677,8 @@ ahomebutton.Text = "HOME"
 ahomebutton.TextColor3 = Color3.fromRGB(255, 255, 255)
 ahomebutton.TextSize = 14.000
 
-UICorner_15.CornerRadius = UDim.new(0, 4)
-UICorner_15.Parent = ahomebutton
-
-UIGradient_8.Parent = ahomebutton
+UICorner_16.CornerRadius = UDim.new(0, 4)
+UICorner_16.Parent = ahomebutton
 
 unibutton.Name = "unibutton"
 unibutton.Parent = buttonhold
@@ -668,8 +692,8 @@ unibutton.Text = "UNIVERSAL"
 unibutton.TextColor3 = Color3.fromRGB(255, 255, 255)
 unibutton.TextSize = 14.000
 
-UICorner_16.CornerRadius = UDim.new(0, 4)
-UICorner_16.Parent = unibutton
+UICorner_17.CornerRadius = UDim.new(0, 4)
+UICorner_17.Parent = unibutton
 
 UIListLayout_2.Parent = buttonhold
 UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
@@ -688,24 +712,24 @@ open.Text = "OPEN VORTEX"
 open.TextColor3 = Color3.fromRGB(255, 255, 255)
 open.TextSize = 14.000
 
-UICorner_17.CornerRadius = UDim.new(0, 4)
-UICorner_17.Parent = open
+UICorner_18.CornerRadius = UDim.new(0, 4)
+UICorner_18.Parent = open
 
 -- Scripts:
 
-local function WXETYW_fake_script() -- ScreenGui.welcome 
+local function WWZT_fake_script() -- ScreenGui.welcome 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("Welcome to Vortex Premium, "..game.Players.LocalPlayer.Name..".")
 end
-coroutine.wrap(WXETYW_fake_script)()
-local function NAZC_fake_script() -- TextLabel.LocalScript 
+coroutine.wrap(WWZT_fake_script)()
+local function UIIUY_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	script.Parent.Text = "Welcome, "..game.Players.LocalPlayer.Name
 end
-coroutine.wrap(NAZC_fake_script)()
-local function YHMCFX_fake_script() -- TextLabel.LocalScript 
+coroutine.wrap(UIIUY_fake_script)()
+local function RVFCLAK_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	local text = script.Parent
@@ -761,14 +785,14 @@ local function YHMCFX_fake_script() -- TextLabel.LocalScript
 		end
 	end
 end
-coroutine.wrap(YHMCFX_fake_script)()
-local function OOJSWU_fake_script() -- TextLabel_2.LocalScript 
+coroutine.wrap(RVFCLAK_fake_script)()
+local function DDERP_fake_script() -- TextLabel_2.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	script.Parent.Text = "@"..game.Players.LocalPlayer.Name
 end
-coroutine.wrap(OOJSWU_fake_script)()
-local function INYTFO_fake_script() -- TextLabel_2.LocalScript 
+coroutine.wrap(DDERP_fake_script)()
+local function AOCJABN_fake_script() -- TextLabel_2.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	local text = script.Parent
@@ -824,8 +848,8 @@ local function INYTFO_fake_script() -- TextLabel_2.LocalScript
 		end
 	end
 end
-coroutine.wrap(INYTFO_fake_script)()
-local function MVSRK_fake_script() -- ImageLabel.LocalScript 
+coroutine.wrap(AOCJABN_fake_script)()
+local function IINLK_fake_script() -- ImageLabel.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel)
 
 	imagelabel = script.Parent
@@ -842,8 +866,8 @@ local function MVSRK_fake_script() -- ImageLabel.LocalScript
 	local imagelabel = script.Parent
 	imagelabel.Image = content
 end
-coroutine.wrap(MVSRK_fake_script)()
-local function NLZR_fake_script() -- TextLabel_3.LocalScript 
+coroutine.wrap(IINLK_fake_script)()
+local function GMPWA_fake_script() -- TextLabel_3.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_3)
 
 	local text = script.Parent
@@ -899,16 +923,16 @@ local function NLZR_fake_script() -- TextLabel_3.LocalScript
 		end
 	end
 end
-coroutine.wrap(NLZR_fake_script)()
-local function OBHH_fake_script() -- minimize.LocalScript 
+coroutine.wrap(GMPWA_fake_script)()
+local function YGLPJIE_fake_script() -- minimize.LocalScript 
 	local script = Instance.new('LocalScript', minimize)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Parent.Parent.mainhold.Visible = false
 	end)
 end
-coroutine.wrap(OBHH_fake_script)()
-local function FKZZXKH_fake_script() -- minimize.color 
+coroutine.wrap(YGLPJIE_fake_script)()
+local function HJXXAK_fake_script() -- minimize.color 
 	local script = Instance.new('LocalScript', minimize)
 
 	-- LocalScript inside the TextButton
@@ -971,8 +995,8 @@ local function FKZZXKH_fake_script() -- minimize.color
 	end)
 	
 end
-coroutine.wrap(FKZZXKH_fake_script)()
-local function NLBPHC_fake_script() -- destroy.color 
+coroutine.wrap(HJXXAK_fake_script)()
+local function RRJYQU_fake_script() -- destroy.color 
 	local script = Instance.new('LocalScript', destroy)
 
 	-- LocalScript inside the TextButton
@@ -1035,16 +1059,16 @@ local function NLBPHC_fake_script() -- destroy.color
 	end)
 	
 end
-coroutine.wrap(NLBPHC_fake_script)()
-local function JVQTSJC_fake_script() -- destroy.destroyscript 
+coroutine.wrap(RRJYQU_fake_script)()
+local function XTPPZN_fake_script() -- destroy.destroyscript 
 	local script = Instance.new('LocalScript', destroy)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(JVQTSJC_fake_script)()
-local function XROGCE_fake_script() -- TextLabel_5.LocalScript 
+coroutine.wrap(XTPPZN_fake_script)()
+local function KSNK_fake_script() -- TextLabel_5.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_5)
 
 	local text = script.Parent
@@ -1100,8 +1124,8 @@ local function XROGCE_fake_script() -- TextLabel_5.LocalScript
 		end
 	end
 end
-coroutine.wrap(XROGCE_fake_script)()
-local function TINTNS_fake_script() -- back.backscript 
+coroutine.wrap(KSNK_fake_script)()
+local function RWGLS_fake_script() -- back.backscript 
 	local script = Instance.new('LocalScript', back)
 
 	--// put all of that in a mouse button click function
@@ -1119,8 +1143,8 @@ local function TINTNS_fake_script() -- back.backscript
 		--                                /\ PUT TAB NAME THERE	
 	end)
 end
-coroutine.wrap(TINTNS_fake_script)()
-local function QDWX_fake_script() -- TextLabel_6.LocalScript 
+coroutine.wrap(RWGLS_fake_script)()
+local function UGOOLD_fake_script() -- TextLabel_6.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_6)
 
 	local text = script.Parent
@@ -1176,8 +1200,8 @@ local function QDWX_fake_script() -- TextLabel_6.LocalScript
 		end
 	end
 end
-coroutine.wrap(QDWX_fake_script)()
-local function ZOWHVQ_fake_script() -- walkbox.walkscript 
+coroutine.wrap(UGOOLD_fake_script)()
+local function BYGZS_fake_script() -- walkbox.walkscript 
 	local script = Instance.new('LocalScript', walkbox)
 
 	local plr = game.Players.LocalPlayer
@@ -1189,8 +1213,8 @@ local function ZOWHVQ_fake_script() -- walkbox.walkscript
 		hum.WalkSpeed = script.Parent.Text
 	end)
 end
-coroutine.wrap(ZOWHVQ_fake_script)()
-local function SJIE_fake_script() -- jumpbox.jumpscript 
+coroutine.wrap(BYGZS_fake_script)()
+local function LHWD_fake_script() -- jumpbox.jumpscript 
 	local script = Instance.new('LocalScript', jumpbox)
 
 	local plr = game.Players.LocalPlayer
@@ -1202,8 +1226,8 @@ local function SJIE_fake_script() -- jumpbox.jumpscript
 		hum.JumpPower = script.Parent.Text
 	end)
 end
-coroutine.wrap(SJIE_fake_script)()
-local function FOXPEJ_fake_script() -- back_2.backscript 
+coroutine.wrap(LHWD_fake_script)()
+local function RPJXX_fake_script() -- back_2.backscript 
 	local script = Instance.new('LocalScript', back_2)
 
 	--// put all of that in a mouse button click function
@@ -1221,8 +1245,8 @@ local function FOXPEJ_fake_script() -- back_2.backscript
 		--                                /\ PUT TAB NAME THERE	
 	end)
 end
-coroutine.wrap(FOXPEJ_fake_script)()
-local function ACWECUB_fake_script() -- TextLabel_7.LocalScript 
+coroutine.wrap(RPJXX_fake_script)()
+local function QOWGSJE_fake_script() -- TextLabel_7.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_7)
 
 	local text = script.Parent
@@ -1278,16 +1302,16 @@ local function ACWECUB_fake_script() -- TextLabel_7.LocalScript
 		end
 	end
 end
-coroutine.wrap(ACWECUB_fake_script)()
-local function HQQN_fake_script() -- infinitey.LocalScript 
+coroutine.wrap(QOWGSJE_fake_script)()
+local function QQHW_fake_script() -- infinitey.LocalScript 
 	local script = Instance.new('LocalScript', infinitey)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 	end)
 end
-coroutine.wrap(HQQN_fake_script)()
-local function TFDGTED_fake_script() -- infinitey.color 
+coroutine.wrap(QQHW_fake_script)()
+local function MXSYERS_fake_script() -- infinitey.color 
 	local script = Instance.new('LocalScript', infinitey)
 
 	-- LocalScript inside the TextButton
@@ -1307,34 +1331,33 @@ local function TFDGTED_fake_script() -- infinitey.color
 		Enum.EasingDirection.Out -- EasingDirection
 	)
 	
-	-- Define the size increase and position offset for the smaller bounce effect
-	local goalSizeIncrease = UDim2.new(0, 5, 0, 5)
-	local goalPositionOffset = UDim2.new(0, -2.5, 0, -2.5)
+	-- Define the size increase and position offset for the bounce effect
+	local hoverSizeIncrease = UDim2.new(0, 5, 0, 5)
+	local goalSizeIncrease = UDim2.new(0, 2, 0, 2) -- Slight bounce increase
+	local goalPositionOffset = UDim2.new(0, -1, 0, -1) -- Slight position offset
 	
-	-- Variables to keep track of current tweens
+	-- Variable to keep track of current tween
 	local currentTween
 	local runningRainbow = false
 	
-	-- Create tweens
+	-- Create tween function
 	local function createTween(goal)
 		return TweenService:Create(button, tweenInfo, goal)
 	end
 	
 	-- Function to play bounce effect
 	local function playBounceEffect()
-		local goal1 = {Size = originalSize + goalSizeIncrease, Position = originalPosition + goalPositionOffset}
-		local goal2 = {Size = originalSize + UDim2.new(0, 2.5, 0, 2.5), Position = originalPosition + UDim2.new(0, -1.25, 0, -1.25)}
-		local goal3 = {Size = originalSize + UDim2.new(0, 3.5, 0, 3.5), Position = originalPosition + UDim2.new(0, -1.75, 0, -1.75)}
+		if currentTween then
+			currentTween:Cancel()
+		end
 	
-		currentTween = createTween(goal1)
+		local goal = {Size = originalSize + hoverSizeIncrease, Position = originalPosition + goalPositionOffset}
+		currentTween = createTween(goal)
 		currentTween:Play()
 		currentTween.Completed:Connect(function()
-			currentTween = createTween(goal2)
+			local goal = {Size = originalSize + goalSizeIncrease, Position = originalPosition + goalPositionOffset}
+			currentTween = createTween(goal)
 			currentTween:Play()
-			currentTween.Completed:Connect(function()
-				currentTween = createTween(goal3)
-				currentTween:Play()
-			end)
 		end)
 	end
 	
@@ -1359,7 +1382,7 @@ local function TFDGTED_fake_script() -- infinitey.color
 			colorTween:Play()
 	
 			colorTween.Completed:Wait()
-			colorIndex = colorIndex % #colors + 1
+			colorIndex = (colorIndex % #colors) + 1
 		end
 	end
 	
@@ -1368,6 +1391,7 @@ local function TFDGTED_fake_script() -- infinitey.color
 		if currentTween then
 			currentTween:Cancel()
 		end
+	
 		playBounceEffect()
 		playRainbowEffect()
 	end)
@@ -1384,16 +1408,16 @@ local function TFDGTED_fake_script() -- infinitey.color
 	end)
 	
 end
-coroutine.wrap(TFDGTED_fake_script)()
-local function HVGTL_fake_script() -- nexam.LocalScript 
+coroutine.wrap(MXSYERS_fake_script)()
+local function LLSG_fake_script() -- nexam.LocalScript 
 	local script = Instance.new('LocalScript', nexam)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5ebefab5c68bfa67271dcbf6430d3c7d.lua"))
 	end)
 end
-coroutine.wrap(HVGTL_fake_script)()
-local function BQQMDFV_fake_script() -- nexam.color 
+coroutine.wrap(LLSG_fake_script)()
+local function QBUOBN_fake_script() -- nexam.color 
 	local script = Instance.new('LocalScript', nexam)
 
 	-- LocalScript inside the TextButton
@@ -1413,34 +1437,33 @@ local function BQQMDFV_fake_script() -- nexam.color
 		Enum.EasingDirection.Out -- EasingDirection
 	)
 	
-	-- Define the size increase and position offset for the smaller bounce effect
-	local goalSizeIncrease = UDim2.new(0, 5, 0, 5)
-	local goalPositionOffset = UDim2.new(0, -2.5, 0, -2.5)
+	-- Define the size increase and position offset for the bounce effect
+	local hoverSizeIncrease = UDim2.new(0, 5, 0, 5)
+	local goalSizeIncrease = UDim2.new(0, 2, 0, 2) -- Slight bounce increase
+	local goalPositionOffset = UDim2.new(0, -1, 0, -1) -- Slight position offset
 	
-	-- Variables to keep track of current tweens
+	-- Variable to keep track of current tween
 	local currentTween
 	local runningRainbow = false
 	
-	-- Create tweens
+	-- Create tween function
 	local function createTween(goal)
 		return TweenService:Create(button, tweenInfo, goal)
 	end
 	
 	-- Function to play bounce effect
 	local function playBounceEffect()
-		local goal1 = {Size = originalSize + goalSizeIncrease, Position = originalPosition + goalPositionOffset}
-		local goal2 = {Size = originalSize + UDim2.new(0, 2.5, 0, 2.5), Position = originalPosition + UDim2.new(0, -1.25, 0, -1.25)}
-		local goal3 = {Size = originalSize + UDim2.new(0, 3.5, 0, 3.5), Position = originalPosition + UDim2.new(0, -1.75, 0, -1.75)}
+		if currentTween then
+			currentTween:Cancel()
+		end
 	
-		currentTween = createTween(goal1)
+		local goal = {Size = originalSize + hoverSizeIncrease, Position = originalPosition + goalPositionOffset}
+		currentTween = createTween(goal)
 		currentTween:Play()
 		currentTween.Completed:Connect(function()
-			currentTween = createTween(goal2)
+			local goal = {Size = originalSize + goalSizeIncrease, Position = originalPosition + goalPositionOffset}
+			currentTween = createTween(goal)
 			currentTween:Play()
-			currentTween.Completed:Connect(function()
-				currentTween = createTween(goal3)
-				currentTween:Play()
-			end)
 		end)
 	end
 	
@@ -1465,7 +1488,7 @@ local function BQQMDFV_fake_script() -- nexam.color
 			colorTween:Play()
 	
 			colorTween.Completed:Wait()
-			colorIndex = colorIndex % #colors + 1
+			colorIndex = (colorIndex % #colors) + 1
 		end
 	end
 	
@@ -1474,6 +1497,7 @@ local function BQQMDFV_fake_script() -- nexam.color
 		if currentTween then
 			currentTween:Cancel()
 		end
+	
 		playBounceEffect()
 		playRainbowEffect()
 	end)
@@ -1490,16 +1514,16 @@ local function BQQMDFV_fake_script() -- nexam.color
 	end)
 	
 end
-coroutine.wrap(BQQMDFV_fake_script)()
-local function BEKVP_fake_script() -- exware.LocalScript 
+coroutine.wrap(QBUOBN_fake_script)()
+local function QZGTI_fake_script() -- exware.LocalScript 
 	local script = Instance.new('LocalScript', exware)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Tomskix/exware-public/main/loader"))()
 	end)
 end
-coroutine.wrap(BEKVP_fake_script)()
-local function OVNF_fake_script() -- exware.color 
+coroutine.wrap(QZGTI_fake_script)()
+local function GSHG_fake_script() -- exware.color 
 	local script = Instance.new('LocalScript', exware)
 
 	-- LocalScript inside the TextButton
@@ -1519,34 +1543,33 @@ local function OVNF_fake_script() -- exware.color
 		Enum.EasingDirection.Out -- EasingDirection
 	)
 	
-	-- Define the size increase and position offset for the smaller bounce effect
-	local goalSizeIncrease = UDim2.new(0, 5, 0, 5)
-	local goalPositionOffset = UDim2.new(0, -2.5, 0, -2.5)
+	-- Define the size increase and position offset for the bounce effect
+	local hoverSizeIncrease = UDim2.new(0, 5, 0, 5)
+	local goalSizeIncrease = UDim2.new(0, 2, 0, 2) -- Slight bounce increase
+	local goalPositionOffset = UDim2.new(0, -1, 0, -1) -- Slight position offset
 	
-	-- Variables to keep track of current tweens
+	-- Variable to keep track of current tween
 	local currentTween
 	local runningRainbow = false
 	
-	-- Create tweens
+	-- Create tween function
 	local function createTween(goal)
 		return TweenService:Create(button, tweenInfo, goal)
 	end
 	
 	-- Function to play bounce effect
 	local function playBounceEffect()
-		local goal1 = {Size = originalSize + goalSizeIncrease, Position = originalPosition + goalPositionOffset}
-		local goal2 = {Size = originalSize + UDim2.new(0, 2.5, 0, 2.5), Position = originalPosition + UDim2.new(0, -1.25, 0, -1.25)}
-		local goal3 = {Size = originalSize + UDim2.new(0, 3.5, 0, 3.5), Position = originalPosition + UDim2.new(0, -1.75, 0, -1.75)}
+		if currentTween then
+			currentTween:Cancel()
+		end
 	
-		currentTween = createTween(goal1)
+		local goal = {Size = originalSize + hoverSizeIncrease, Position = originalPosition + goalPositionOffset}
+		currentTween = createTween(goal)
 		currentTween:Play()
 		currentTween.Completed:Connect(function()
-			currentTween = createTween(goal2)
+			local goal = {Size = originalSize + goalSizeIncrease, Position = originalPosition + goalPositionOffset}
+			currentTween = createTween(goal)
 			currentTween:Play()
-			currentTween.Completed:Connect(function()
-				currentTween = createTween(goal3)
-				currentTween:Play()
-			end)
 		end)
 	end
 	
@@ -1571,7 +1594,7 @@ local function OVNF_fake_script() -- exware.color
 			colorTween:Play()
 	
 			colorTween.Completed:Wait()
-			colorIndex = colorIndex % #colors + 1
+			colorIndex = (colorIndex % #colors) + 1
 		end
 	end
 	
@@ -1580,6 +1603,7 @@ local function OVNF_fake_script() -- exware.color
 		if currentTween then
 			currentTween:Cancel()
 		end
+	
 		playBounceEffect()
 		playRainbowEffect()
 	end)
@@ -1596,17 +1620,17 @@ local function OVNF_fake_script() -- exware.color
 	end)
 	
 end
-coroutine.wrap(OVNF_fake_script)()
-local function OGNE_fake_script() -- azuremod.LocalScript 
-	local script = Instance.new('LocalScript', azuremod)
+coroutine.wrap(GSHG_fake_script)()
+local function RGCQ_fake_script() -- zuremod.LocalScript 
+	local script = Instance.new('LocalScript', zuremod)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Actyrn/Scripts/main/AzureModded"))()
 	end)
 end
-coroutine.wrap(OGNE_fake_script)()
-local function QGASPK_fake_script() -- azuremod.color 
-	local script = Instance.new('LocalScript', azuremod)
+coroutine.wrap(RGCQ_fake_script)()
+local function DPAFDPN_fake_script() -- zuremod.color 
+	local script = Instance.new('LocalScript', zuremod)
 
 	-- LocalScript inside the TextButton
 	
@@ -1625,34 +1649,33 @@ local function QGASPK_fake_script() -- azuremod.color
 		Enum.EasingDirection.Out -- EasingDirection
 	)
 	
-	-- Define the size increase and position offset for the smaller bounce effect
-	local goalSizeIncrease = UDim2.new(0, 5, 0, 5)
-	local goalPositionOffset = UDim2.new(0, -2.5, 0, -2.5)
+	-- Define the size increase and position offset for the bounce effect
+	local hoverSizeIncrease = UDim2.new(0, 5, 0, 5)
+	local goalSizeIncrease = UDim2.new(0, 2, 0, 2) -- Slight bounce increase
+	local goalPositionOffset = UDim2.new(0, -1, 0, -1) -- Slight position offset
 	
-	-- Variables to keep track of current tweens
+	-- Variable to keep track of current tween
 	local currentTween
 	local runningRainbow = false
 	
-	-- Create tweens
+	-- Create tween function
 	local function createTween(goal)
 		return TweenService:Create(button, tweenInfo, goal)
 	end
 	
 	-- Function to play bounce effect
 	local function playBounceEffect()
-		local goal1 = {Size = originalSize + goalSizeIncrease, Position = originalPosition + goalPositionOffset}
-		local goal2 = {Size = originalSize + UDim2.new(0, 2.5, 0, 2.5), Position = originalPosition + UDim2.new(0, -1.25, 0, -1.25)}
-		local goal3 = {Size = originalSize + UDim2.new(0, 3.5, 0, 3.5), Position = originalPosition + UDim2.new(0, -1.75, 0, -1.75)}
+		if currentTween then
+			currentTween:Cancel()
+		end
 	
-		currentTween = createTween(goal1)
+		local goal = {Size = originalSize + hoverSizeIncrease, Position = originalPosition + goalPositionOffset}
+		currentTween = createTween(goal)
 		currentTween:Play()
 		currentTween.Completed:Connect(function()
-			currentTween = createTween(goal2)
+			local goal = {Size = originalSize + goalSizeIncrease, Position = originalPosition + goalPositionOffset}
+			currentTween = createTween(goal)
 			currentTween:Play()
-			currentTween.Completed:Connect(function()
-				currentTween = createTween(goal3)
-				currentTween:Play()
-			end)
 		end)
 	end
 	
@@ -1677,7 +1700,7 @@ local function QGASPK_fake_script() -- azuremod.color
 			colorTween:Play()
 	
 			colorTween.Completed:Wait()
-			colorIndex = colorIndex % #colors + 1
+			colorIndex = (colorIndex % #colors) + 1
 		end
 	end
 	
@@ -1686,6 +1709,7 @@ local function QGASPK_fake_script() -- azuremod.color
 		if currentTween then
 			currentTween:Cancel()
 		end
+	
 		playBounceEffect()
 		playRainbowEffect()
 	end)
@@ -1702,8 +1726,251 @@ local function QGASPK_fake_script() -- azuremod.color
 	end)
 	
 end
-coroutine.wrap(QGASPK_fake_script)()
-local function IGLW_fake_script() -- atitle.LocalScript 
+coroutine.wrap(DPAFDPN_fake_script)()
+local function ZXNBVF_fake_script() -- prisonware.LocalScript 
+	local script = Instance.new('LocalScript', prisonware)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))()
+	end)
+end
+coroutine.wrap(ZXNBVF_fake_script)()
+local function QKKEAOY_fake_script() -- prisonware.color 
+	local script = Instance.new('LocalScript', prisonware)
+
+	-- LocalScript inside the TextButton
+	
+	local button = script.Parent
+	local TweenService = game:GetService("TweenService")
+	
+	-- Store the original size, position, and text color
+	local originalSize = button.Size
+	local originalPosition = button.Position
+	local originalTextColor = button.TextColor3
+	
+	-- Define tween information for the bounce effect
+	local tweenInfo = TweenInfo.new(
+		0.1, -- Time
+		Enum.EasingStyle.Quad, -- EasingStyle
+		Enum.EasingDirection.Out -- EasingDirection
+	)
+	
+	-- Define the size increase and position offset for the bounce effect
+	local hoverSizeIncrease = UDim2.new(0, 5, 0, 5)
+	local goalSizeIncrease = UDim2.new(0, 2, 0, 2) -- Slight bounce increase
+	local goalPositionOffset = UDim2.new(0, -1, 0, -1) -- Slight position offset
+	
+	-- Variable to keep track of current tween
+	local currentTween
+	local runningRainbow = false
+	
+	-- Create tween function
+	local function createTween(goal)
+		return TweenService:Create(button, tweenInfo, goal)
+	end
+	
+	-- Function to play bounce effect
+	local function playBounceEffect()
+		if currentTween then
+			currentTween:Cancel()
+		end
+	
+		local goal = {Size = originalSize + hoverSizeIncrease, Position = originalPosition + goalPositionOffset}
+		currentTween = createTween(goal)
+		currentTween:Play()
+		currentTween.Completed:Connect(function()
+			local goal = {Size = originalSize + goalSizeIncrease, Position = originalPosition + goalPositionOffset}
+			currentTween = createTween(goal)
+			currentTween:Play()
+		end)
+	end
+	
+	-- Function to play rainbow effect
+	local function playRainbowEffect()
+		local colors = {
+			Color3.fromRGB(255, 0, 0),    -- Red
+			Color3.fromRGB(255, 127, 0),  -- Orange
+			Color3.fromRGB(255, 255, 0),  -- Yellow
+			Color3.fromRGB(0, 255, 0),    -- Green
+			Color3.fromRGB(0, 0, 255),    -- Blue
+			Color3.fromRGB(75, 0, 130),   -- Indigo
+			Color3.fromRGB(148, 0, 211)   -- Violet
+		}
+	
+		local colorIndex = 1
+		runningRainbow = true
+	
+		while runningRainbow do
+			local nextColor = colors[colorIndex]
+			local colorTween = TweenService:Create(button, tweenInfo, {TextColor3 = nextColor})
+			colorTween:Play()
+	
+			colorTween.Completed:Wait()
+			colorIndex = (colorIndex % #colors) + 1
+		end
+	end
+	
+	-- Hover effect
+	button.MouseEnter:Connect(function()
+		if currentTween then
+			currentTween:Cancel()
+		end
+	
+		playBounceEffect()
+		playRainbowEffect()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		if currentTween then
+			currentTween:Cancel()
+		end
+		runningRainbow = false -- Stop the rainbow effect
+	
+		local goal = {Size = originalSize, Position = originalPosition, TextColor3 = originalTextColor}
+		currentTween = createTween(goal)
+		currentTween:Play()
+	end)
+	
+end
+coroutine.wrap(QKKEAOY_fake_script)()
+local function BJXPA_fake_script() -- zbloxfruits.LocalScript 
+	local script = Instance.new('LocalScript', zbloxfruits)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua"))() 
+	end)
+end
+coroutine.wrap(BJXPA_fake_script)()
+local function WIXE_fake_script() -- zbloxfruits.color 
+	local script = Instance.new('LocalScript', zbloxfruits)
+
+	-- LocalScript inside the TextButton
+	
+	local button = script.Parent
+	local TweenService = game:GetService("TweenService")
+	
+	-- Store the original size, position, and text color
+	local originalSize = button.Size
+	local originalPosition = button.Position
+	local originalTextColor = button.TextColor3
+	
+	-- Define tween information for the bounce effect
+	local tweenInfo = TweenInfo.new(
+		0.1, -- Time
+		Enum.EasingStyle.Quad, -- EasingStyle
+		Enum.EasingDirection.Out -- EasingDirection
+	)
+	
+	-- Define the size increase and position offset for the bounce effect
+	local hoverSizeIncrease = UDim2.new(0, 5, 0, 5)
+	local goalSizeIncrease = UDim2.new(0, 2, 0, 2) -- Slight bounce increase
+	local goalPositionOffset = UDim2.new(0, -1, 0, -1) -- Slight position offset
+	
+	-- Variable to keep track of current tween
+	local currentTween
+	local runningRainbow = false
+	
+	-- Create tween function
+	local function createTween(goal)
+		return TweenService:Create(button, tweenInfo, goal)
+	end
+	
+	-- Function to play bounce effect
+	local function playBounceEffect()
+		if currentTween then
+			currentTween:Cancel()
+		end
+	
+		local goal = {Size = originalSize + hoverSizeIncrease, Position = originalPosition + goalPositionOffset}
+		currentTween = createTween(goal)
+		currentTween:Play()
+		currentTween.Completed:Connect(function()
+			local goal = {Size = originalSize + goalSizeIncrease, Position = originalPosition + goalPositionOffset}
+			currentTween = createTween(goal)
+			currentTween:Play()
+		end)
+	end
+	
+	-- Function to play rainbow effect
+	local function playRainbowEffect()
+		local colors = {
+			Color3.fromRGB(255, 0, 0),    -- Red
+			Color3.fromRGB(255, 127, 0),  -- Orange
+			Color3.fromRGB(255, 255, 0),  -- Yellow
+			Color3.fromRGB(0, 255, 0),    -- Green
+			Color3.fromRGB(0, 0, 255),    -- Blue
+			Color3.fromRGB(75, 0, 130),   -- Indigo
+			Color3.fromRGB(148, 0, 211)   -- Violet
+		}
+	
+		local colorIndex = 1
+		runningRainbow = true
+	
+		while runningRainbow do
+			local nextColor = colors[colorIndex]
+			local colorTween = TweenService:Create(button, tweenInfo, {TextColor3 = nextColor})
+			colorTween:Play()
+	
+			colorTween.Completed:Wait()
+			colorIndex = (colorIndex % #colors) + 1
+		end
+	end
+	
+	-- Hover effect
+	button.MouseEnter:Connect(function()
+		if currentTween then
+			currentTween:Cancel()
+		end
+	
+		playBounceEffect()
+		playRainbowEffect()
+	end)
+	
+	button.MouseLeave:Connect(function()
+		if currentTween then
+			currentTween:Cancel()
+		end
+		runningRainbow = false -- Stop the rainbow effect
+	
+		local goal = {Size = originalSize, Position = originalPosition, TextColor3 = originalTextColor}
+		currentTween = createTween(goal)
+		currentTween:Play()
+	end)
+	
+end
+coroutine.wrap(WIXE_fake_script)()
+local function AVXNNM_fake_script() -- universal.searchscript 
+	local script = Instance.new('LocalScript', universal)
+
+	local scroll = script.Parent.uniscroll
+	local textBox = script.Parent.bsearch
+	
+	textBox.Changed:Connect(function() -- when the text is changed
+		local text = textBox.Text:lower() -- lowercase search bar text
+		if text ~= "" then -- if it has text
+			local buttons = scroll:GetDescendants() -- all of the buttons
+			for _, button in pairs(buttons) do -- loops through the buttons
+				if button:IsA("TextButton") then -- if it's a button
+					local buttonText = button.Text:lower() -- lowercase button text
+					if string.find(buttonText, text) then -- if search bar text is found in the button's text
+						button.Visible = true -- shows button
+					else -- otherwise
+						button.Visible = false -- hides button
+					end
+				end
+			end
+		else -- if it's empty
+			local buttons = scroll:GetDescendants() -- all buttons
+			for _, button in pairs(buttons) do -- loops through buttons
+				if button:IsA("TextButton") then -- if it's a button
+					button.Visible = true -- shows button
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(AVXNNM_fake_script)()
+local function VGSNH_fake_script() -- atitle.LocalScript 
 	local script = Instance.new('LocalScript', atitle)
 
 	local text = script.Parent
@@ -1759,220 +2026,8 @@ local function IGLW_fake_script() -- atitle.LocalScript
 		end
 	end
 end
-coroutine.wrap(IGLW_fake_script)()
-local function SVDLKDR_fake_script() -- prisonware.LocalScript 
-	local script = Instance.new('LocalScript', prisonware)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))()
-	end)
-end
-coroutine.wrap(SVDLKDR_fake_script)()
-local function VUDPC_fake_script() -- prisonware.color 
-	local script = Instance.new('LocalScript', prisonware)
-
-	-- LocalScript inside the TextButton
-	
-	local button = script.Parent
-	local TweenService = game:GetService("TweenService")
-	
-	-- Store the original size, position, and text color
-	local originalSize = button.Size
-	local originalPosition = button.Position
-	local originalTextColor = button.TextColor3
-	
-	-- Define tween information for the bounce effect
-	local tweenInfo = TweenInfo.new(
-		0.1, -- Time
-		Enum.EasingStyle.Quad, -- EasingStyle
-		Enum.EasingDirection.Out -- EasingDirection
-	)
-	
-	-- Define the size increase and position offset for the smaller bounce effect
-	local goalSizeIncrease = UDim2.new(0, 5, 0, 5)
-	local goalPositionOffset = UDim2.new(0, -2.5, 0, -2.5)
-	
-	-- Variables to keep track of current tweens
-	local currentTween
-	local runningRainbow = false
-	
-	-- Create tweens
-	local function createTween(goal)
-		return TweenService:Create(button, tweenInfo, goal)
-	end
-	
-	-- Function to play bounce effect
-	local function playBounceEffect()
-		local goal1 = {Size = originalSize + goalSizeIncrease, Position = originalPosition + goalPositionOffset}
-		local goal2 = {Size = originalSize + UDim2.new(0, 2.5, 0, 2.5), Position = originalPosition + UDim2.new(0, -1.25, 0, -1.25)}
-		local goal3 = {Size = originalSize + UDim2.new(0, 3.5, 0, 3.5), Position = originalPosition + UDim2.new(0, -1.75, 0, -1.75)}
-	
-		currentTween = createTween(goal1)
-		currentTween:Play()
-		currentTween.Completed:Connect(function()
-			currentTween = createTween(goal2)
-			currentTween:Play()
-			currentTween.Completed:Connect(function()
-				currentTween = createTween(goal3)
-				currentTween:Play()
-			end)
-		end)
-	end
-	
-	-- Function to play rainbow effect
-	local function playRainbowEffect()
-		local colors = {
-			Color3.fromRGB(255, 0, 0),    -- Red
-			Color3.fromRGB(255, 127, 0),  -- Orange
-			Color3.fromRGB(255, 255, 0),  -- Yellow
-			Color3.fromRGB(0, 255, 0),    -- Green
-			Color3.fromRGB(0, 0, 255),    -- Blue
-			Color3.fromRGB(75, 0, 130),   -- Indigo
-			Color3.fromRGB(148, 0, 211)   -- Violet
-		}
-	
-		local colorIndex = 1
-		runningRainbow = true
-	
-		while runningRainbow do
-			local nextColor = colors[colorIndex]
-			local colorTween = TweenService:Create(button, tweenInfo, {TextColor3 = nextColor})
-			colorTween:Play()
-	
-			colorTween.Completed:Wait()
-			colorIndex = colorIndex % #colors + 1
-		end
-	end
-	
-	-- Hover effect
-	button.MouseEnter:Connect(function()
-		if currentTween then
-			currentTween:Cancel()
-		end
-		playBounceEffect()
-		playRainbowEffect()
-	end)
-	
-	button.MouseLeave:Connect(function()
-		if currentTween then
-			currentTween:Cancel()
-		end
-		runningRainbow = false -- Stop the rainbow effect
-	
-		local goal = {Size = originalSize, Position = originalPosition, TextColor3 = originalTextColor}
-		currentTween = createTween(goal)
-		currentTween:Play()
-	end)
-	
-end
-coroutine.wrap(VUDPC_fake_script)()
-local function RYMXWRP_fake_script() -- zbloxfruits.LocalScript 
-	local script = Instance.new('LocalScript', zbloxfruits)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua"))() 
-	end)
-end
-coroutine.wrap(RYMXWRP_fake_script)()
-local function QIJSI_fake_script() -- zbloxfruits.color 
-	local script = Instance.new('LocalScript', zbloxfruits)
-
-	-- LocalScript inside the TextButton
-	
-	local button = script.Parent
-	local TweenService = game:GetService("TweenService")
-	
-	-- Store the original size, position, and text color
-	local originalSize = button.Size
-	local originalPosition = button.Position
-	local originalTextColor = button.TextColor3
-	
-	-- Define tween information for the bounce effect
-	local tweenInfo = TweenInfo.new(
-		0.1, -- Time
-		Enum.EasingStyle.Quad, -- EasingStyle
-		Enum.EasingDirection.Out -- EasingDirection
-	)
-	
-	-- Define the size increase and position offset for the smaller bounce effect
-	local goalSizeIncrease = UDim2.new(0, 5, 0, 5)
-	local goalPositionOffset = UDim2.new(0, -2.5, 0, -2.5)
-	
-	-- Variables to keep track of current tweens
-	local currentTween
-	local runningRainbow = false
-	
-	-- Create tweens
-	local function createTween(goal)
-		return TweenService:Create(button, tweenInfo, goal)
-	end
-	
-	-- Function to play bounce effect
-	local function playBounceEffect()
-		local goal1 = {Size = originalSize + goalSizeIncrease, Position = originalPosition + goalPositionOffset}
-		local goal2 = {Size = originalSize + UDim2.new(0, 2.5, 0, 2.5), Position = originalPosition + UDim2.new(0, -1.25, 0, -1.25)}
-		local goal3 = {Size = originalSize + UDim2.new(0, 3.5, 0, 3.5), Position = originalPosition + UDim2.new(0, -1.75, 0, -1.75)}
-	
-		currentTween = createTween(goal1)
-		currentTween:Play()
-		currentTween.Completed:Connect(function()
-			currentTween = createTween(goal2)
-			currentTween:Play()
-			currentTween.Completed:Connect(function()
-				currentTween = createTween(goal3)
-				currentTween:Play()
-			end)
-		end)
-	end
-	
-	-- Function to play rainbow effect
-	local function playRainbowEffect()
-		local colors = {
-			Color3.fromRGB(255, 0, 0),    -- Red
-			Color3.fromRGB(255, 127, 0),  -- Orange
-			Color3.fromRGB(255, 255, 0),  -- Yellow
-			Color3.fromRGB(0, 255, 0),    -- Green
-			Color3.fromRGB(0, 0, 255),    -- Blue
-			Color3.fromRGB(75, 0, 130),   -- Indigo
-			Color3.fromRGB(148, 0, 211)   -- Violet
-		}
-	
-		local colorIndex = 1
-		runningRainbow = true
-	
-		while runningRainbow do
-			local nextColor = colors[colorIndex]
-			local colorTween = TweenService:Create(button, tweenInfo, {TextColor3 = nextColor})
-			colorTween:Play()
-	
-			colorTween.Completed:Wait()
-			colorIndex = colorIndex % #colors + 1
-		end
-	end
-	
-	-- Hover effect
-	button.MouseEnter:Connect(function()
-		if currentTween then
-			currentTween:Cancel()
-		end
-		playBounceEffect()
-		playRainbowEffect()
-	end)
-	
-	button.MouseLeave:Connect(function()
-		if currentTween then
-			currentTween:Cancel()
-		end
-		runningRainbow = false -- Stop the rainbow effect
-	
-		local goal = {Size = originalSize, Position = originalPosition, TextColor3 = originalTextColor}
-		currentTween = createTween(goal)
-		currentTween:Play()
-	end)
-	
-end
-coroutine.wrap(QIJSI_fake_script)()
-local function YZBOQP_fake_script() -- TextLabel_8.LocalScript 
+coroutine.wrap(VGSNH_fake_script)()
+local function OJCYKYO_fake_script() -- TextLabel_8.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_8)
 
 	local text = script.Parent
@@ -2028,8 +2083,8 @@ local function YZBOQP_fake_script() -- TextLabel_8.LocalScript
 		end
 	end
 end
-coroutine.wrap(YZBOQP_fake_script)()
-local function MZJKZNG_fake_script() -- febutton.LocalScript 
+coroutine.wrap(OJCYKYO_fake_script)()
+local function TVIDS_fake_script() -- febutton.LocalScript 
 	local script = Instance.new('LocalScript', febutton)
 
 	--// put all of that in a mouse button click function
@@ -2047,8 +2102,8 @@ local function MZJKZNG_fake_script() -- febutton.LocalScript
 		--                                /\ PUT TAB NAME THERE	
 	end)
 end
-coroutine.wrap(MZJKZNG_fake_script)()
-local function YIZOBRG_fake_script() -- febutton.color 
+coroutine.wrap(TVIDS_fake_script)()
+local function EHLSEI_fake_script() -- febutton.color 
 	local script = Instance.new('LocalScript', febutton)
 
 	-- LocalScript inside the TextButton
@@ -2068,34 +2123,33 @@ local function YIZOBRG_fake_script() -- febutton.color
 		Enum.EasingDirection.Out -- EasingDirection
 	)
 	
-	-- Define the size increase and position offset for the smaller bounce effect
-	local goalSizeIncrease = UDim2.new(0, 5, 0, 5)
-	local goalPositionOffset = UDim2.new(0, -2.5, 0, -2.5)
+	-- Define the size increase and position offset for the bounce effect
+	local hoverSizeIncrease = UDim2.new(0, 5, 0, 5)
+	local goalSizeIncrease = UDim2.new(0, 2, 0, 2) -- Slight bounce increase
+	local goalPositionOffset = UDim2.new(0, -1, 0, -1) -- Slight position offset
 	
-	-- Variables to keep track of current tweens
+	-- Variable to keep track of current tween
 	local currentTween
 	local runningRainbow = false
 	
-	-- Create tweens
+	-- Create tween function
 	local function createTween(goal)
 		return TweenService:Create(button, tweenInfo, goal)
 	end
 	
 	-- Function to play bounce effect
 	local function playBounceEffect()
-		local goal1 = {Size = originalSize + goalSizeIncrease, Position = originalPosition + goalPositionOffset}
-		local goal2 = {Size = originalSize + UDim2.new(0, 2.5, 0, 2.5), Position = originalPosition + UDim2.new(0, -1.25, 0, -1.25)}
-		local goal3 = {Size = originalSize + UDim2.new(0, 3.5, 0, 3.5), Position = originalPosition + UDim2.new(0, -1.75, 0, -1.75)}
+		if currentTween then
+			currentTween:Cancel()
+		end
 	
-		currentTween = createTween(goal1)
+		local goal = {Size = originalSize + hoverSizeIncrease, Position = originalPosition + goalPositionOffset}
+		currentTween = createTween(goal)
 		currentTween:Play()
 		currentTween.Completed:Connect(function()
-			currentTween = createTween(goal2)
+			local goal = {Size = originalSize + goalSizeIncrease, Position = originalPosition + goalPositionOffset}
+			currentTween = createTween(goal)
 			currentTween:Play()
-			currentTween.Completed:Connect(function()
-				currentTween = createTween(goal3)
-				currentTween:Play()
-			end)
 		end)
 	end
 	
@@ -2120,7 +2174,7 @@ local function YIZOBRG_fake_script() -- febutton.color
 			colorTween:Play()
 	
 			colorTween.Completed:Wait()
-			colorIndex = colorIndex % #colors + 1
+			colorIndex = (colorIndex % #colors) + 1
 		end
 	end
 	
@@ -2129,6 +2183,7 @@ local function YIZOBRG_fake_script() -- febutton.color
 		if currentTween then
 			currentTween:Cancel()
 		end
+	
 		playBounceEffect()
 		playRainbowEffect()
 	end)
@@ -2145,8 +2200,8 @@ local function YIZOBRG_fake_script() -- febutton.color
 	end)
 	
 end
-coroutine.wrap(YIZOBRG_fake_script)()
-local function WWSLEQK_fake_script() -- ahomebutton.LocalScript 
+coroutine.wrap(EHLSEI_fake_script)()
+local function GNWMSP_fake_script() -- ahomebutton.LocalScript 
 	local script = Instance.new('LocalScript', ahomebutton)
 
 	--// put all of that in a mouse button click function
@@ -2164,8 +2219,8 @@ local function WWSLEQK_fake_script() -- ahomebutton.LocalScript
 		--                                /\ PUT TAB NAME THERE	
 	end)
 end
-coroutine.wrap(WWSLEQK_fake_script)()
-local function GGZDXAY_fake_script() -- ahomebutton.color 
+coroutine.wrap(GNWMSP_fake_script)()
+local function DEOE_fake_script() -- ahomebutton.color 
 	local script = Instance.new('LocalScript', ahomebutton)
 
 	-- LocalScript inside the TextButton
@@ -2185,34 +2240,33 @@ local function GGZDXAY_fake_script() -- ahomebutton.color
 		Enum.EasingDirection.Out -- EasingDirection
 	)
 	
-	-- Define the size increase and position offset for the smaller bounce effect
-	local goalSizeIncrease = UDim2.new(0, 5, 0, 5)
-	local goalPositionOffset = UDim2.new(0, -2.5, 0, -2.5)
+	-- Define the size increase and position offset for the bounce effect
+	local hoverSizeIncrease = UDim2.new(0, 5, 0, 5)
+	local goalSizeIncrease = UDim2.new(0, 2, 0, 2) -- Slight bounce increase
+	local goalPositionOffset = UDim2.new(0, -1, 0, -1) -- Slight position offset
 	
-	-- Variables to keep track of current tweens
+	-- Variable to keep track of current tween
 	local currentTween
 	local runningRainbow = false
 	
-	-- Create tweens
+	-- Create tween function
 	local function createTween(goal)
 		return TweenService:Create(button, tweenInfo, goal)
 	end
 	
 	-- Function to play bounce effect
 	local function playBounceEffect()
-		local goal1 = {Size = originalSize + goalSizeIncrease, Position = originalPosition + goalPositionOffset}
-		local goal2 = {Size = originalSize + UDim2.new(0, 2.5, 0, 2.5), Position = originalPosition + UDim2.new(0, -1.25, 0, -1.25)}
-		local goal3 = {Size = originalSize + UDim2.new(0, 3.5, 0, 3.5), Position = originalPosition + UDim2.new(0, -1.75, 0, -1.75)}
+		if currentTween then
+			currentTween:Cancel()
+		end
 	
-		currentTween = createTween(goal1)
+		local goal = {Size = originalSize + hoverSizeIncrease, Position = originalPosition + goalPositionOffset}
+		currentTween = createTween(goal)
 		currentTween:Play()
 		currentTween.Completed:Connect(function()
-			currentTween = createTween(goal2)
+			local goal = {Size = originalSize + goalSizeIncrease, Position = originalPosition + goalPositionOffset}
+			currentTween = createTween(goal)
 			currentTween:Play()
-			currentTween.Completed:Connect(function()
-				currentTween = createTween(goal3)
-				currentTween:Play()
-			end)
 		end)
 	end
 	
@@ -2237,7 +2291,7 @@ local function GGZDXAY_fake_script() -- ahomebutton.color
 			colorTween:Play()
 	
 			colorTween.Completed:Wait()
-			colorIndex = colorIndex % #colors + 1
+			colorIndex = (colorIndex % #colors) + 1
 		end
 	end
 	
@@ -2246,6 +2300,7 @@ local function GGZDXAY_fake_script() -- ahomebutton.color
 		if currentTween then
 			currentTween:Cancel()
 		end
+	
 		playBounceEffect()
 		playRainbowEffect()
 	end)
@@ -2262,8 +2317,8 @@ local function GGZDXAY_fake_script() -- ahomebutton.color
 	end)
 	
 end
-coroutine.wrap(GGZDXAY_fake_script)()
-local function URHZLG_fake_script() -- unibutton.LocalScript 
+coroutine.wrap(DEOE_fake_script)()
+local function TGVYZ_fake_script() -- unibutton.LocalScript 
 	local script = Instance.new('LocalScript', unibutton)
 
 	--// put all of that in a mouse button click function
@@ -2281,8 +2336,8 @@ local function URHZLG_fake_script() -- unibutton.LocalScript
 		--                                /\ PUT TAB NAME THERE	
 	end)
 end
-coroutine.wrap(URHZLG_fake_script)()
-local function UQZGWVS_fake_script() -- unibutton.color 
+coroutine.wrap(TGVYZ_fake_script)()
+local function AOPMOZ_fake_script() -- unibutton.color 
 	local script = Instance.new('LocalScript', unibutton)
 
 	-- LocalScript inside the TextButton
@@ -2302,34 +2357,33 @@ local function UQZGWVS_fake_script() -- unibutton.color
 		Enum.EasingDirection.Out -- EasingDirection
 	)
 	
-	-- Define the size increase and position offset for the smaller bounce effect
-	local goalSizeIncrease = UDim2.new(0, 5, 0, 5)
-	local goalPositionOffset = UDim2.new(0, -2.5, 0, -2.5)
+	-- Define the size increase and position offset for the bounce effect
+	local hoverSizeIncrease = UDim2.new(0, 5, 0, 5)
+	local goalSizeIncrease = UDim2.new(0, 2, 0, 2) -- Slight bounce increase
+	local goalPositionOffset = UDim2.new(0, -1, 0, -1) -- Slight position offset
 	
-	-- Variables to keep track of current tweens
+	-- Variable to keep track of current tween
 	local currentTween
 	local runningRainbow = false
 	
-	-- Create tweens
+	-- Create tween function
 	local function createTween(goal)
 		return TweenService:Create(button, tweenInfo, goal)
 	end
 	
 	-- Function to play bounce effect
 	local function playBounceEffect()
-		local goal1 = {Size = originalSize + goalSizeIncrease, Position = originalPosition + goalPositionOffset}
-		local goal2 = {Size = originalSize + UDim2.new(0, 2.5, 0, 2.5), Position = originalPosition + UDim2.new(0, -1.25, 0, -1.25)}
-		local goal3 = {Size = originalSize + UDim2.new(0, 3.5, 0, 3.5), Position = originalPosition + UDim2.new(0, -1.75, 0, -1.75)}
+		if currentTween then
+			currentTween:Cancel()
+		end
 	
-		currentTween = createTween(goal1)
+		local goal = {Size = originalSize + hoverSizeIncrease, Position = originalPosition + goalPositionOffset}
+		currentTween = createTween(goal)
 		currentTween:Play()
 		currentTween.Completed:Connect(function()
-			currentTween = createTween(goal2)
+			local goal = {Size = originalSize + goalSizeIncrease, Position = originalPosition + goalPositionOffset}
+			currentTween = createTween(goal)
 			currentTween:Play()
-			currentTween.Completed:Connect(function()
-				currentTween = createTween(goal3)
-				currentTween:Play()
-			end)
 		end)
 	end
 	
@@ -2354,7 +2408,7 @@ local function UQZGWVS_fake_script() -- unibutton.color
 			colorTween:Play()
 	
 			colorTween.Completed:Wait()
-			colorIndex = colorIndex % #colors + 1
+			colorIndex = (colorIndex % #colors) + 1
 		end
 	end
 	
@@ -2363,6 +2417,7 @@ local function UQZGWVS_fake_script() -- unibutton.color
 		if currentTween then
 			currentTween:Cancel()
 		end
+	
 		playBounceEffect()
 		playRainbowEffect()
 	end)
@@ -2379,8 +2434,8 @@ local function UQZGWVS_fake_script() -- unibutton.color
 	end)
 	
 end
-coroutine.wrap(UQZGWVS_fake_script)()
-local function POTKS_fake_script() -- mainhold.drags 
+coroutine.wrap(AOPMOZ_fake_script)()
+local function KVJOEQ_fake_script() -- mainhold.drags 
 	local script = Instance.new('LocalScript', mainhold)
 
 	spawn(function()
@@ -2423,16 +2478,16 @@ local function POTKS_fake_script() -- mainhold.drags
 		normal_dragify(script.Parent)
 	end)
 end
-coroutine.wrap(POTKS_fake_script)()
-local function ZTUB_fake_script() -- open.LocalScript 
+coroutine.wrap(KVJOEQ_fake_script)()
+local function KYRIBJS_fake_script() -- open.LocalScript 
 	local script = Instance.new('LocalScript', open)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.mainhold.Visible = true
 	end)
 end
-coroutine.wrap(ZTUB_fake_script)()
-local function XMSTBJ_fake_script() -- open.bounce 
+coroutine.wrap(KYRIBJS_fake_script)()
+local function JCNAL_fake_script() -- open.color 
 	local script = Instance.new('LocalScript', open)
 
 	-- LocalScript inside the TextButton
@@ -2440,9 +2495,10 @@ local function XMSTBJ_fake_script() -- open.bounce
 	local button = script.Parent
 	local TweenService = game:GetService("TweenService")
 	
-	-- Store the original size and position
+	-- Store the original size, position, and text color
 	local originalSize = button.Size
 	local originalPosition = button.Position
+	local originalTextColor = button.TextColor3
 	
 	-- Define tween information for the bounce effect
 	local tweenInfo = TweenInfo.new(
@@ -2452,33 +2508,58 @@ local function XMSTBJ_fake_script() -- open.bounce
 	)
 	
 	-- Define the size increase and position offset for the bounce effect
-	local goalSizeIncrease = UDim2.new(0, 10, 0, 10)
-	local goalPositionOffset = UDim2.new(0, -5, 0, -5)
+	local hoverSizeIncrease = UDim2.new(0, 5, 0, 5)
+	local goalSizeIncrease = UDim2.new(0, 2, 0, 2) -- Slight bounce increase
+	local goalPositionOffset = UDim2.new(0, -1, 0, -1) -- Slight position offset
 	
-	-- Variables to keep track of current tweens
+	-- Variable to keep track of current tween
 	local currentTween
+	local runningRainbow = false
 	
-	-- Create tweens
+	-- Create tween function
 	local function createTween(goal)
 		return TweenService:Create(button, tweenInfo, goal)
 	end
 	
 	-- Function to play bounce effect
 	local function playBounceEffect()
-		local goal1 = {Size = originalSize + goalSizeIncrease, Position = originalPosition + goalPositionOffset}
-		local goal2 = {Size = originalSize + UDim2.new(0, 5, 0, 5), Position = originalPosition + UDim2.new(0, -2.5, 0, -2.5)}
-		local goal3 = {Size = originalSize + UDim2.new(0, 7, 0, 7), Position = originalPosition + UDim2.new(0, -3.5, 0, -3.5)}
+		if currentTween then
+			currentTween:Cancel()
+		end
 	
-		currentTween = createTween(goal1)
+		local goal = {Size = originalSize + hoverSizeIncrease, Position = originalPosition + goalPositionOffset}
+		currentTween = createTween(goal)
 		currentTween:Play()
 		currentTween.Completed:Connect(function()
-			currentTween = createTween(goal2)
+			local goal = {Size = originalSize + goalSizeIncrease, Position = originalPosition + goalPositionOffset}
+			currentTween = createTween(goal)
 			currentTween:Play()
-			currentTween.Completed:Connect(function()
-				currentTween = createTween(goal3)
-				currentTween:Play()
-			end)
 		end)
+	end
+	
+	-- Function to play rainbow effect
+	local function playRainbowEffect()
+		local colors = {
+			Color3.fromRGB(255, 0, 0),    -- Red
+			Color3.fromRGB(255, 127, 0),  -- Orange
+			Color3.fromRGB(255, 255, 0),  -- Yellow
+			Color3.fromRGB(0, 255, 0),    -- Green
+			Color3.fromRGB(0, 0, 255),    -- Blue
+			Color3.fromRGB(75, 0, 130),   -- Indigo
+			Color3.fromRGB(148, 0, 211)   -- Violet
+		}
+	
+		local colorIndex = 1
+		runningRainbow = true
+	
+		while runningRainbow do
+			local nextColor = colors[colorIndex]
+			local colorTween = TweenService:Create(button, tweenInfo, {TextColor3 = nextColor})
+			colorTween:Play()
+	
+			colorTween.Completed:Wait()
+			colorIndex = (colorIndex % #colors) + 1
+		end
 	end
 	
 	-- Hover effect
@@ -2486,18 +2567,21 @@ local function XMSTBJ_fake_script() -- open.bounce
 		if currentTween then
 			currentTween:Cancel()
 		end
+	
 		playBounceEffect()
+		playRainbowEffect()
 	end)
 	
 	button.MouseLeave:Connect(function()
 		if currentTween then
 			currentTween:Cancel()
 		end
+		runningRainbow = false -- Stop the rainbow effect
 	
-		local goal = {Size = originalSize, Position = originalPosition}
+		local goal = {Size = originalSize, Position = originalPosition, TextColor3 = originalTextColor}
 		currentTween = createTween(goal)
 		currentTween:Play()
 	end)
 	
 end
-coroutine.wrap(XMSTBJ_fake_script)()
+coroutine.wrap(JCNAL_fake_script)()
