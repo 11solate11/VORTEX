@@ -27,7 +27,7 @@ local UICorner_4 = Instance.new("UICorner")
 local ImageLabel_6 = Instance.new("ImageLabel")
 local UICorner_5 = Instance.new("UICorner")
 local TextLabel_4 = Instance.new("TextLabel")
-local exit = Instance.new("TextButton")
+local minimize = Instance.new("TextButton")
 local destroy = Instance.new("TextButton")
 local title = Instance.new("TextLabel")
 local TextLabel_5 = Instance.new("TextLabel")
@@ -76,8 +76,6 @@ local UIGradient_8 = Instance.new("UIGradient")
 local unibutton = Instance.new("TextButton")
 local UICorner_16 = Instance.new("UICorner")
 local UIListLayout_2 = Instance.new("UIListLayout")
-local destroyinfo = Instance.new("TextLabel")
-local minimizeinfo = Instance.new("TextLabel")
 local open = Instance.new("TextButton")
 local UICorner_17 = Instance.new("UICorner")
 
@@ -246,20 +244,20 @@ TextLabel_4.TextScaled = true
 TextLabel_4.TextSize = 14.000
 TextLabel_4.TextWrapped = true
 
-exit.Name = "exit"
-exit.Parent = home
-exit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-exit.BackgroundTransparency = 1.000
-exit.BorderColor3 = Color3.fromRGB(0, 0, 0)
-exit.BorderSizePixel = 0
-exit.Position = UDim2.new(0.81145525, 0, 0, 0)
-exit.Size = UDim2.new(0, 32, 0, 24)
-exit.Font = Enum.Font.GothamBold
-exit.Text = "-"
-exit.TextColor3 = Color3.fromRGB(255, 255, 255)
-exit.TextScaled = true
-exit.TextSize = 14.000
-exit.TextWrapped = true
+minimize.Name = "minimize"
+minimize.Parent = home
+minimize.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+minimize.BackgroundTransparency = 1.000
+minimize.BorderColor3 = Color3.fromRGB(0, 0, 0)
+minimize.BorderSizePixel = 0
+minimize.Position = UDim2.new(0.81145525, 0, 0, 0)
+minimize.Size = UDim2.new(0, 32, 0, 24)
+minimize.Font = Enum.Font.GothamBold
+minimize.Text = "-"
+minimize.TextColor3 = Color3.fromRGB(255, 255, 255)
+minimize.TextScaled = true
+minimize.TextSize = 14.000
+minimize.TextWrapped = true
 
 destroy.Name = "destroy"
 destroy.Parent = home
@@ -677,38 +675,6 @@ UIListLayout_2.Parent = buttonhold
 UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
 UIListLayout_2.Padding = UDim.new(0, 3)
 
-destroyinfo.Name = "destroyinfo"
-destroyinfo.Parent = mainhold
-destroyinfo.AnchorPoint = Vector2.new(0.5, 0.5)
-destroyinfo.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-destroyinfo.BackgroundTransparency = 1.000
-destroyinfo.BorderColor3 = Color3.fromRGB(0, 0, 0)
-destroyinfo.BorderSizePixel = 0
-destroyinfo.Position = UDim2.new(0.350854695, 0, -0.154555798, 0)
-destroyinfo.Size = UDim2.new(0, 129, 0, 49)
-destroyinfo.Font = Enum.Font.Gotham
-destroyinfo.Text = "Completely gets rids of vortex."
-destroyinfo.TextColor3 = Color3.fromRGB(255, 255, 255)
-destroyinfo.TextSize = 13.000
-destroyinfo.TextTransparency = 1.000
-destroyinfo.TextWrapped = true
-
-minimizeinfo.Name = "minimizeinfo"
-minimizeinfo.Parent = mainhold
-minimizeinfo.AnchorPoint = Vector2.new(0.5, 0.5)
-minimizeinfo.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-minimizeinfo.BackgroundTransparency = 1.000
-minimizeinfo.BorderColor3 = Color3.fromRGB(0, 0, 0)
-minimizeinfo.BorderSizePixel = 0
-minimizeinfo.Position = UDim2.new(0.352897763, 0, -0.152223185, 0)
-minimizeinfo.Size = UDim2.new(0, 129, 0, 49)
-minimizeinfo.Font = Enum.Font.Gotham
-minimizeinfo.Text = "Minimizes vortex so you can use the button at the top"
-minimizeinfo.TextColor3 = Color3.fromRGB(255, 255, 255)
-minimizeinfo.TextSize = 13.000
-minimizeinfo.TextTransparency = 1.000
-minimizeinfo.TextWrapped = true
-
 open.Name = "open"
 open.Parent = ScreenGui
 open.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -727,19 +693,19 @@ UICorner_17.Parent = open
 
 -- Scripts:
 
-local function OITBAYC_fake_script() -- ScreenGui.welcome 
+local function WXETYW_fake_script() -- ScreenGui.welcome 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("Welcome to Vortex Premium, "..game.Players.LocalPlayer.Name..".")
 end
-coroutine.wrap(OITBAYC_fake_script)()
-local function EQNGLC_fake_script() -- TextLabel.LocalScript 
+coroutine.wrap(WXETYW_fake_script)()
+local function NAZC_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	script.Parent.Text = "Welcome, "..game.Players.LocalPlayer.Name
 end
-coroutine.wrap(EQNGLC_fake_script)()
-local function JIZMKK_fake_script() -- TextLabel.LocalScript 
+coroutine.wrap(NAZC_fake_script)()
+local function YHMCFX_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	local text = script.Parent
@@ -795,14 +761,14 @@ local function JIZMKK_fake_script() -- TextLabel.LocalScript
 		end
 	end
 end
-coroutine.wrap(JIZMKK_fake_script)()
-local function FMAEU_fake_script() -- TextLabel_2.LocalScript 
+coroutine.wrap(YHMCFX_fake_script)()
+local function OOJSWU_fake_script() -- TextLabel_2.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	script.Parent.Text = "@"..game.Players.LocalPlayer.Name
 end
-coroutine.wrap(FMAEU_fake_script)()
-local function HRWHCB_fake_script() -- TextLabel_2.LocalScript 
+coroutine.wrap(OOJSWU_fake_script)()
+local function INYTFO_fake_script() -- TextLabel_2.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	local text = script.Parent
@@ -858,8 +824,8 @@ local function HRWHCB_fake_script() -- TextLabel_2.LocalScript
 		end
 	end
 end
-coroutine.wrap(HRWHCB_fake_script)()
-local function PSFN_fake_script() -- ImageLabel.LocalScript 
+coroutine.wrap(INYTFO_fake_script)()
+local function MVSRK_fake_script() -- ImageLabel.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel)
 
 	imagelabel = script.Parent
@@ -876,8 +842,8 @@ local function PSFN_fake_script() -- ImageLabel.LocalScript
 	local imagelabel = script.Parent
 	imagelabel.Image = content
 end
-coroutine.wrap(PSFN_fake_script)()
-local function TNBJEQ_fake_script() -- TextLabel_3.LocalScript 
+coroutine.wrap(MVSRK_fake_script)()
+local function NLZR_fake_script() -- TextLabel_3.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_3)
 
 	local text = script.Parent
@@ -933,17 +899,17 @@ local function TNBJEQ_fake_script() -- TextLabel_3.LocalScript
 		end
 	end
 end
-coroutine.wrap(TNBJEQ_fake_script)()
-local function JYWGUV_fake_script() -- exit.LocalScript 
-	local script = Instance.new('LocalScript', exit)
+coroutine.wrap(NLZR_fake_script)()
+local function OBHH_fake_script() -- minimize.LocalScript 
+	local script = Instance.new('LocalScript', minimize)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Parent.Parent.mainhold.Visible = false
 	end)
 end
-coroutine.wrap(JYWGUV_fake_script)()
-local function SLIUSNP_fake_script() -- exit.color 
-	local script = Instance.new('LocalScript', exit)
+coroutine.wrap(OBHH_fake_script)()
+local function FKZZXKH_fake_script() -- minimize.color 
+	local script = Instance.new('LocalScript', minimize)
 
 	-- LocalScript inside the TextButton
 	
@@ -1005,186 +971,80 @@ local function SLIUSNP_fake_script() -- exit.color
 	end)
 	
 end
-coroutine.wrap(SLIUSNP_fake_script)()
-local function VJOT_fake_script() -- exit.fadeinl 
-	local script = Instance.new('LocalScript', exit)
+coroutine.wrap(FKZZXKH_fake_script)()
+local function NLBPHC_fake_script() -- destroy.color 
+	local script = Instance.new('LocalScript', destroy)
 
 	-- LocalScript inside the TextButton
 	
 	local button = script.Parent
-	local screenGui = button.Parent
-	local textLabel = script.Parent.Parent.Parent.Parent.Parent.minimizeinfo
 	local TweenService = game:GetService("TweenService")
 	
-	-- Store the original size and position of the TextLabel
-	local originalSize = textLabel.Size
-	local originalPosition = textLabel.Position
+	-- Store the original text color
+	local originalTextColor = button.TextColor3
 	
-	-- Define the initial transparency of the TextLabel
-	textLabel.TextTransparency = 1 -- Start fully transparent
-	textLabel.BackgroundTransparency = 1
-	-- Define tween information for the fade-in effect
+	-- Define tween information for the rainbow effect
 	local tweenInfo = TweenInfo.new(
-		0.3, -- Time (adjust as needed for faster or slower fade)
+		0.5, -- Time
 		Enum.EasingStyle.Linear, -- EasingStyle
 		Enum.EasingDirection.Out -- EasingDirection
 	)
 	
-	-- Function to create a tween
-	local function createTween(instance, properties)
-		return TweenService:Create(instance, tweenInfo, properties)
+	-- Variables to keep track of current tweens
+	local runningRainbow = false
+	
+	-- Function to play rainbow effect
+	local function playRainbowEffect()
+		local colors = {
+			Color3.fromRGB(255, 0, 0),    -- Red
+			Color3.fromRGB(255, 127, 0),  -- Orange
+			Color3.fromRGB(255, 255, 0),  -- Yellow
+			Color3.fromRGB(0, 255, 0),    -- Green
+			Color3.fromRGB(0, 0, 255),    -- Blue
+			Color3.fromRGB(75, 0, 130),   -- Indigo
+			Color3.fromRGB(148, 0, 211)   -- Violet
+		}
+	
+		local colorIndex = 1
+		runningRainbow = true
+	
+		while runningRainbow do
+			local nextColor = colors[colorIndex]
+			local colorTween = TweenService:Create(button, tweenInfo, {TextColor3 = nextColor})
+			colorTween:Play()
+	
+			colorTween.Completed:Wait()
+			colorIndex = colorIndex % #colors + 1
+		end
 	end
 	
-	-- Hover effect to fade-in the TextLabel
+	-- Hover effect
 	button.MouseEnter:Connect(function()
-		local transparencyTween = createTween(textLabel, {TextTransparency = 0}) -- Fade in (set TextTransparency to 0 for fully visible)
-		transparencyTween:Play()
-	end)
-	
-	button.MouseEnter:Connect(function()
-		local transparencyTween = createTween(textLabel, {BackgroundTransparency = 0}) -- Fade in (set TextTransparency to 0 for fully visible)
-		transparencyTween:Play()
-	end)
-	
-	-- Reset TextLabel when mouse leaves the button
-	button.MouseLeave:Connect(function()
-		local transparencyTween = createTween(textLabel, {TextTransparency = 1}) -- Fade out (set TextTransparency to 1 for fully transparent)
-		transparencyTween:Play()
+		if runningRainbow then
+			runningRainbow = false
+			wait(0.5) -- Ensure smooth transition if hover is triggered quickly
+		end
+		playRainbowEffect()
 	end)
 	
 	button.MouseLeave:Connect(function()
-		local transparencyTween = createTween(textLabel, {BackgroundTransparency = 1}) -- Fade out (set TextTransparency to 1 for fully transparent)
-		transparencyTween:Play()
+		runningRainbow = false -- Stop the rainbow effect
+	
+		local colorTween = TweenService:Create(button, tweenInfo, {TextColor3 = originalTextColor})
+		colorTween:Play()
 	end)
 	
 end
-coroutine.wrap(VJOT_fake_script)()
-local function JCGUDT_fake_script() -- destroy.destroyscript 
+coroutine.wrap(NLBPHC_fake_script)()
+local function JVQTSJC_fake_script() -- destroy.destroyscript 
 	local script = Instance.new('LocalScript', destroy)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(JCGUDT_fake_script)()
-local function LTOUTO_fake_script() -- destroy.color 
-	local script = Instance.new('LocalScript', destroy)
-
-	-- LocalScript inside the TextButton
-	
-	local button = script.Parent
-	local TweenService = game:GetService("TweenService")
-	
-	-- Store the original text color
-	local originalTextColor = button.TextColor3
-	
-	-- Define tween information for the rainbow effect
-	local tweenInfo = TweenInfo.new(
-		0.5, -- Time
-		Enum.EasingStyle.Linear, -- EasingStyle
-		Enum.EasingDirection.Out -- EasingDirection
-	)
-	
-	-- Variables to keep track of current tweens
-	local runningRainbow = false
-	
-	-- Function to play rainbow effect
-	local function playRainbowEffect()
-		local colors = {
-			Color3.fromRGB(255, 0, 0),    -- Red
-			Color3.fromRGB(255, 127, 0),  -- Orange
-			Color3.fromRGB(255, 255, 0),  -- Yellow
-			Color3.fromRGB(0, 255, 0),    -- Green
-			Color3.fromRGB(0, 0, 255),    -- Blue
-			Color3.fromRGB(75, 0, 130),   -- Indigo
-			Color3.fromRGB(148, 0, 211)   -- Violet
-		}
-	
-		local colorIndex = 1
-		runningRainbow = true
-	
-		while runningRainbow do
-			local nextColor = colors[colorIndex]
-			local colorTween = TweenService:Create(button, tweenInfo, {TextColor3 = nextColor})
-			colorTween:Play()
-	
-			colorTween.Completed:Wait()
-			colorIndex = colorIndex % #colors + 1
-		end
-	end
-	
-	-- Hover effect
-	button.MouseEnter:Connect(function()
-		if runningRainbow then
-			runningRainbow = false
-			wait(0.5) -- Ensure smooth transition if hover is triggered quickly
-		end
-		playRainbowEffect()
-	end)
-	
-	button.MouseLeave:Connect(function()
-		runningRainbow = false -- Stop the rainbow effect
-	
-		local colorTween = TweenService:Create(button, tweenInfo, {TextColor3 = originalTextColor})
-		colorTween:Play()
-	end)
-	
-end
-coroutine.wrap(LTOUTO_fake_script)()
-local function IHCCNWL_fake_script() -- destroy.fadein 
-	local script = Instance.new('LocalScript', destroy)
-
-	-- LocalScript inside the TextButton
-	
-	local button = script.Parent
-	local screenGui = button.Parent
-	local textLabel = script.Parent.Parent.Parent.Parent.Parent.destroyinfo
-	local TweenService = game:GetService("TweenService")
-	
-	-- Store the original size and position of the TextLabel
-	local originalSize = textLabel.Size
-	local originalPosition = textLabel.Position
-	
-	-- Define the initial transparency of the TextLabel
-	textLabel.TextTransparency = 1 -- Start fully transparent
-	textLabel.BackgroundTransparency = 1
-	-- Define tween information for the fade-in effect
-	local tweenInfo = TweenInfo.new(
-		0.3, -- Time (adjust as needed for faster or slower fade)
-		Enum.EasingStyle.Linear, -- EasingStyle
-		Enum.EasingDirection.Out -- EasingDirection
-	)
-	
-	-- Function to create a tween
-	local function createTween(instance, properties)
-		return TweenService:Create(instance, tweenInfo, properties)
-	end
-	
-	-- Hover effect to fade-in the TextLabel
-	button.MouseEnter:Connect(function()
-		local transparencyTween = createTween(textLabel, {TextTransparency = 0}) -- Fade in (set TextTransparency to 0 for fully visible)
-		transparencyTween:Play()
-	end)
-	
-	button.MouseEnter:Connect(function()
-		local transparencyTween = createTween(textLabel, {BackgroundTransparency = 0}) -- Fade in (set TextTransparency to 0 for fully visible)
-		transparencyTween:Play()
-	end)
-	
-	-- Reset TextLabel when mouse leaves the button
-	button.MouseLeave:Connect(function()
-		local transparencyTween = createTween(textLabel, {TextTransparency = 1}) -- Fade out (set TextTransparency to 1 for fully transparent)
-		transparencyTween:Play()
-	end)
-	
-	button.MouseLeave:Connect(function()
-		local transparencyTween = createTween(textLabel, {BackgroundTransparency = 1}) -- Fade out (set TextTransparency to 1 for fully transparent)
-		transparencyTween:Play()
-	end)
-	
-end
-coroutine.wrap(IHCCNWL_fake_script)()
-local function FSKISSX_fake_script() -- TextLabel_5.LocalScript 
+coroutine.wrap(JVQTSJC_fake_script)()
+local function XROGCE_fake_script() -- TextLabel_5.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_5)
 
 	local text = script.Parent
@@ -1240,8 +1100,8 @@ local function FSKISSX_fake_script() -- TextLabel_5.LocalScript
 		end
 	end
 end
-coroutine.wrap(FSKISSX_fake_script)()
-local function CNSFH_fake_script() -- back.backscript 
+coroutine.wrap(XROGCE_fake_script)()
+local function TINTNS_fake_script() -- back.backscript 
 	local script = Instance.new('LocalScript', back)
 
 	--// put all of that in a mouse button click function
@@ -1259,8 +1119,8 @@ local function CNSFH_fake_script() -- back.backscript
 		--                                /\ PUT TAB NAME THERE	
 	end)
 end
-coroutine.wrap(CNSFH_fake_script)()
-local function VMVKL_fake_script() -- TextLabel_6.LocalScript 
+coroutine.wrap(TINTNS_fake_script)()
+local function QDWX_fake_script() -- TextLabel_6.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_6)
 
 	local text = script.Parent
@@ -1316,8 +1176,8 @@ local function VMVKL_fake_script() -- TextLabel_6.LocalScript
 		end
 	end
 end
-coroutine.wrap(VMVKL_fake_script)()
-local function XCBLF_fake_script() -- walkbox.walkscript 
+coroutine.wrap(QDWX_fake_script)()
+local function ZOWHVQ_fake_script() -- walkbox.walkscript 
 	local script = Instance.new('LocalScript', walkbox)
 
 	local plr = game.Players.LocalPlayer
@@ -1329,8 +1189,8 @@ local function XCBLF_fake_script() -- walkbox.walkscript
 		hum.WalkSpeed = script.Parent.Text
 	end)
 end
-coroutine.wrap(XCBLF_fake_script)()
-local function TSJK_fake_script() -- jumpbox.jumpscript 
+coroutine.wrap(ZOWHVQ_fake_script)()
+local function SJIE_fake_script() -- jumpbox.jumpscript 
 	local script = Instance.new('LocalScript', jumpbox)
 
 	local plr = game.Players.LocalPlayer
@@ -1342,8 +1202,8 @@ local function TSJK_fake_script() -- jumpbox.jumpscript
 		hum.JumpPower = script.Parent.Text
 	end)
 end
-coroutine.wrap(TSJK_fake_script)()
-local function PIZRKJ_fake_script() -- back_2.backscript 
+coroutine.wrap(SJIE_fake_script)()
+local function FOXPEJ_fake_script() -- back_2.backscript 
 	local script = Instance.new('LocalScript', back_2)
 
 	--// put all of that in a mouse button click function
@@ -1361,8 +1221,8 @@ local function PIZRKJ_fake_script() -- back_2.backscript
 		--                                /\ PUT TAB NAME THERE	
 	end)
 end
-coroutine.wrap(PIZRKJ_fake_script)()
-local function KBHFRHZ_fake_script() -- TextLabel_7.LocalScript 
+coroutine.wrap(FOXPEJ_fake_script)()
+local function ACWECUB_fake_script() -- TextLabel_7.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_7)
 
 	local text = script.Parent
@@ -1418,16 +1278,16 @@ local function KBHFRHZ_fake_script() -- TextLabel_7.LocalScript
 		end
 	end
 end
-coroutine.wrap(KBHFRHZ_fake_script)()
-local function QFYL_fake_script() -- infinitey.LocalScript 
+coroutine.wrap(ACWECUB_fake_script)()
+local function HQQN_fake_script() -- infinitey.LocalScript 
 	local script = Instance.new('LocalScript', infinitey)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 	end)
 end
-coroutine.wrap(QFYL_fake_script)()
-local function XUVDHY_fake_script() -- infinitey.color 
+coroutine.wrap(HQQN_fake_script)()
+local function TFDGTED_fake_script() -- infinitey.color 
 	local script = Instance.new('LocalScript', infinitey)
 
 	-- LocalScript inside the TextButton
@@ -1524,16 +1384,16 @@ local function XUVDHY_fake_script() -- infinitey.color
 	end)
 	
 end
-coroutine.wrap(XUVDHY_fake_script)()
-local function EHYQ_fake_script() -- nexam.LocalScript 
+coroutine.wrap(TFDGTED_fake_script)()
+local function HVGTL_fake_script() -- nexam.LocalScript 
 	local script = Instance.new('LocalScript', nexam)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5ebefab5c68bfa67271dcbf6430d3c7d.lua"))
 	end)
 end
-coroutine.wrap(EHYQ_fake_script)()
-local function JGAK_fake_script() -- nexam.color 
+coroutine.wrap(HVGTL_fake_script)()
+local function BQQMDFV_fake_script() -- nexam.color 
 	local script = Instance.new('LocalScript', nexam)
 
 	-- LocalScript inside the TextButton
@@ -1630,16 +1490,16 @@ local function JGAK_fake_script() -- nexam.color
 	end)
 	
 end
-coroutine.wrap(JGAK_fake_script)()
-local function CTVYR_fake_script() -- exware.LocalScript 
+coroutine.wrap(BQQMDFV_fake_script)()
+local function BEKVP_fake_script() -- exware.LocalScript 
 	local script = Instance.new('LocalScript', exware)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Tomskix/exware-public/main/loader"))()
 	end)
 end
-coroutine.wrap(CTVYR_fake_script)()
-local function SVFCQ_fake_script() -- exware.color 
+coroutine.wrap(BEKVP_fake_script)()
+local function OVNF_fake_script() -- exware.color 
 	local script = Instance.new('LocalScript', exware)
 
 	-- LocalScript inside the TextButton
@@ -1736,16 +1596,16 @@ local function SVFCQ_fake_script() -- exware.color
 	end)
 	
 end
-coroutine.wrap(SVFCQ_fake_script)()
-local function NSRLCTI_fake_script() -- azuremod.LocalScript 
+coroutine.wrap(OVNF_fake_script)()
+local function OGNE_fake_script() -- azuremod.LocalScript 
 	local script = Instance.new('LocalScript', azuremod)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Actyrn/Scripts/main/AzureModded"))()
 	end)
 end
-coroutine.wrap(NSRLCTI_fake_script)()
-local function OTWMRF_fake_script() -- azuremod.color 
+coroutine.wrap(OGNE_fake_script)()
+local function QGASPK_fake_script() -- azuremod.color 
 	local script = Instance.new('LocalScript', azuremod)
 
 	-- LocalScript inside the TextButton
@@ -1842,8 +1702,8 @@ local function OTWMRF_fake_script() -- azuremod.color
 	end)
 	
 end
-coroutine.wrap(OTWMRF_fake_script)()
-local function AVZP_fake_script() -- atitle.LocalScript 
+coroutine.wrap(QGASPK_fake_script)()
+local function IGLW_fake_script() -- atitle.LocalScript 
 	local script = Instance.new('LocalScript', atitle)
 
 	local text = script.Parent
@@ -1899,16 +1759,16 @@ local function AVZP_fake_script() -- atitle.LocalScript
 		end
 	end
 end
-coroutine.wrap(AVZP_fake_script)()
-local function CJMI_fake_script() -- prisonware.LocalScript 
+coroutine.wrap(IGLW_fake_script)()
+local function SVDLKDR_fake_script() -- prisonware.LocalScript 
 	local script = Instance.new('LocalScript', prisonware)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))()
 	end)
 end
-coroutine.wrap(CJMI_fake_script)()
-local function MBLC_fake_script() -- prisonware.color 
+coroutine.wrap(SVDLKDR_fake_script)()
+local function VUDPC_fake_script() -- prisonware.color 
 	local script = Instance.new('LocalScript', prisonware)
 
 	-- LocalScript inside the TextButton
@@ -2005,16 +1865,16 @@ local function MBLC_fake_script() -- prisonware.color
 	end)
 	
 end
-coroutine.wrap(MBLC_fake_script)()
-local function EJURLK_fake_script() -- zbloxfruits.LocalScript 
+coroutine.wrap(VUDPC_fake_script)()
+local function RYMXWRP_fake_script() -- zbloxfruits.LocalScript 
 	local script = Instance.new('LocalScript', zbloxfruits)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua"))() 
 	end)
 end
-coroutine.wrap(EJURLK_fake_script)()
-local function MEHHO_fake_script() -- zbloxfruits.color 
+coroutine.wrap(RYMXWRP_fake_script)()
+local function QIJSI_fake_script() -- zbloxfruits.color 
 	local script = Instance.new('LocalScript', zbloxfruits)
 
 	-- LocalScript inside the TextButton
@@ -2111,8 +1971,8 @@ local function MEHHO_fake_script() -- zbloxfruits.color
 	end)
 	
 end
-coroutine.wrap(MEHHO_fake_script)()
-local function MXMBY_fake_script() -- TextLabel_8.LocalScript 
+coroutine.wrap(QIJSI_fake_script)()
+local function YZBOQP_fake_script() -- TextLabel_8.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_8)
 
 	local text = script.Parent
@@ -2168,8 +2028,8 @@ local function MXMBY_fake_script() -- TextLabel_8.LocalScript
 		end
 	end
 end
-coroutine.wrap(MXMBY_fake_script)()
-local function LRGR_fake_script() -- febutton.LocalScript 
+coroutine.wrap(YZBOQP_fake_script)()
+local function MZJKZNG_fake_script() -- febutton.LocalScript 
 	local script = Instance.new('LocalScript', febutton)
 
 	--// put all of that in a mouse button click function
@@ -2187,8 +2047,8 @@ local function LRGR_fake_script() -- febutton.LocalScript
 		--                                /\ PUT TAB NAME THERE	
 	end)
 end
-coroutine.wrap(LRGR_fake_script)()
-local function NGXUR_fake_script() -- febutton.color 
+coroutine.wrap(MZJKZNG_fake_script)()
+local function YIZOBRG_fake_script() -- febutton.color 
 	local script = Instance.new('LocalScript', febutton)
 
 	-- LocalScript inside the TextButton
@@ -2285,8 +2145,8 @@ local function NGXUR_fake_script() -- febutton.color
 	end)
 	
 end
-coroutine.wrap(NGXUR_fake_script)()
-local function BQXPBA_fake_script() -- ahomebutton.LocalScript 
+coroutine.wrap(YIZOBRG_fake_script)()
+local function WWSLEQK_fake_script() -- ahomebutton.LocalScript 
 	local script = Instance.new('LocalScript', ahomebutton)
 
 	--// put all of that in a mouse button click function
@@ -2304,8 +2164,8 @@ local function BQXPBA_fake_script() -- ahomebutton.LocalScript
 		--                                /\ PUT TAB NAME THERE	
 	end)
 end
-coroutine.wrap(BQXPBA_fake_script)()
-local function TROH_fake_script() -- ahomebutton.color 
+coroutine.wrap(WWSLEQK_fake_script)()
+local function GGZDXAY_fake_script() -- ahomebutton.color 
 	local script = Instance.new('LocalScript', ahomebutton)
 
 	-- LocalScript inside the TextButton
@@ -2402,8 +2262,8 @@ local function TROH_fake_script() -- ahomebutton.color
 	end)
 	
 end
-coroutine.wrap(TROH_fake_script)()
-local function IBGPYG_fake_script() -- unibutton.LocalScript 
+coroutine.wrap(GGZDXAY_fake_script)()
+local function URHZLG_fake_script() -- unibutton.LocalScript 
 	local script = Instance.new('LocalScript', unibutton)
 
 	--// put all of that in a mouse button click function
@@ -2421,8 +2281,8 @@ local function IBGPYG_fake_script() -- unibutton.LocalScript
 		--                                /\ PUT TAB NAME THERE	
 	end)
 end
-coroutine.wrap(IBGPYG_fake_script)()
-local function EKGLD_fake_script() -- unibutton.color 
+coroutine.wrap(URHZLG_fake_script)()
+local function UQZGWVS_fake_script() -- unibutton.color 
 	local script = Instance.new('LocalScript', unibutton)
 
 	-- LocalScript inside the TextButton
@@ -2519,8 +2379,8 @@ local function EKGLD_fake_script() -- unibutton.color
 	end)
 	
 end
-coroutine.wrap(EKGLD_fake_script)()
-local function XLVNRL_fake_script() -- mainhold.LocalScript 
+coroutine.wrap(UQZGWVS_fake_script)()
+local function POTKS_fake_script() -- mainhold.drags 
 	local script = Instance.new('LocalScript', mainhold)
 
 	spawn(function()
@@ -2563,16 +2423,16 @@ local function XLVNRL_fake_script() -- mainhold.LocalScript
 		normal_dragify(script.Parent)
 	end)
 end
-coroutine.wrap(XLVNRL_fake_script)()
-local function QYBKU_fake_script() -- open.LocalScript 
+coroutine.wrap(POTKS_fake_script)()
+local function ZTUB_fake_script() -- open.LocalScript 
 	local script = Instance.new('LocalScript', open)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.mainhold.Visible = true
 	end)
 end
-coroutine.wrap(QYBKU_fake_script)()
-local function FHPD_fake_script() -- open.bounce 
+coroutine.wrap(ZTUB_fake_script)()
+local function XMSTBJ_fake_script() -- open.bounce 
 	local script = Instance.new('LocalScript', open)
 
 	-- LocalScript inside the TextButton
@@ -2640,4 +2500,4 @@ local function FHPD_fake_script() -- open.bounce
 	end)
 	
 end
-coroutine.wrap(FHPD_fake_script)()
+coroutine.wrap(XMSTBJ_fake_script)()
