@@ -1,959 +1,875 @@
--- Generated using RoadToGlory's Converter v1.1 (RoadToGlory#9879)
+-- Gui to Lua
+-- Version: 3.2
 
 -- Instances:
 
-local Converted = {
-	["_ScreenGui"] = Instance.new("ScreenGui");
-	["_welcome"] = Instance.new("LocalScript");
-	["_mainhold"] = Instance.new("Frame");
-	["_thold"] = Instance.new("Frame");
-	["_home"] = Instance.new("Frame");
-	["_user"] = Instance.new("Frame");
-	["_UICorner"] = Instance.new("UICorner");
-	["_TextLabel"] = Instance.new("TextLabel");
-	["_LocalScript"] = Instance.new("LocalScript");
-	["_UIGradient"] = Instance.new("UIGradient");
-	["_LocalScript1"] = Instance.new("LocalScript");
-	["_TextLabel1"] = Instance.new("TextLabel");
-	["_LocalScript2"] = Instance.new("LocalScript");
-	["_UIGradient1"] = Instance.new("UIGradient");
-	["_LocalScript3"] = Instance.new("LocalScript");
-	["_ImageLabel"] = Instance.new("ImageLabel");
-	["_UICorner1"] = Instance.new("UICorner");
-	["_LocalScript4"] = Instance.new("LocalScript");
-	["_exec"] = Instance.new("Frame");
-	["_UICorner2"] = Instance.new("UICorner");
-	["_TextLabel2"] = Instance.new("TextLabel");
-	["_LocalScript5"] = Instance.new("LocalScript");
-	["_UIGradient2"] = Instance.new("UIGradient");
-	["_ImageLabel1"] = Instance.new("ImageLabel");
-	["_ImageLabel2"] = Instance.new("ImageLabel");
-	["_ImageLabel3"] = Instance.new("ImageLabel");
-	["_ImageLabel4"] = Instance.new("ImageLabel");
-	["_UICorner3"] = Instance.new("UICorner");
-	["_ImageLabel5"] = Instance.new("ImageLabel");
-	["_UICorner4"] = Instance.new("UICorner");
-	["_TextLabel3"] = Instance.new("TextLabel");
-	["_minimize"] = Instance.new("TextButton");
-	["_LocalScript6"] = Instance.new("LocalScript");
-	["_color"] = Instance.new("LocalScript");
-	["_destroy"] = Instance.new("TextButton");
-	["_color1"] = Instance.new("LocalScript");
-	["_destroyscript"] = Instance.new("LocalScript");
-	["_title"] = Instance.new("TextLabel");
-	["_TextLabel4"] = Instance.new("TextLabel");
-	["_UIGradient3"] = Instance.new("UIGradient");
-	["_LocalScript7"] = Instance.new("LocalScript");
-	["_fun"] = Instance.new("Frame");
-	["_back"] = Instance.new("TextButton");
-	["_backscript"] = Instance.new("LocalScript");
-	["_fetitle"] = Instance.new("TextLabel");
-	["_TextLabel5"] = Instance.new("TextLabel");
-	["_UIGradient4"] = Instance.new("UIGradient");
-	["_LocalScript8"] = Instance.new("LocalScript");
-	["_walkbox"] = Instance.new("TextBox");
-	["_UICorner5"] = Instance.new("UICorner");
-	["_walkscript"] = Instance.new("LocalScript");
-	["_fewalk"] = Instance.new("TextLabel");
-	["_fejump"] = Instance.new("TextLabel");
-	["_jumpbox"] = Instance.new("TextBox");
-	["_UICorner6"] = Instance.new("UICorner");
-	["_jumpscript"] = Instance.new("LocalScript");
-	["_universal"] = Instance.new("Frame");
-	["_back1"] = Instance.new("TextButton");
-	["_backscript1"] = Instance.new("LocalScript");
-	["_unititle"] = Instance.new("TextLabel");
-	["_TextLabel6"] = Instance.new("TextLabel");
-	["_UIGradient5"] = Instance.new("UIGradient");
-	["_LocalScript9"] = Instance.new("LocalScript");
-	["_uniscroll"] = Instance.new("ScrollingFrame");
-	["_infinitey"] = Instance.new("TextButton");
-	["_UICorner7"] = Instance.new("UICorner");
-	["_LocalScript10"] = Instance.new("LocalScript");
-	["_color2"] = Instance.new("LocalScript");
-	["_nexam"] = Instance.new("TextButton");
-	["_UICorner8"] = Instance.new("UICorner");
-	["_LocalScript11"] = Instance.new("LocalScript");
-	["_color3"] = Instance.new("LocalScript");
-	["_exware"] = Instance.new("TextButton");
-	["_UICorner9"] = Instance.new("UICorner");
-	["_LocalScript12"] = Instance.new("LocalScript");
-	["_color4"] = Instance.new("LocalScript");
-	["_zuremod"] = Instance.new("TextButton");
-	["_UICorner10"] = Instance.new("UICorner");
-	["_LocalScript13"] = Instance.new("LocalScript");
-	["_color5"] = Instance.new("LocalScript");
-	["_UIListLayout"] = Instance.new("UIListLayout");
-	["_prisonware"] = Instance.new("TextButton");
-	["_UICorner11"] = Instance.new("UICorner");
-	["_LocalScript14"] = Instance.new("LocalScript");
-	["_color6"] = Instance.new("LocalScript");
-	["_zbloxfruits"] = Instance.new("TextButton");
-	["_UICorner12"] = Instance.new("UICorner");
-	["_LocalScript15"] = Instance.new("LocalScript");
-	["_color7"] = Instance.new("LocalScript");
-	["_searchscript"] = Instance.new("LocalScript");
-	["_bsearch"] = Instance.new("TextBox");
-	["_UICorner13"] = Instance.new("UICorner");
-	["_ImageLabel6"] = Instance.new("ImageLabel");
-	["_atitle"] = Instance.new("TextLabel");
-	["_LocalScript16"] = Instance.new("LocalScript");
-	["_taskbar"] = Instance.new("Frame");
-	["_title1"] = Instance.new("TextLabel");
-	["_TextLabel7"] = Instance.new("TextLabel");
-	["_UIGradient6"] = Instance.new("UIGradient");
-	["_LocalScript17"] = Instance.new("LocalScript");
-	["_buttonhold"] = Instance.new("Frame");
-	["_febutton"] = Instance.new("TextButton");
-	["_UICorner14"] = Instance.new("UICorner");
-	["_LocalScript18"] = Instance.new("LocalScript");
-	["_color8"] = Instance.new("LocalScript");
-	["_ahomebutton"] = Instance.new("TextButton");
-	["_UICorner15"] = Instance.new("UICorner");
-	["_LocalScript19"] = Instance.new("LocalScript");
-	["_color9"] = Instance.new("LocalScript");
-	["_unibutton"] = Instance.new("TextButton");
-	["_UICorner16"] = Instance.new("UICorner");
-	["_LocalScript20"] = Instance.new("LocalScript");
-	["_color10"] = Instance.new("LocalScript");
-	["_UIListLayout1"] = Instance.new("UIListLayout");
-	["_drags"] = Instance.new("LocalScript");
-	["_open"] = Instance.new("TextButton");
-	["_UICorner17"] = Instance.new("UICorner");
-	["_LocalScript21"] = Instance.new("LocalScript");
-	["_color11"] = Instance.new("LocalScript");
-	["_keysys"] = Instance.new("Frame");
-	["_UICorner18"] = Instance.new("UICorner");
-	["_titlebar"] = Instance.new("Frame");
-	["_UICorner19"] = Instance.new("UICorner");
-	["_Frame"] = Instance.new("Frame");
-	["_title2"] = Instance.new("TextLabel");
-	["_title3"] = Instance.new("TextLabel");
-	["_TextLabel8"] = Instance.new("TextLabel");
-	["_UIGradient7"] = Instance.new("UIGradient");
-	["_LocalScript22"] = Instance.new("LocalScript");
-	["_submit"] = Instance.new("TextButton");
-	["_UICorner20"] = Instance.new("UICorner");
-	["_LocalScript23"] = Instance.new("LocalScript");
-	["_keybox"] = Instance.new("TextBox");
-	["_UICorner21"] = Instance.new("UICorner");
-	["_clipboard"] = Instance.new("ImageButton");
-	["_LocalScript24"] = Instance.new("LocalScript");
-	["_exit2"] = Instance.new("TextButton");
-	["_LocalScript25"] = Instance.new("LocalScript");
-}
-
--- Properties:
-
-Converted["_ScreenGui"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Converted["_ScreenGui"].Parent = game.CoreGui
-
-Converted["_mainhold"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_mainhold"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_mainhold"].BackgroundTransparency = 1
-Converted["_mainhold"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_mainhold"].BorderSizePixel = 0
-Converted["_mainhold"].Position = UDim2.new(0.5, 50, 0.5, 0)
-Converted["_mainhold"].Size = UDim2.new(0, 342, 0, 285)
-Converted["_mainhold"].Visible = false
-Converted["_mainhold"].Name = "mainhold"
-Converted["_mainhold"].Parent = Converted["_ScreenGui"]
-
-Converted["_thold"].BackgroundColor3 = Color3.fromRGB(21.000000648200512, 21.000000648200512, 21.000000648200512)
-Converted["_thold"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_thold"].BorderSizePixel = 0
-Converted["_thold"].Position = UDim2.new(-0.00692409929, 0, 0, 0)
-Converted["_thold"].Size = UDim2.new(0, 342, 0, 285)
-Converted["_thold"].Name = "thold"
-Converted["_thold"].Parent = Converted["_mainhold"]
-
-Converted["_home"].BackgroundColor3 = Color3.fromRGB(21.000000648200512, 21.000000648200512, 21.000000648200512)
-Converted["_home"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_home"].BorderSizePixel = 0
-Converted["_home"].Position = UDim2.new(-0.00141023332, 0, 0.00346401287, 0)
-Converted["_home"].Size = UDim2.new(0, 342, 0, 285)
-Converted["_home"].Name = "home"
-Converted["_home"].Parent = Converted["_thold"]
-
-Converted["_user"].BackgroundColor3 = Color3.fromRGB(35.00000171363354, 35.00000171363354, 35.00000171363354)
-Converted["_user"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_user"].Position = UDim2.new(0.0847953185, 0, 0.147368416, 0)
-Converted["_user"].Size = UDim2.new(0, 281, 0, 91)
-Converted["_user"].Name = "user"
-Converted["_user"].Parent = Converted["_home"]
-
-Converted["_UICorner"].Parent = Converted["_user"]
-
-Converted["_TextLabel"].Font = Enum.Font.GothamMedium
-Converted["_TextLabel"].Text = "Welcome, (User here)"
-Converted["_TextLabel"].TextColor3 = Color3.fromRGB(0, 255, 234.00000125169754)
-Converted["_TextLabel"].TextSize = 14
-Converted["_TextLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel"].BackgroundTransparency = 1
-Converted["_TextLabel"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_TextLabel"].BorderSizePixel = 0
-Converted["_TextLabel"].Position = UDim2.new(0.359430611, 0, 0.230769232, 0)
-Converted["_TextLabel"].Size = UDim2.new(0, 143, 0, 32)
-Converted["_TextLabel"].Parent = Converted["_user"]
-
-Converted["_UIGradient"].Parent = Converted["_TextLabel"]
-
-Converted["_TextLabel1"].Font = Enum.Font.GothamMedium
-Converted["_TextLabel1"].Text = "@(user here)"
-Converted["_TextLabel1"].TextColor3 = Color3.fromRGB(0, 255, 234.00000125169754)
-Converted["_TextLabel1"].TextSize = 14
-Converted["_TextLabel1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel1"].BackgroundTransparency = 1
-Converted["_TextLabel1"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_TextLabel1"].BorderSizePixel = 0
-Converted["_TextLabel1"].Position = UDim2.new(0.359430611, 0, 0.439560443, 0)
-Converted["_TextLabel1"].Size = UDim2.new(0, 143, 0, 32)
-Converted["_TextLabel1"].Parent = Converted["_user"]
-
-Converted["_UIGradient1"].Parent = Converted["_TextLabel1"]
-
-Converted["_ImageLabel"].BackgroundColor3 = Color3.fromRGB(57.00000420212746, 57.00000420212746, 57.00000420212746)
-Converted["_ImageLabel"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_ImageLabel"].Position = UDim2.new(0.0264130179, 0, 0.073333405, 0)
-Converted["_ImageLabel"].Size = UDim2.new(0, 77, 0, 77)
-Converted["_ImageLabel"].Parent = Converted["_user"]
-
-Converted["_UICorner1"].CornerRadius = UDim.new(10, 0)
-Converted["_UICorner1"].Parent = Converted["_ImageLabel"]
-
-Converted["_exec"].BackgroundColor3 = Color3.fromRGB(35.00000171363354, 35.00000171363354, 35.00000171363354)
-Converted["_exec"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_exec"].Position = UDim2.new(0.0847953185, 0, 0.515789449, 0)
-Converted["_exec"].Size = UDim2.new(0, 281, 0, 91)
-Converted["_exec"].Name = "exec"
-Converted["_exec"].Parent = Converted["_home"]
-
-Converted["_UICorner2"].Parent = Converted["_exec"]
-
-Converted["_TextLabel2"].Font = Enum.Font.GothamMedium
-Converted["_TextLabel2"].Text = "SUPPORTED EXECUTORS"
-Converted["_TextLabel2"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel2"].TextSize = 12
-Converted["_TextLabel2"].TextWrapped = true
-Converted["_TextLabel2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel2"].BackgroundTransparency = 1
-Converted["_TextLabel2"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_TextLabel2"].BorderSizePixel = 0
-Converted["_TextLabel2"].Size = UDim2.new(0, 160, 0, 32)
-Converted["_TextLabel2"].Parent = Converted["_exec"]
-
-Converted["_UIGradient2"].Parent = Converted["_TextLabel2"]
-
-Converted["_ImageLabel1"].Image = "rbxassetid://18383113478"
-Converted["_ImageLabel1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_ImageLabel1"].BackgroundTransparency = 1
-Converted["_ImageLabel1"].BorderColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_ImageLabel1"].BorderSizePixel = 0
-Converted["_ImageLabel1"].Position = UDim2.new(0.0249110311, 0, 0.35164836, 0)
-Converted["_ImageLabel1"].Size = UDim2.new(0, 45, 0, 43)
-Converted["_ImageLabel1"].Parent = Converted["_exec"]
-
-Converted["_ImageLabel2"].Image = "rbxassetid://18383495417"
-Converted["_ImageLabel2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_ImageLabel2"].BackgroundTransparency = 1
-Converted["_ImageLabel2"].BorderColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_ImageLabel2"].BorderSizePixel = 0
-Converted["_ImageLabel2"].Position = UDim2.new(0.234875441, 0, 0.35164836, 0)
-Converted["_ImageLabel2"].Size = UDim2.new(0, 45, 0, 43)
-Converted["_ImageLabel2"].Parent = Converted["_exec"]
-
-Converted["_ImageLabel3"].Image = "rbxassetid://18383552231"
-Converted["_ImageLabel3"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_ImageLabel3"].BackgroundTransparency = 1
-Converted["_ImageLabel3"].BorderColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_ImageLabel3"].BorderSizePixel = 0
-Converted["_ImageLabel3"].Position = UDim2.new(0.419928819, 0, 0.35164836, 0)
-Converted["_ImageLabel3"].Size = UDim2.new(0, 45, 0, 43)
-Converted["_ImageLabel3"].Parent = Converted["_exec"]
-
-Converted["_ImageLabel4"].Image = "rbxassetid://18389868487"
-Converted["_ImageLabel4"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_ImageLabel4"].BackgroundTransparency = 1
-Converted["_ImageLabel4"].BorderColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_ImageLabel4"].BorderSizePixel = 0
-Converted["_ImageLabel4"].Position = UDim2.new(0.604982197, 0, 0.35164836, 0)
-Converted["_ImageLabel4"].Size = UDim2.new(0, 45, 0, 43)
-Converted["_ImageLabel4"].Parent = Converted["_exec"]
-
-Converted["_UICorner3"].CornerRadius = UDim.new(1, 0)
-Converted["_UICorner3"].Parent = Converted["_ImageLabel4"]
-
-Converted["_ImageLabel5"].Image = "rbxassetid://18389895498"
-Converted["_ImageLabel5"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_ImageLabel5"].BackgroundTransparency = 1
-Converted["_ImageLabel5"].BorderColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_ImageLabel5"].BorderSizePixel = 0
-Converted["_ImageLabel5"].Position = UDim2.new(0.77935946, 0, 0.274725288, 0)
-Converted["_ImageLabel5"].Size = UDim2.new(0, 62, 0, 56)
-Converted["_ImageLabel5"].Parent = Converted["_exec"]
-
-Converted["_UICorner4"].CornerRadius = UDim.new(1, 0)
-Converted["_UICorner4"].Parent = Converted["_ImageLabel5"]
-
-Converted["_TextLabel3"].Font = Enum.Font.Gotham
-Converted["_TextLabel3"].Text = "WHERE DREAMS ARE MADE"
-Converted["_TextLabel3"].TextColor3 = Color3.fromRGB(80.00000283122063, 80.00000283122063, 80.00000283122063)
-Converted["_TextLabel3"].TextScaled = true
-Converted["_TextLabel3"].TextSize = 14
-Converted["_TextLabel3"].TextWrapped = true
-Converted["_TextLabel3"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel3"].BackgroundTransparency = 1
-Converted["_TextLabel3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextLabel3"].BorderSizePixel = 0
-Converted["_TextLabel3"].Position = UDim2.new(0, 0, 0.89122808, 0)
-Converted["_TextLabel3"].Size = UDim2.new(0, 342, 0, 17)
-Converted["_TextLabel3"].Parent = Converted["_home"]
-
-Converted["_minimize"].Font = Enum.Font.GothamBold
-Converted["_minimize"].Text = "-"
-Converted["_minimize"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_minimize"].TextScaled = true
-Converted["_minimize"].TextSize = 14
-Converted["_minimize"].TextWrapped = true
-Converted["_minimize"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_minimize"].BackgroundTransparency = 1
-Converted["_minimize"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_minimize"].BorderSizePixel = 0
-Converted["_minimize"].Position = UDim2.new(0.81145525, 0, 0, 0)
-Converted["_minimize"].Size = UDim2.new(0, 32, 0, 24)
-Converted["_minimize"].Name = "minimize"
-Converted["_minimize"].Parent = Converted["_home"]
-
-Converted["_destroy"].Font = Enum.Font.GothamBold
-Converted["_destroy"].Text = "x"
-Converted["_destroy"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_destroy"].TextSize = 14
-Converted["_destroy"].TextWrapped = true
-Converted["_destroy"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_destroy"].BackgroundTransparency = 1
-Converted["_destroy"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_destroy"].BorderSizePixel = 0
-Converted["_destroy"].Position = UDim2.new(0.905022502, 0, 0, 0)
-Converted["_destroy"].Size = UDim2.new(0, 32, 0, 24)
-Converted["_destroy"].Name = "destroy"
-Converted["_destroy"].Parent = Converted["_home"]
-
-Converted["_title"].Font = Enum.Font.GothamMedium
-Converted["_title"].Text = "VORTEX"
-Converted["_title"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_title"].TextSize = 14
-Converted["_title"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_title"].BackgroundTransparency = 1
-Converted["_title"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_title"].BorderSizePixel = 0
-Converted["_title"].Size = UDim2.new(0, 81, 0, 32)
-Converted["_title"].Name = "title"
-Converted["_title"].Parent = Converted["_home"]
-
-Converted["_TextLabel4"].Font = Enum.Font.GothamMedium
-Converted["_TextLabel4"].Text = "HOME"
-Converted["_TextLabel4"].TextColor3 = Color3.fromRGB(0, 255, 234.00000125169754)
-Converted["_TextLabel4"].TextSize = 14
-Converted["_TextLabel4"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel4"].BackgroundTransparency = 1
-Converted["_TextLabel4"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_TextLabel4"].BorderSizePixel = 0
-Converted["_TextLabel4"].Position = UDim2.new(0.89823705, 0, 0, 0)
-Converted["_TextLabel4"].Size = UDim2.new(0, 40, 0, 32)
-Converted["_TextLabel4"].Parent = Converted["_title"]
-
-Converted["_UIGradient3"].Parent = Converted["_TextLabel4"]
-
-Converted["_fun"].BackgroundColor3 = Color3.fromRGB(21.000000648200512, 21.000000648200512, 21.000000648200512)
-Converted["_fun"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_fun"].BorderSizePixel = 0
-Converted["_fun"].Position = UDim2.new(0.00107793079, 0, 0, 0)
-Converted["_fun"].Size = UDim2.new(0, 342, 0, 285)
-Converted["_fun"].Visible = false
-Converted["_fun"].Name = "fun"
-Converted["_fun"].Parent = Converted["_thold"]
-
-Converted["_back"].Font = Enum.Font.GothamBold
-Converted["_back"].Text = "<--"
-Converted["_back"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_back"].TextScaled = true
-Converted["_back"].TextSize = 14
-Converted["_back"].TextWrapped = true
-Converted["_back"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_back"].BackgroundTransparency = 1
-Converted["_back"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_back"].BorderSizePixel = 0
-Converted["_back"].Position = UDim2.new(0.869300902, 0, -0.003508772, 0)
-Converted["_back"].Size = UDim2.new(0, 42, 0, 23)
-Converted["_back"].Name = "back"
-Converted["_back"].Parent = Converted["_fun"]
-
-Converted["_fetitle"].Font = Enum.Font.GothamMedium
-Converted["_fetitle"].Text = "WELCOME TO VORTEX "
-Converted["_fetitle"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_fetitle"].TextSize = 14
-Converted["_fetitle"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_fetitle"].BackgroundTransparency = 1
-Converted["_fetitle"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_fetitle"].BorderSizePixel = 0
-Converted["_fetitle"].Position = UDim2.new(-0.0704517514, 0, -0.003508772, 0)
-Converted["_fetitle"].Size = UDim2.new(0, 210, 0, 32)
-Converted["_fetitle"].Name = "fetitle"
-Converted["_fetitle"].Parent = Converted["_fun"]
-
-Converted["_TextLabel5"].Font = Enum.Font.GothamMedium
-Converted["_TextLabel5"].Text = "FUN"
-Converted["_TextLabel5"].TextColor3 = Color3.fromRGB(0, 255, 234.00000125169754)
-Converted["_TextLabel5"].TextSize = 14
-Converted["_TextLabel5"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel5"].BackgroundTransparency = 1
-Converted["_TextLabel5"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_TextLabel5"].BorderSizePixel = 0
-Converted["_TextLabel5"].Position = UDim2.new(0.829304159, 0, 0, 0)
-Converted["_TextLabel5"].Size = UDim2.new(0, 40, 0, 32)
-Converted["_TextLabel5"].Parent = Converted["_fetitle"]
-
-Converted["_UIGradient4"].Parent = Converted["_TextLabel5"]
-
-Converted["_walkbox"].Font = Enum.Font.Gotham
-Converted["_walkbox"].Text = "16"
-Converted["_walkbox"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_walkbox"].TextSize = 14
-Converted["_walkbox"].BackgroundColor3 = Color3.fromRGB(35.00000171363354, 35.00000171363354, 35.00000171363354)
-Converted["_walkbox"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_walkbox"].BorderSizePixel = 0
-Converted["_walkbox"].Position = UDim2.new(0.363636374, 0, 0.150877193, 0)
-Converted["_walkbox"].Size = UDim2.new(0, 200, 0, 23)
-Converted["_walkbox"].Name = "walkbox"
-Converted["_walkbox"].Parent = Converted["_fun"]
-
-Converted["_UICorner5"].CornerRadius = UDim.new(0, 4)
-Converted["_UICorner5"].Parent = Converted["_walkbox"]
-
-Converted["_fewalk"].Font = Enum.Font.GothamMedium
-Converted["_fewalk"].Text = "WALKSPEED"
-Converted["_fewalk"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_fewalk"].TextSize = 14
-Converted["_fewalk"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_fewalk"].BackgroundTransparency = 1
-Converted["_fewalk"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_fewalk"].BorderSizePixel = 0
-Converted["_fewalk"].Position = UDim2.new(0.0439177491, 0, 0.13333334, 0)
-Converted["_fewalk"].Size = UDim2.new(0, 97, 0, 32)
-Converted["_fewalk"].Name = "fewalk"
-Converted["_fewalk"].Parent = Converted["_fun"]
-
-Converted["_fejump"].Font = Enum.Font.GothamMedium
-Converted["_fejump"].Text = "JUMP POWER"
-Converted["_fejump"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_fejump"].TextSize = 14
-Converted["_fejump"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_fejump"].BackgroundTransparency = 1
-Converted["_fejump"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_fejump"].BorderSizePixel = 0
-Converted["_fejump"].Position = UDim2.new(0.0585891083, 0, 0.245614037, 0)
-Converted["_fejump"].Size = UDim2.new(0, 91, 0, 32)
-Converted["_fejump"].Name = "fejump"
-Converted["_fejump"].Parent = Converted["_fun"]
-
-Converted["_jumpbox"].CursorPosition = -1
-Converted["_jumpbox"].Font = Enum.Font.Gotham
-Converted["_jumpbox"].Text = "50"
-Converted["_jumpbox"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_jumpbox"].TextSize = 14
-Converted["_jumpbox"].BackgroundColor3 = Color3.fromRGB(35.00000171363354, 35.00000171363354, 35.00000171363354)
-Converted["_jumpbox"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_jumpbox"].BorderSizePixel = 0
-Converted["_jumpbox"].Position = UDim2.new(0.363636404, 0, 0.263157904, 0)
-Converted["_jumpbox"].Size = UDim2.new(0, 200, 0, 23)
-Converted["_jumpbox"].Name = "jumpbox"
-Converted["_jumpbox"].Parent = Converted["_fun"]
-
-Converted["_UICorner6"].CornerRadius = UDim.new(0, 4)
-Converted["_UICorner6"].Parent = Converted["_jumpbox"]
-
-Converted["_universal"].BackgroundColor3 = Color3.fromRGB(21.000000648200512, 21.000000648200512, 21.000000648200512)
-Converted["_universal"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_universal"].BorderSizePixel = 0
-Converted["_universal"].Position = UDim2.new(0.00107793079, 0, 0, 0)
-Converted["_universal"].Size = UDim2.new(0, 342, 0, 285)
-Converted["_universal"].Visible = false
-Converted["_universal"].Name = "universal"
-Converted["_universal"].Parent = Converted["_thold"]
-
-Converted["_back1"].Font = Enum.Font.GothamBold
-Converted["_back1"].Text = "<--"
-Converted["_back1"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_back1"].TextScaled = true
-Converted["_back1"].TextSize = 14
-Converted["_back1"].TextWrapped = true
-Converted["_back1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_back1"].BackgroundTransparency = 1
-Converted["_back1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_back1"].BorderSizePixel = 0
-Converted["_back1"].Position = UDim2.new(0.869300902, 0, -0.003508772, 0)
-Converted["_back1"].Size = UDim2.new(0, 42, 0, 23)
-Converted["_back1"].Name = "back"
-Converted["_back1"].Parent = Converted["_universal"]
-
-Converted["_unititle"].Font = Enum.Font.GothamMedium
-Converted["_unititle"].Text = "WELCOME TO VORTEX "
-Converted["_unititle"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_unititle"].TextSize = 14
-Converted["_unititle"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_unititle"].BackgroundTransparency = 1
-Converted["_unititle"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_unititle"].BorderSizePixel = 0
-Converted["_unititle"].Position = UDim2.new(-0.0704517514, 0, -0.003508772, 0)
-Converted["_unititle"].Size = UDim2.new(0, 210, 0, 32)
-Converted["_unititle"].Name = "unititle"
-Converted["_unititle"].Parent = Converted["_universal"]
-
-Converted["_TextLabel6"].Font = Enum.Font.GothamMedium
-Converted["_TextLabel6"].Text = "UNIVERSAL"
-Converted["_TextLabel6"].TextColor3 = Color3.fromRGB(0, 255, 234.00000125169754)
-Converted["_TextLabel6"].TextSize = 14
-Converted["_TextLabel6"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel6"].BackgroundTransparency = 1
-Converted["_TextLabel6"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_TextLabel6"].BorderSizePixel = 0
-Converted["_TextLabel6"].Position = UDim2.new(0.929304123, 0, 0, 0)
-Converted["_TextLabel6"].Size = UDim2.new(0, 40, 0, 32)
-Converted["_TextLabel6"].Parent = Converted["_unititle"]
-
-Converted["_UIGradient5"].Parent = Converted["_TextLabel6"]
-
-Converted["_uniscroll"].CanvasSize = UDim2.new(0, 0, 1, 0)
-Converted["_uniscroll"].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_uniscroll"].ScrollBarThickness = 7
-Converted["_uniscroll"].Active = true
-Converted["_uniscroll"].BackgroundColor3 = Color3.fromRGB(21.000000648200512, 21.000000648200512, 21.000000648200512)
-Converted["_uniscroll"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_uniscroll"].BorderSizePixel = 0
-Converted["_uniscroll"].Position = UDim2.new(0.023391813, 0, 0.308771938, 0)
-Converted["_uniscroll"].Size = UDim2.new(0, 324, 0, 191)
-Converted["_uniscroll"].Name = "uniscroll"
-Converted["_uniscroll"].Parent = Converted["_universal"]
-
-Converted["_infinitey"].Font = Enum.Font.Gotham
-Converted["_infinitey"].Text = "INFINITE YIELD - UNIVERSAL ADMIN COMMANDS"
-Converted["_infinitey"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_infinitey"].TextSize = 10
-Converted["_infinitey"].TextWrapped = true
-Converted["_infinitey"].BackgroundColor3 = Color3.fromRGB(35.00000171363354, 35.00000171363354, 35.00000171363354)
-Converted["_infinitey"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_infinitey"].BorderSizePixel = 0
-Converted["_infinitey"].Position = UDim2.new(0.0910493806, 0, 0.0411522649, 0)
-Converted["_infinitey"].Size = UDim2.new(0, 267, 0, 23)
-Converted["_infinitey"].Name = "infinitey"
-Converted["_infinitey"].Parent = Converted["_uniscroll"]
-
-Converted["_UICorner7"].CornerRadius = UDim.new(0, 4)
-Converted["_UICorner7"].Parent = Converted["_infinitey"]
-
-Converted["_nexam"].Font = Enum.Font.Gotham
-Converted["_nexam"].Text = "NEXAM - ROBLOX BLADE BALL SCRIPT "
-Converted["_nexam"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_nexam"].TextSize = 12
-Converted["_nexam"].TextWrapped = true
-Converted["_nexam"].BackgroundColor3 = Color3.fromRGB(35.00000171363354, 35.00000171363354, 35.00000171363354)
-Converted["_nexam"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_nexam"].BorderSizePixel = 0
-Converted["_nexam"].Position = UDim2.new(0.0432098769, 0, 0.0617283955, 0)
-Converted["_nexam"].Size = UDim2.new(0, 267, 0, 23)
-Converted["_nexam"].Name = "nexam"
-Converted["_nexam"].Parent = Converted["_uniscroll"]
-
-Converted["_UICorner8"].CornerRadius = UDim.new(0, 4)
-Converted["_UICorner8"].Parent = Converted["_nexam"]
-
-Converted["_exware"].Font = Enum.Font.Gotham
-Converted["_exware"].Text = "EXWARE - BEST ARSENAL SCRIPT"
-Converted["_exware"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_exware"].TextSize = 12
-Converted["_exware"].TextWrapped = true
-Converted["_exware"].BackgroundColor3 = Color3.fromRGB(35.00000171363354, 35.00000171363354, 35.00000171363354)
-Converted["_exware"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_exware"].BorderSizePixel = 0
-Converted["_exware"].Position = UDim2.new(0.0432098769, 0, 0.0617283955, 0)
-Converted["_exware"].Size = UDim2.new(0, 267, 0, 23)
-Converted["_exware"].Name = "exware"
-Converted["_exware"].Parent = Converted["_uniscroll"]
-
-Converted["_UICorner9"].CornerRadius = UDim.new(0, 4)
-Converted["_UICorner9"].Parent = Converted["_exware"]
-
-Converted["_zuremod"].Font = Enum.Font.Gotham
-Converted["_zuremod"].Text = "AZURE MODDED - DAHOOD SCRIPT (OP)"
-Converted["_zuremod"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_zuremod"].TextSize = 12
-Converted["_zuremod"].TextWrapped = true
-Converted["_zuremod"].BackgroundColor3 = Color3.fromRGB(35.00000171363354, 35.00000171363354, 35.00000171363354)
-Converted["_zuremod"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_zuremod"].BorderSizePixel = 0
-Converted["_zuremod"].Position = UDim2.new(0.0432098769, 0, 0.0617283955, 0)
-Converted["_zuremod"].Size = UDim2.new(0, 267, 0, 23)
-Converted["_zuremod"].Name = "zuremod"
-Converted["_zuremod"].Parent = Converted["_uniscroll"]
-
-Converted["_UICorner10"].CornerRadius = UDim.new(0, 4)
-Converted["_UICorner10"].Parent = Converted["_zuremod"]
-
-Converted["_UIListLayout"].Padding = UDim.new(0, 10)
-Converted["_UIListLayout"].HorizontalAlignment = Enum.HorizontalAlignment.Center
-Converted["_UIListLayout"].Parent = Converted["_uniscroll"]
-
-Converted["_prisonware"].Font = Enum.Font.Gotham
-Converted["_prisonware"].Text = "PRISONWARE - PRISON LIFE SCRIPT"
-Converted["_prisonware"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_prisonware"].TextSize = 12
-Converted["_prisonware"].TextWrapped = true
-Converted["_prisonware"].BackgroundColor3 = Color3.fromRGB(35.00000171363354, 35.00000171363354, 35.00000171363354)
-Converted["_prisonware"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_prisonware"].BorderSizePixel = 0
-Converted["_prisonware"].Position = UDim2.new(0.0879629627, 0, 0.619433224, 0)
-Converted["_prisonware"].Size = UDim2.new(0, 267, 0, 23)
-Converted["_prisonware"].Name = "prisonware"
-Converted["_prisonware"].Parent = Converted["_uniscroll"]
-
-Converted["_UICorner11"].CornerRadius = UDim.new(0, 4)
-Converted["_UICorner11"].Parent = Converted["_prisonware"]
-
-Converted["_zbloxfruits"].Font = Enum.Font.Gotham
-Converted["_zbloxfruits"].Text = "SPEED HUB V3 - BLOXFRUITS SCRIPT"
-Converted["_zbloxfruits"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_zbloxfruits"].TextSize = 12
-Converted["_zbloxfruits"].TextWrapped = true
-Converted["_zbloxfruits"].BackgroundColor3 = Color3.fromRGB(35.00000171363354, 35.00000171363354, 35.00000171363354)
-Converted["_zbloxfruits"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_zbloxfruits"].BorderSizePixel = 0
-Converted["_zbloxfruits"].Position = UDim2.new(0.0879629627, 0, 0.619433224, 0)
-Converted["_zbloxfruits"].Size = UDim2.new(0, 267, 0, 23)
-Converted["_zbloxfruits"].Name = "zbloxfruits"
-Converted["_zbloxfruits"].Parent = Converted["_uniscroll"]
-
-Converted["_UICorner12"].CornerRadius = UDim.new(0, 4)
-Converted["_UICorner12"].Parent = Converted["_zbloxfruits"]
-
-Converted["_bsearch"].CursorPosition = -1
-Converted["_bsearch"].Font = Enum.Font.Gotham
-Converted["_bsearch"].Text = ""
-Converted["_bsearch"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_bsearch"].TextSize = 14
-Converted["_bsearch"].BackgroundColor3 = Color3.fromRGB(35.00000171363354, 35.00000171363354, 35.00000171363354)
-Converted["_bsearch"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_bsearch"].BorderSizePixel = 0
-Converted["_bsearch"].Position = UDim2.new(0.200130001, 0, 0.199460208, 0)
-Converted["_bsearch"].Size = UDim2.new(0, 200, 0, 23)
-Converted["_bsearch"].Name = "bsearch"
-Converted["_bsearch"].Parent = Converted["_universal"]
-
-Converted["_UICorner13"].CornerRadius = UDim.new(0, 4)
-Converted["_UICorner13"].Parent = Converted["_bsearch"]
-
-Converted["_ImageLabel6"].Image = "rbxassetid://18400800878"
-Converted["_ImageLabel6"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_ImageLabel6"].BackgroundTransparency = 1
-Converted["_ImageLabel6"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ImageLabel6"].BorderSizePixel = 0
-Converted["_ImageLabel6"].Position = UDim2.new(1.02029657, 0, 0.0416666679, 0)
-Converted["_ImageLabel6"].Size = UDim2.new(0, 23, 0, 21)
-Converted["_ImageLabel6"].Parent = Converted["_bsearch"]
-
-Converted["_atitle"].Font = Enum.Font.GothamBold
-Converted["_atitle"].Text = "WELCOME TO VORTEXHUB"
-Converted["_atitle"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_atitle"].TextSize = 14
-Converted["_atitle"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_atitle"].BackgroundTransparency = 1
-Converted["_atitle"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_atitle"].BorderSizePixel = 0
-Converted["_atitle"].Position = UDim2.new(0.227663994, 0, 0.124236524, 0)
-Converted["_atitle"].Size = UDim2.new(0, 185, 0, 15)
-Converted["_atitle"].Name = "atitle"
-Converted["_atitle"].Parent = Converted["_universal"]
-
-Converted["_taskbar"].BackgroundColor3 = Color3.fromRGB(35.00000171363354, 35.00000171363354, 35.00000171363354)
-Converted["_taskbar"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_taskbar"].BorderSizePixel = 0
-Converted["_taskbar"].Position = UDim2.new(-0.326999992, 0, -0, 0)
-Converted["_taskbar"].Size = UDim2.new(0, 110, 0, 285)
-Converted["_taskbar"].Name = "taskbar"
-Converted["_taskbar"].Parent = Converted["_mainhold"]
-
-Converted["_title1"].Font = Enum.Font.GothamMedium
-Converted["_title1"].Text = "VOR"
-Converted["_title1"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_title1"].TextSize = 14
-Converted["_title1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_title1"].BackgroundTransparency = 1
-Converted["_title1"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_title1"].BorderSizePixel = 0
-Converted["_title1"].Size = UDim2.new(0, 40, 0, 32)
-Converted["_title1"].Name = "title"
-Converted["_title1"].Parent = Converted["_taskbar"]
-
-Converted["_TextLabel7"].Font = Enum.Font.GothamMedium
-Converted["_TextLabel7"].Text = "TEX"
-Converted["_TextLabel7"].TextColor3 = Color3.fromRGB(0, 255, 234.00000125169754)
-Converted["_TextLabel7"].TextSize = 14
-Converted["_TextLabel7"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel7"].BackgroundTransparency = 1
-Converted["_TextLabel7"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_TextLabel7"].BorderSizePixel = 0
-Converted["_TextLabel7"].Position = UDim2.new(0.614286065, 0, 0, 0)
-Converted["_TextLabel7"].Size = UDim2.new(0, 40, 0, 32)
-Converted["_TextLabel7"].Parent = Converted["_title1"]
-
-Converted["_UIGradient6"].Parent = Converted["_TextLabel7"]
-
-Converted["_buttonhold"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_buttonhold"].BackgroundTransparency = 1
-Converted["_buttonhold"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_buttonhold"].BorderSizePixel = 0
-Converted["_buttonhold"].Position = UDim2.new(0, 0, 0.101754382, 0)
-Converted["_buttonhold"].Size = UDim2.new(0, 108, 0, 256)
-Converted["_buttonhold"].Name = "buttonhold"
-Converted["_buttonhold"].Parent = Converted["_taskbar"]
-
-Converted["_febutton"].Font = Enum.Font.GothamBold
-Converted["_febutton"].Text = "FUN SCRIPTS"
-Converted["_febutton"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_febutton"].TextSize = 14
-Converted["_febutton"].BackgroundColor3 = Color3.fromRGB(21.000000648200512, 21.000000648200512, 21.000000648200512)
-Converted["_febutton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_febutton"].BorderSizePixel = 0
-Converted["_febutton"].Position = UDim2.new(0.0462962948, 0, 0.1328125, 0)
-Converted["_febutton"].Size = UDim2.new(0, 100, 0, 28)
-Converted["_febutton"].Name = "febutton"
-Converted["_febutton"].Parent = Converted["_buttonhold"]
-
-Converted["_UICorner14"].CornerRadius = UDim.new(0, 4)
-Converted["_UICorner14"].Parent = Converted["_febutton"]
-
-Converted["_ahomebutton"].Font = Enum.Font.GothamBold
-Converted["_ahomebutton"].Text = "HOME"
-Converted["_ahomebutton"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_ahomebutton"].TextSize = 14
-Converted["_ahomebutton"].BackgroundColor3 = Color3.fromRGB(21.000000648200512, 21.000000648200512, 21.000000648200512)
-Converted["_ahomebutton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ahomebutton"].BorderSizePixel = 0
-Converted["_ahomebutton"].Position = UDim2.new(0.0404733717, 0, 0.0123872757, 0)
-Converted["_ahomebutton"].Size = UDim2.new(0, 100, 0, 28)
-Converted["_ahomebutton"].Name = "ahomebutton"
-Converted["_ahomebutton"].Parent = Converted["_buttonhold"]
-
-Converted["_UICorner15"].CornerRadius = UDim.new(0, 4)
-Converted["_UICorner15"].Parent = Converted["_ahomebutton"]
-
-Converted["_unibutton"].Font = Enum.Font.GothamBold
-Converted["_unibutton"].Text = "UNIVERSAL"
-Converted["_unibutton"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_unibutton"].TextSize = 14
-Converted["_unibutton"].BackgroundColor3 = Color3.fromRGB(21.000000648200512, 21.000000648200512, 21.000000648200512)
-Converted["_unibutton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_unibutton"].BorderSizePixel = 0
-Converted["_unibutton"].Position = UDim2.new(0.0314814262, 0, 0.238333225, 0)
-Converted["_unibutton"].Size = UDim2.new(0, 100, 0, 28)
-Converted["_unibutton"].Name = "unibutton"
-Converted["_unibutton"].Parent = Converted["_buttonhold"]
-
-Converted["_UICorner16"].CornerRadius = UDim.new(0, 4)
-Converted["_UICorner16"].Parent = Converted["_unibutton"]
-
-Converted["_UIListLayout1"].Padding = UDim.new(0, 3)
-Converted["_UIListLayout1"].HorizontalAlignment = Enum.HorizontalAlignment.Center
-Converted["_UIListLayout1"].Parent = Converted["_buttonhold"]
-
-Converted["_open"].Font = Enum.Font.Gotham
-Converted["_open"].Text = "OPEN VORTEX"
-Converted["_open"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_open"].TextSize = 14
-Converted["_open"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_open"].BackgroundColor3 = Color3.fromRGB(21.000000648200512, 21.000000648200512, 21.000000648200512)
-Converted["_open"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_open"].BorderSizePixel = 0
-Converted["_open"].Position = UDim2.new(0.5, 0, 0.0888337418, 0)
-Converted["_open"].Size = UDim2.new(0, 200, 0, 32)
-Converted["_open"].Visible = false
-Converted["_open"].Name = "open"
-Converted["_open"].Parent = Converted["_ScreenGui"]
-
-Converted["_UICorner17"].CornerRadius = UDim.new(0, 4)
-Converted["_UICorner17"].Parent = Converted["_open"]
-
-Converted["_keysys"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_keysys"].BackgroundColor3 = Color3.fromRGB(21.000000648200512, 21.000000648200512, 21.000000648200512)
-Converted["_keysys"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_keysys"].BorderSizePixel = 0
-Converted["_keysys"].Position = UDim2.new(0.517347753, 0, 0.369727045, 0)
-Converted["_keysys"].Size = UDim2.new(0, 254, 0, 213)
-Converted["_keysys"].Name = "keysys"
-Converted["_keysys"].Parent = Converted["_ScreenGui"]
-
-Converted["_UICorner18"].CornerRadius = UDim.new(0, 4)
-Converted["_UICorner18"].Parent = Converted["_keysys"]
-
-Converted["_titlebar"].BackgroundColor3 = Color3.fromRGB(35.00000171363354, 35.00000171363354, 35.00000171363354)
-Converted["_titlebar"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_titlebar"].BorderSizePixel = 0
-Converted["_titlebar"].Size = UDim2.new(0, 254, 0, 44)
-Converted["_titlebar"].Name = "titlebar"
-Converted["_titlebar"].Parent = Converted["_keysys"]
-
-Converted["_UICorner19"].CornerRadius = UDim.new(0, 4)
-Converted["_UICorner19"].Parent = Converted["_titlebar"]
-
-Converted["_Frame"].BackgroundColor3 = Color3.fromRGB(35.00000171363354, 35.00000171363354, 35.00000171363354)
-Converted["_Frame"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Frame"].BorderSizePixel = 0
-Converted["_Frame"].Position = UDim2.new(0, 0, 0.859375, 0)
-Converted["_Frame"].Size = UDim2.new(0, 254, 0, 9)
-Converted["_Frame"].Parent = Converted["_titlebar"]
-
-Converted["_title2"].Font = Enum.Font.GothamMedium
-Converted["_title2"].Text = "KEY SYSTEM"
-Converted["_title2"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_title2"].TextSize = 14
-Converted["_title2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_title2"].BackgroundTransparency = 1
-Converted["_title2"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_title2"].BorderSizePixel = 0
-Converted["_title2"].Position = UDim2.new(0, 0, 0.111005329, 0)
-Converted["_title2"].Size = UDim2.new(0, 254, 0, 20)
-Converted["_title2"].Name = "title"
-Converted["_title2"].Parent = Converted["_keysys"]
-
-Converted["_title3"].Font = Enum.Font.GothamMedium
-Converted["_title3"].Text = "VOR"
-Converted["_title3"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_title3"].TextSize = 14
-Converted["_title3"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_title3"].BackgroundTransparency = 1
-Converted["_title3"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_title3"].BorderSizePixel = 0
-Converted["_title3"].Position = UDim2.new(0.375454158, 0, 0, 0)
-Converted["_title3"].Size = UDim2.new(0, 40, 0, 32)
-Converted["_title3"].Name = "title"
-Converted["_title3"].Parent = Converted["_keysys"]
-
-Converted["_TextLabel8"].Font = Enum.Font.GothamMedium
-Converted["_TextLabel8"].Text = "TEX"
-Converted["_TextLabel8"].TextColor3 = Color3.fromRGB(0, 255, 234.00000125169754)
-Converted["_TextLabel8"].TextSize = 14
-Converted["_TextLabel8"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel8"].BackgroundTransparency = 1
-Converted["_TextLabel8"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_TextLabel8"].BorderSizePixel = 0
-Converted["_TextLabel8"].Position = UDim2.new(0.61428678, 0, 0, 0)
-Converted["_TextLabel8"].Size = UDim2.new(0, 40, 0, 32)
-Converted["_TextLabel8"].Parent = Converted["_title3"]
-
-Converted["_UIGradient7"].Parent = Converted["_TextLabel8"]
-
-Converted["_submit"].Font = Enum.Font.GothamBold
-Converted["_submit"].Text = "SUBMIT"
-Converted["_submit"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_submit"].TextSize = 14
-Converted["_submit"].BackgroundColor3 = Color3.fromRGB(35.00000171363354, 35.00000171363354, 35.00000171363354)
-Converted["_submit"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_submit"].BorderSizePixel = 0
-Converted["_submit"].Position = UDim2.new(0.105845056, 0, 0.56807512, 0)
-Converted["_submit"].Size = UDim2.new(0, 200, 0, 28)
-Converted["_submit"].Name = "submit"
-Converted["_submit"].Parent = Converted["_keysys"]
-
-Converted["_UICorner20"].CornerRadius = UDim.new(0, 4)
-Converted["_UICorner20"].Parent = Converted["_submit"]
-
-Converted["_keybox"].CursorPosition = -1
-Converted["_keybox"].Font = Enum.Font.Gotham
-Converted["_keybox"].Text = "ENTER KEY HERE"
-Converted["_keybox"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_keybox"].TextSize = 14
-Converted["_keybox"].BackgroundColor3 = Color3.fromRGB(35.00000171363354, 35.00000171363354, 35.00000171363354)
-Converted["_keybox"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_keybox"].BorderSizePixel = 0
-Converted["_keybox"].Position = UDim2.new(0.105845056, 0, 0.267605633, 0)
-Converted["_keybox"].Size = UDim2.new(0, 200, 0, 50)
-Converted["_keybox"].Name = "keybox"
-Converted["_keybox"].Parent = Converted["_keysys"]
-
-Converted["_UICorner21"].CornerRadius = UDim.new(0, 4)
-Converted["_UICorner21"].Parent = Converted["_keybox"]
-
-Converted["_clipboard"].Image = "rbxassetid://18401695661"
-Converted["_clipboard"].BackgroundColor3 = Color3.fromRGB(21.000000648200512, 21.000000648200512, 21.000000648200512)
-Converted["_clipboard"].BackgroundTransparency = 1
-Converted["_clipboard"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_clipboard"].BorderSizePixel = 0
-Converted["_clipboard"].Position = UDim2.new(0.0236220472, 0, 0.0140845068, 0)
-Converted["_clipboard"].Size = UDim2.new(0, 38, 0, 37)
-Converted["_clipboard"].Name = "clipboard"
-Converted["_clipboard"].Parent = Converted["_keysys"]
-
-Converted["_exit2"].Font = Enum.Font.GothamBold
-Converted["_exit2"].Text = "X"
-Converted["_exit2"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_exit2"].TextSize = 14
-Converted["_exit2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_exit2"].BackgroundTransparency = 1
-Converted["_exit2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_exit2"].BorderSizePixel = 0
-Converted["_exit2"].Position = UDim2.new(0.826771677, 0, 0.0140845068, 0)
-Converted["_exit2"].Size = UDim2.new(0, 44, 0, 29)
-Converted["_exit2"].Name = "exit2"
-Converted["_exit2"].Parent = Converted["_keysys"]
-
--- Fake Module Scripts:
-
-local fake_module_scripts = {}
-
-
--- Fake Local Scripts:
-
-local function JWDZ_fake_script() -- Fake Script: Workspace.ScreenGui.welcome
-    local script = Instance.new("LocalScript")
-    script.Name = "welcome"
-    script.Parent = Converted["_ScreenGui"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local ScreenGui = Instance.new("ScreenGui")
+local mainhold = Instance.new("Frame")
+local thold = Instance.new("Frame")
+local home = Instance.new("Frame")
+local user = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UIGradient = Instance.new("UIGradient")
+local TextLabel_2 = Instance.new("TextLabel")
+local UIGradient_2 = Instance.new("UIGradient")
+local ImageLabel = Instance.new("ImageLabel")
+local UICorner_2 = Instance.new("UICorner")
+local exec = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local UIGradient_3 = Instance.new("UIGradient")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local ImageLabel_4 = Instance.new("ImageLabel")
+local ImageLabel_5 = Instance.new("ImageLabel")
+local UICorner_4 = Instance.new("UICorner")
+local ImageLabel_6 = Instance.new("ImageLabel")
+local UICorner_5 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
+local minimize = Instance.new("TextButton")
+local destroy = Instance.new("TextButton")
+local title = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local UIGradient_4 = Instance.new("UIGradient")
+local fun = Instance.new("Frame")
+local back = Instance.new("TextButton")
+local fetitle = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local UIGradient_5 = Instance.new("UIGradient")
+local walkbox = Instance.new("TextBox")
+local UICorner_6 = Instance.new("UICorner")
+local fewalk = Instance.new("TextLabel")
+local fejump = Instance.new("TextLabel")
+local jumpbox = Instance.new("TextBox")
+local UICorner_7 = Instance.new("UICorner")
+local universal = Instance.new("Frame")
+local back_2 = Instance.new("TextButton")
+local unititle = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local UIGradient_6 = Instance.new("UIGradient")
+local uniscroll = Instance.new("ScrollingFrame")
+local infinitey = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local nexam = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local exware = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local zuremod = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local UIListLayout = Instance.new("UIListLayout")
+local prisonware = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local zbloxfruits = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local bsearch = Instance.new("TextBox")
+local UICorner_14 = Instance.new("UICorner")
+local ImageLabel_7 = Instance.new("ImageLabel")
+local atitle = Instance.new("TextLabel")
+local taskbar = Instance.new("Frame")
+local title_2 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local UIGradient_7 = Instance.new("UIGradient")
+local buttonhold = Instance.new("Frame")
+local funbutton = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local ahomebutton = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local unibutton = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local open = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local keysys = Instance.new("Frame")
+local UICorner_19 = Instance.new("UICorner")
+local titlebar = Instance.new("Frame")
+local UICorner_20 = Instance.new("UICorner")
+local Frame = Instance.new("Frame")
+local title_3 = Instance.new("TextLabel")
+local title_4 = Instance.new("TextLabel")
+local TextLabel_9 = Instance.new("TextLabel")
+local UIGradient_8 = Instance.new("UIGradient")
+local submit = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local keybox = Instance.new("TextBox")
+local UICorner_22 = Instance.new("UICorner")
+local clipboard = Instance.new("ImageButton")
+local exit2 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+mainhold.Name = "mainhold"
+mainhold.Parent = ScreenGui
+mainhold.AnchorPoint = Vector2.new(0.5, 0.5)
+mainhold.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+mainhold.BackgroundTransparency = 1.000
+mainhold.BorderColor3 = Color3.fromRGB(0, 0, 0)
+mainhold.BorderSizePixel = 0
+mainhold.Position = UDim2.new(0.5, 50, 0.5, 0)
+mainhold.Size = UDim2.new(0, 342, 0, 285)
+mainhold.Visible = false
+
+thold.Name = "thold"
+thold.Parent = mainhold
+thold.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+thold.BorderColor3 = Color3.fromRGB(27, 42, 53)
+thold.BorderSizePixel = 0
+thold.Position = UDim2.new(-0.00692409929, 0, 0, 0)
+thold.Size = UDim2.new(0, 342, 0, 285)
+
+home.Name = "home"
+home.Parent = thold
+home.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+home.BorderColor3 = Color3.fromRGB(27, 42, 53)
+home.BorderSizePixel = 0
+home.Position = UDim2.new(-0.00141023332, 0, 0.00346401287, 0)
+home.Size = UDim2.new(0, 342, 0, 285)
+
+user.Name = "user"
+user.Parent = home
+user.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+user.BorderColor3 = Color3.fromRGB(27, 42, 53)
+user.Position = UDim2.new(0.0847953185, 0, 0.147368416, 0)
+user.Size = UDim2.new(0, 281, 0, 91)
+
+UICorner.Parent = user
+
+TextLabel.Parent = user
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.359430611, 0, 0.230769232, 0)
+TextLabel.Size = UDim2.new(0, 143, 0, 32)
+TextLabel.Font = Enum.Font.GothamMedium
+TextLabel.Text = "Welcome, (User here)"
+TextLabel.TextColor3 = Color3.fromRGB(0, 255, 234)
+TextLabel.TextSize = 14.000
+
+UIGradient.Parent = TextLabel
+
+TextLabel_2.Parent = user
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.359430611, 0, 0.439560443, 0)
+TextLabel_2.Size = UDim2.new(0, 143, 0, 32)
+TextLabel_2.Font = Enum.Font.GothamMedium
+TextLabel_2.Text = "@(user here)"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 255, 234)
+TextLabel_2.TextSize = 14.000
+
+UIGradient_2.Parent = TextLabel_2
+
+ImageLabel.Parent = user
+ImageLabel.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+ImageLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ImageLabel.Position = UDim2.new(0.0264130179, 0, 0.073333405, 0)
+ImageLabel.Size = UDim2.new(0, 77, 0, 77)
+
+UICorner_2.CornerRadius = UDim.new(10, 0)
+UICorner_2.Parent = ImageLabel
+
+exec.Name = "exec"
+exec.Parent = home
+exec.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+exec.BorderColor3 = Color3.fromRGB(27, 42, 53)
+exec.Position = UDim2.new(0.0847953185, 0, 0.515789449, 0)
+exec.Size = UDim2.new(0, 281, 0, 91)
+
+UICorner_3.Parent = exec
+
+TextLabel_3.Parent = exec
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Size = UDim2.new(0, 160, 0, 32)
+TextLabel_3.Font = Enum.Font.GothamMedium
+TextLabel_3.Text = "SUPPORTED EXECUTORS"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 12.000
+TextLabel_3.TextWrapped = true
+
+UIGradient_3.Parent = TextLabel_3
+
+ImageLabel_2.Parent = exec
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BorderSizePixel = 0
+ImageLabel_2.Position = UDim2.new(0.0249110311, 0, 0.35164836, 0)
+ImageLabel_2.Size = UDim2.new(0, 45, 0, 43)
+ImageLabel_2.Image = "rbxassetid://18383113478"
+
+ImageLabel_3.Parent = exec
+ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_3.BackgroundTransparency = 1.000
+ImageLabel_3.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_3.BorderSizePixel = 0
+ImageLabel_3.Position = UDim2.new(0.234875441, 0, 0.35164836, 0)
+ImageLabel_3.Size = UDim2.new(0, 45, 0, 43)
+ImageLabel_3.Image = "rbxassetid://18383495417"
+
+ImageLabel_4.Parent = exec
+ImageLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_4.BackgroundTransparency = 1.000
+ImageLabel_4.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_4.BorderSizePixel = 0
+ImageLabel_4.Position = UDim2.new(0.419928819, 0, 0.35164836, 0)
+ImageLabel_4.Size = UDim2.new(0, 45, 0, 43)
+ImageLabel_4.Image = "rbxassetid://18383552231"
+
+ImageLabel_5.Parent = exec
+ImageLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_5.BackgroundTransparency = 1.000
+ImageLabel_5.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_5.BorderSizePixel = 0
+ImageLabel_5.Position = UDim2.new(0.604982197, 0, 0.35164836, 0)
+ImageLabel_5.Size = UDim2.new(0, 45, 0, 43)
+ImageLabel_5.Image = "rbxassetid://18389868487"
+
+UICorner_4.CornerRadius = UDim.new(1, 0)
+UICorner_4.Parent = ImageLabel_5
+
+ImageLabel_6.Parent = exec
+ImageLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_6.BackgroundTransparency = 1.000
+ImageLabel_6.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_6.BorderSizePixel = 0
+ImageLabel_6.Position = UDim2.new(0.77935946, 0, 0.274725288, 0)
+ImageLabel_6.Size = UDim2.new(0, 62, 0, 56)
+ImageLabel_6.Image = "rbxassetid://18389895498"
+
+UICorner_5.CornerRadius = UDim.new(1, 0)
+UICorner_5.Parent = ImageLabel_6
+
+TextLabel_4.Parent = home
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0, 0, 0.89122808, 0)
+TextLabel_4.Size = UDim2.new(0, 342, 0, 17)
+TextLabel_4.Font = Enum.Font.Gotham
+TextLabel_4.Text = "WHERE DREAMS ARE MADE"
+TextLabel_4.TextColor3 = Color3.fromRGB(80, 80, 80)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+minimize.Name = "minimize"
+minimize.Parent = home
+minimize.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+minimize.BackgroundTransparency = 1.000
+minimize.BorderColor3 = Color3.fromRGB(0, 0, 0)
+minimize.BorderSizePixel = 0
+minimize.Position = UDim2.new(0.81145525, 0, 0, 0)
+minimize.Size = UDim2.new(0, 32, 0, 24)
+minimize.Font = Enum.Font.GothamBold
+minimize.Text = "-"
+minimize.TextColor3 = Color3.fromRGB(255, 255, 255)
+minimize.TextScaled = true
+minimize.TextSize = 14.000
+minimize.TextWrapped = true
+
+destroy.Name = "destroy"
+destroy.Parent = home
+destroy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+destroy.BackgroundTransparency = 1.000
+destroy.BorderColor3 = Color3.fromRGB(0, 0, 0)
+destroy.BorderSizePixel = 0
+destroy.Position = UDim2.new(0.905022502, 0, 0, 0)
+destroy.Size = UDim2.new(0, 32, 0, 24)
+destroy.Font = Enum.Font.GothamBold
+destroy.Text = "x"
+destroy.TextColor3 = Color3.fromRGB(255, 255, 255)
+destroy.TextSize = 14.000
+destroy.TextWrapped = true
+
+title.Name = "title"
+title.Parent = home
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
+title.BorderColor3 = Color3.fromRGB(27, 42, 53)
+title.BorderSizePixel = 0
+title.Size = UDim2.new(0, 81, 0, 32)
+title.Font = Enum.Font.GothamMedium
+title.Text = "VORTEX"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextSize = 14.000
+
+TextLabel_5.Parent = title
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.89823705, 0, 0, 0)
+TextLabel_5.Size = UDim2.new(0, 40, 0, 32)
+TextLabel_5.Font = Enum.Font.GothamMedium
+TextLabel_5.Text = "HOME"
+TextLabel_5.TextColor3 = Color3.fromRGB(0, 255, 234)
+TextLabel_5.TextSize = 14.000
+
+UIGradient_4.Parent = TextLabel_5
+
+fun.Name = "fun"
+fun.Parent = thold
+fun.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+fun.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fun.BorderSizePixel = 0
+fun.Position = UDim2.new(0.00107793079, 0, 0, 0)
+fun.Size = UDim2.new(0, 342, 0, 285)
+fun.Visible = false
+
+back.Name = "back"
+back.Parent = fun
+back.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+back.BackgroundTransparency = 1.000
+back.BorderColor3 = Color3.fromRGB(0, 0, 0)
+back.BorderSizePixel = 0
+back.Position = UDim2.new(0.869300902, 0, -0.003508772, 0)
+back.Size = UDim2.new(0, 42, 0, 23)
+back.Font = Enum.Font.GothamBold
+back.Text = "<--"
+back.TextColor3 = Color3.fromRGB(255, 255, 255)
+back.TextScaled = true
+back.TextSize = 14.000
+back.TextWrapped = true
+
+fetitle.Name = "fetitle"
+fetitle.Parent = fun
+fetitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+fetitle.BackgroundTransparency = 1.000
+fetitle.BorderColor3 = Color3.fromRGB(27, 42, 53)
+fetitle.BorderSizePixel = 0
+fetitle.Position = UDim2.new(-0.0704517514, 0, -0.003508772, 0)
+fetitle.Size = UDim2.new(0, 210, 0, 32)
+fetitle.Font = Enum.Font.GothamMedium
+fetitle.Text = "WELCOME TO VORTEX "
+fetitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+fetitle.TextSize = 14.000
+
+TextLabel_6.Parent = fetitle
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0.829304159, 0, 0, 0)
+TextLabel_6.Size = UDim2.new(0, 40, 0, 32)
+TextLabel_6.Font = Enum.Font.GothamMedium
+TextLabel_6.Text = "FUN"
+TextLabel_6.TextColor3 = Color3.fromRGB(0, 255, 234)
+TextLabel_6.TextSize = 14.000
+
+UIGradient_5.Parent = TextLabel_6
+
+walkbox.Name = "walkbox"
+walkbox.Parent = fun
+walkbox.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+walkbox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+walkbox.BorderSizePixel = 0
+walkbox.Position = UDim2.new(0.363636374, 0, 0.150877193, 0)
+walkbox.Size = UDim2.new(0, 200, 0, 23)
+walkbox.Font = Enum.Font.Gotham
+walkbox.Text = "16"
+walkbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+walkbox.TextSize = 14.000
+
+UICorner_6.CornerRadius = UDim.new(0, 4)
+UICorner_6.Parent = walkbox
+
+fewalk.Name = "fewalk"
+fewalk.Parent = fun
+fewalk.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+fewalk.BackgroundTransparency = 1.000
+fewalk.BorderColor3 = Color3.fromRGB(27, 42, 53)
+fewalk.BorderSizePixel = 0
+fewalk.Position = UDim2.new(0.0439177491, 0, 0.13333334, 0)
+fewalk.Size = UDim2.new(0, 97, 0, 32)
+fewalk.Font = Enum.Font.GothamMedium
+fewalk.Text = "WALKSPEED"
+fewalk.TextColor3 = Color3.fromRGB(255, 255, 255)
+fewalk.TextSize = 14.000
+
+fejump.Name = "fejump"
+fejump.Parent = fun
+fejump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+fejump.BackgroundTransparency = 1.000
+fejump.BorderColor3 = Color3.fromRGB(27, 42, 53)
+fejump.BorderSizePixel = 0
+fejump.Position = UDim2.new(0.0585891083, 0, 0.245614037, 0)
+fejump.Size = UDim2.new(0, 91, 0, 32)
+fejump.Font = Enum.Font.GothamMedium
+fejump.Text = "JUMP POWER"
+fejump.TextColor3 = Color3.fromRGB(255, 255, 255)
+fejump.TextSize = 14.000
+
+jumpbox.Name = "jumpbox"
+jumpbox.Parent = fun
+jumpbox.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+jumpbox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+jumpbox.BorderSizePixel = 0
+jumpbox.Position = UDim2.new(0.363636404, 0, 0.263157904, 0)
+jumpbox.Size = UDim2.new(0, 200, 0, 23)
+jumpbox.Font = Enum.Font.Gotham
+jumpbox.Text = "50"
+jumpbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+jumpbox.TextSize = 14.000
+
+UICorner_7.CornerRadius = UDim.new(0, 4)
+UICorner_7.Parent = jumpbox
+
+universal.Name = "universal"
+universal.Parent = thold
+universal.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+universal.BorderColor3 = Color3.fromRGB(0, 0, 0)
+universal.BorderSizePixel = 0
+universal.Position = UDim2.new(0.00107793079, 0, 0, 0)
+universal.Size = UDim2.new(0, 342, 0, 285)
+universal.Visible = false
+
+back_2.Name = "back"
+back_2.Parent = universal
+back_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+back_2.BackgroundTransparency = 1.000
+back_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+back_2.BorderSizePixel = 0
+back_2.Position = UDim2.new(0.869300902, 0, -0.003508772, 0)
+back_2.Size = UDim2.new(0, 42, 0, 23)
+back_2.Font = Enum.Font.GothamBold
+back_2.Text = "<--"
+back_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+back_2.TextScaled = true
+back_2.TextSize = 14.000
+back_2.TextWrapped = true
+
+unititle.Name = "unititle"
+unititle.Parent = universal
+unititle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+unititle.BackgroundTransparency = 1.000
+unititle.BorderColor3 = Color3.fromRGB(27, 42, 53)
+unititle.BorderSizePixel = 0
+unititle.Position = UDim2.new(-0.0704517514, 0, -0.003508772, 0)
+unititle.Size = UDim2.new(0, 210, 0, 32)
+unititle.Font = Enum.Font.GothamMedium
+unititle.Text = "WELCOME TO VORTEX "
+unititle.TextColor3 = Color3.fromRGB(255, 255, 255)
+unititle.TextSize = 14.000
+
+TextLabel_7.Parent = unititle
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(0.929304123, 0, 0, 0)
+TextLabel_7.Size = UDim2.new(0, 40, 0, 32)
+TextLabel_7.Font = Enum.Font.GothamMedium
+TextLabel_7.Text = "UNIVERSAL"
+TextLabel_7.TextColor3 = Color3.fromRGB(0, 255, 234)
+TextLabel_7.TextSize = 14.000
+
+UIGradient_6.Parent = TextLabel_7
+
+uniscroll.Name = "uniscroll"
+uniscroll.Parent = universal
+uniscroll.Active = true
+uniscroll.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+uniscroll.BorderColor3 = Color3.fromRGB(0, 0, 0)
+uniscroll.BorderSizePixel = 0
+uniscroll.Position = UDim2.new(0.023391813, 0, 0.308771938, 0)
+uniscroll.Size = UDim2.new(0, 324, 0, 191)
+uniscroll.CanvasSize = UDim2.new(0, 0, 1, 0)
+uniscroll.ScrollBarThickness = 7
+
+infinitey.Name = "infinitey"
+infinitey.Parent = uniscroll
+infinitey.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+infinitey.BorderColor3 = Color3.fromRGB(0, 0, 0)
+infinitey.BorderSizePixel = 0
+infinitey.Position = UDim2.new(0.0910493806, 0, 0.0411522649, 0)
+infinitey.Size = UDim2.new(0, 267, 0, 23)
+infinitey.Font = Enum.Font.Gotham
+infinitey.Text = "INFINITE YIELD - UNIVERSAL ADMIN COMMANDS"
+infinitey.TextColor3 = Color3.fromRGB(255, 255, 255)
+infinitey.TextSize = 10.000
+infinitey.TextWrapped = true
+
+UICorner_8.CornerRadius = UDim.new(0, 4)
+UICorner_8.Parent = infinitey
+
+nexam.Name = "nexam"
+nexam.Parent = uniscroll
+nexam.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+nexam.BorderColor3 = Color3.fromRGB(0, 0, 0)
+nexam.BorderSizePixel = 0
+nexam.Position = UDim2.new(0.0432098769, 0, 0.0617283955, 0)
+nexam.Size = UDim2.new(0, 267, 0, 23)
+nexam.Font = Enum.Font.Gotham
+nexam.Text = "NEXAM - ROBLOX BLADE BALL SCRIPT "
+nexam.TextColor3 = Color3.fromRGB(255, 255, 255)
+nexam.TextSize = 12.000
+nexam.TextWrapped = true
+
+UICorner_9.CornerRadius = UDim.new(0, 4)
+UICorner_9.Parent = nexam
+
+exware.Name = "exware"
+exware.Parent = uniscroll
+exware.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+exware.BorderColor3 = Color3.fromRGB(0, 0, 0)
+exware.BorderSizePixel = 0
+exware.Position = UDim2.new(0.0432098769, 0, 0.0617283955, 0)
+exware.Size = UDim2.new(0, 267, 0, 23)
+exware.Font = Enum.Font.Gotham
+exware.Text = "EXWARE - BEST ARSENAL SCRIPT"
+exware.TextColor3 = Color3.fromRGB(255, 255, 255)
+exware.TextSize = 12.000
+exware.TextWrapped = true
+
+UICorner_10.CornerRadius = UDim.new(0, 4)
+UICorner_10.Parent = exware
+
+zuremod.Name = "zuremod"
+zuremod.Parent = uniscroll
+zuremod.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+zuremod.BorderColor3 = Color3.fromRGB(0, 0, 0)
+zuremod.BorderSizePixel = 0
+zuremod.Position = UDim2.new(0.0432098769, 0, 0.0617283955, 0)
+zuremod.Size = UDim2.new(0, 267, 0, 23)
+zuremod.Font = Enum.Font.Gotham
+zuremod.Text = "AZURE MODDED - DAHOOD SCRIPT (OP)"
+zuremod.TextColor3 = Color3.fromRGB(255, 255, 255)
+zuremod.TextSize = 12.000
+zuremod.TextWrapped = true
+
+UICorner_11.CornerRadius = UDim.new(0, 4)
+UICorner_11.Parent = zuremod
+
+UIListLayout.Parent = uniscroll
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.Padding = UDim.new(0, 10)
+
+prisonware.Name = "prisonware"
+prisonware.Parent = uniscroll
+prisonware.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+prisonware.BorderColor3 = Color3.fromRGB(0, 0, 0)
+prisonware.BorderSizePixel = 0
+prisonware.Position = UDim2.new(0.0879629627, 0, 0.619433224, 0)
+prisonware.Size = UDim2.new(0, 267, 0, 23)
+prisonware.Font = Enum.Font.Gotham
+prisonware.Text = "PRISONWARE - PRISON LIFE SCRIPT"
+prisonware.TextColor3 = Color3.fromRGB(255, 255, 255)
+prisonware.TextSize = 12.000
+prisonware.TextWrapped = true
+
+UICorner_12.CornerRadius = UDim.new(0, 4)
+UICorner_12.Parent = prisonware
+
+zbloxfruits.Name = "zbloxfruits"
+zbloxfruits.Parent = uniscroll
+zbloxfruits.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+zbloxfruits.BorderColor3 = Color3.fromRGB(0, 0, 0)
+zbloxfruits.BorderSizePixel = 0
+zbloxfruits.Position = UDim2.new(0.0879629627, 0, 0.619433224, 0)
+zbloxfruits.Size = UDim2.new(0, 267, 0, 23)
+zbloxfruits.Font = Enum.Font.Gotham
+zbloxfruits.Text = "SPEED HUB V3 - BLOXFRUITS SCRIPT"
+zbloxfruits.TextColor3 = Color3.fromRGB(255, 255, 255)
+zbloxfruits.TextSize = 12.000
+zbloxfruits.TextWrapped = true
+
+UICorner_13.CornerRadius = UDim.new(0, 4)
+UICorner_13.Parent = zbloxfruits
+
+bsearch.Name = "bsearch"
+bsearch.Parent = universal
+bsearch.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+bsearch.BorderColor3 = Color3.fromRGB(0, 0, 0)
+bsearch.BorderSizePixel = 0
+bsearch.Position = UDim2.new(0.200130001, 0, 0.199460208, 0)
+bsearch.Size = UDim2.new(0, 200, 0, 23)
+bsearch.Font = Enum.Font.Gotham
+bsearch.Text = ""
+bsearch.TextColor3 = Color3.fromRGB(255, 255, 255)
+bsearch.TextSize = 14.000
+
+UICorner_14.CornerRadius = UDim.new(0, 4)
+UICorner_14.Parent = bsearch
+
+ImageLabel_7.Parent = bsearch
+ImageLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_7.BackgroundTransparency = 1.000
+ImageLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_7.BorderSizePixel = 0
+ImageLabel_7.Position = UDim2.new(1.02029657, 0, 0.0416666679, 0)
+ImageLabel_7.Size = UDim2.new(0, 23, 0, 21)
+ImageLabel_7.Image = "rbxassetid://18400800878"
+
+atitle.Name = "atitle"
+atitle.Parent = universal
+atitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+atitle.BackgroundTransparency = 1.000
+atitle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+atitle.BorderSizePixel = 0
+atitle.Position = UDim2.new(0.227663994, 0, 0.124236524, 0)
+atitle.Size = UDim2.new(0, 185, 0, 15)
+atitle.Font = Enum.Font.GothamBold
+atitle.Text = "WELCOME TO VORTEXHUB"
+atitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+atitle.TextSize = 14.000
+
+taskbar.Name = "taskbar"
+taskbar.Parent = mainhold
+taskbar.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+taskbar.BorderColor3 = Color3.fromRGB(27, 42, 53)
+taskbar.BorderSizePixel = 0
+taskbar.Position = UDim2.new(-0.326999992, 0, -0, 0)
+taskbar.Size = UDim2.new(0, 110, 0, 285)
+
+title_2.Name = "title"
+title_2.Parent = taskbar
+title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title_2.BackgroundTransparency = 1.000
+title_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+title_2.BorderSizePixel = 0
+title_2.Size = UDim2.new(0, 40, 0, 32)
+title_2.Font = Enum.Font.GothamMedium
+title_2.Text = "VOR"
+title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+title_2.TextSize = 14.000
+
+TextLabel_8.Parent = title_2
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(0.614286065, 0, 0, 0)
+TextLabel_8.Size = UDim2.new(0, 40, 0, 32)
+TextLabel_8.Font = Enum.Font.GothamMedium
+TextLabel_8.Text = "TEX"
+TextLabel_8.TextColor3 = Color3.fromRGB(0, 255, 234)
+TextLabel_8.TextSize = 14.000
+
+UIGradient_7.Parent = TextLabel_8
+
+buttonhold.Name = "buttonhold"
+buttonhold.Parent = taskbar
+buttonhold.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+buttonhold.BackgroundTransparency = 1.000
+buttonhold.BorderColor3 = Color3.fromRGB(0, 0, 0)
+buttonhold.BorderSizePixel = 0
+buttonhold.Position = UDim2.new(0, 0, 0.101754382, 0)
+buttonhold.Size = UDim2.new(0, 108, 0, 256)
+
+funbutton.Name = "funbutton"
+funbutton.Parent = buttonhold
+funbutton.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+funbutton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+funbutton.BorderSizePixel = 0
+funbutton.Position = UDim2.new(0.0462962948, 0, 0.1328125, 0)
+funbutton.Size = UDim2.new(0, 100, 0, 28)
+funbutton.Font = Enum.Font.GothamBold
+funbutton.Text = "FUN SCRIPTS"
+funbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+funbutton.TextSize = 14.000
+
+UICorner_15.CornerRadius = UDim.new(0, 4)
+UICorner_15.Parent = funbutton
+
+ahomebutton.Name = "ahomebutton"
+ahomebutton.Parent = buttonhold
+ahomebutton.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+ahomebutton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ahomebutton.BorderSizePixel = 0
+ahomebutton.Position = UDim2.new(0.0404733717, 0, 0.0123872757, 0)
+ahomebutton.Size = UDim2.new(0, 100, 0, 28)
+ahomebutton.Font = Enum.Font.GothamBold
+ahomebutton.Text = "HOME"
+ahomebutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ahomebutton.TextSize = 14.000
+
+UICorner_16.CornerRadius = UDim.new(0, 4)
+UICorner_16.Parent = ahomebutton
+
+unibutton.Name = "unibutton"
+unibutton.Parent = buttonhold
+unibutton.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+unibutton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+unibutton.BorderSizePixel = 0
+unibutton.Position = UDim2.new(0.0314814262, 0, 0.238333225, 0)
+unibutton.Size = UDim2.new(0, 100, 0, 28)
+unibutton.Font = Enum.Font.GothamBold
+unibutton.Text = "UNIVERSAL"
+unibutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+unibutton.TextSize = 14.000
+
+UICorner_17.CornerRadius = UDim.new(0, 4)
+UICorner_17.Parent = unibutton
+
+UIListLayout_2.Parent = buttonhold
+UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_2.Padding = UDim.new(0, 3)
+
+open.Name = "open"
+open.Parent = ScreenGui
+open.AnchorPoint = Vector2.new(0.5, 0.5)
+open.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+open.BorderColor3 = Color3.fromRGB(0, 0, 0)
+open.BorderSizePixel = 0
+open.Position = UDim2.new(0.5, 0, 0.0888337418, 0)
+open.Size = UDim2.new(0, 200, 0, 32)
+open.Visible = false
+open.Font = Enum.Font.Gotham
+open.Text = "OPEN VORTEX"
+open.TextColor3 = Color3.fromRGB(255, 255, 255)
+open.TextSize = 14.000
+
+UICorner_18.CornerRadius = UDim.new(0, 4)
+UICorner_18.Parent = open
+
+keysys.Name = "keysys"
+keysys.Parent = ScreenGui
+keysys.AnchorPoint = Vector2.new(0.5, 0.5)
+keysys.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+keysys.BorderColor3 = Color3.fromRGB(0, 0, 0)
+keysys.BorderSizePixel = 0
+keysys.Position = UDim2.new(0.517347753, 0, 0.369727045, 0)
+keysys.Size = UDim2.new(0, 254, 0, 213)
+
+UICorner_19.CornerRadius = UDim.new(0, 4)
+UICorner_19.Parent = keysys
+
+titlebar.Name = "titlebar"
+titlebar.Parent = keysys
+titlebar.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+titlebar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+titlebar.BorderSizePixel = 0
+titlebar.Size = UDim2.new(0, 254, 0, 44)
+
+UICorner_20.CornerRadius = UDim.new(0, 4)
+UICorner_20.Parent = titlebar
+
+Frame.Parent = titlebar
+Frame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 0.859375, 0)
+Frame.Size = UDim2.new(0, 254, 0, 9)
+
+title_3.Name = "title"
+title_3.Parent = keysys
+title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title_3.BackgroundTransparency = 1.000
+title_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+title_3.BorderSizePixel = 0
+title_3.Position = UDim2.new(0, 0, 0.111005329, 0)
+title_3.Size = UDim2.new(0, 254, 0, 20)
+title_3.Font = Enum.Font.GothamMedium
+title_3.Text = "KEY SYSTEM"
+title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+title_3.TextSize = 14.000
+
+title_4.Name = "title"
+title_4.Parent = keysys
+title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title_4.BackgroundTransparency = 1.000
+title_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
+title_4.BorderSizePixel = 0
+title_4.Position = UDim2.new(0.375454158, 0, 0, 0)
+title_4.Size = UDim2.new(0, 40, 0, 32)
+title_4.Font = Enum.Font.GothamMedium
+title_4.Text = "VOR"
+title_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+title_4.TextSize = 14.000
+
+TextLabel_9.Parent = title_4
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(0.61428678, 0, 0, 0)
+TextLabel_9.Size = UDim2.new(0, 40, 0, 32)
+TextLabel_9.Font = Enum.Font.GothamMedium
+TextLabel_9.Text = "TEX"
+TextLabel_9.TextColor3 = Color3.fromRGB(0, 255, 234)
+TextLabel_9.TextSize = 14.000
+
+UIGradient_8.Parent = TextLabel_9
+
+submit.Name = "submit"
+submit.Parent = keysys
+submit.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+submit.BorderColor3 = Color3.fromRGB(0, 0, 0)
+submit.BorderSizePixel = 0
+submit.Position = UDim2.new(0.105845056, 0, 0.56807512, 0)
+submit.Size = UDim2.new(0, 200, 0, 28)
+submit.Font = Enum.Font.GothamBold
+submit.Text = "SUBMIT"
+submit.TextColor3 = Color3.fromRGB(255, 255, 255)
+submit.TextSize = 14.000
+
+UICorner_21.CornerRadius = UDim.new(0, 4)
+UICorner_21.Parent = submit
+
+keybox.Name = "keybox"
+keybox.Parent = keysys
+keybox.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+keybox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+keybox.BorderSizePixel = 0
+keybox.Position = UDim2.new(0.105845056, 0, 0.267605633, 0)
+keybox.Size = UDim2.new(0, 200, 0, 50)
+keybox.Font = Enum.Font.Gotham
+keybox.Text = "ENTER KEY HERE"
+keybox.TextColor3 = Color3.fromRGB(255, 255, 255)
+keybox.TextSize = 14.000
+
+UICorner_22.CornerRadius = UDim.new(0, 4)
+UICorner_22.Parent = keybox
+
+clipboard.Name = "clipboard"
+clipboard.Parent = keysys
+clipboard.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+clipboard.BackgroundTransparency = 1.000
+clipboard.BorderColor3 = Color3.fromRGB(0, 0, 0)
+clipboard.BorderSizePixel = 0
+clipboard.Position = UDim2.new(0.0236220472, 0, 0.0140845068, 0)
+clipboard.Size = UDim2.new(0, 38, 0, 37)
+clipboard.Image = "rbxassetid://18401695661"
+
+exit2.Name = "exit2"
+exit2.Parent = keysys
+exit2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+exit2.BackgroundTransparency = 1.000
+exit2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+exit2.BorderSizePixel = 0
+exit2.Position = UDim2.new(0.826771677, 0, 0.0140845068, 0)
+exit2.Size = UDim2.new(0, 44, 0, 29)
+exit2.Font = Enum.Font.GothamBold
+exit2.Text = "X"
+exit2.TextColor3 = Color3.fromRGB(255, 255, 255)
+exit2.TextSize = 14.000
+
+-- Scripts:
+
+local function ZLGMXI_fake_script() -- ScreenGui.welcome 
+	local script = Instance.new('LocalScript', ScreenGui)
 
 	game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("Welcome to Vortex Premium, "..game.Players.LocalPlayer.Name..".")
 end
-local function OLGGSBB_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.thold.home.user.TextLabel.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_TextLabel"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(ZLGMXI_fake_script)()
+local function VAXC_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
 
 	script.Parent.Text = "Welcome, "..game.Players.LocalPlayer.Name
 end
-local function BQAQ_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.thold.home.user.TextLabel.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_TextLabel"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(VAXC_fake_script)()
+local function ITSMTD_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
 
 	local text = script.Parent
 	local add = 10
@@ -1008,33 +924,15 @@ local function BQAQ_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.t
 		end
 	end
 end
-local function BAAJ_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.thold.home.user.TextLabel.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_TextLabel1"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(ITSMTD_fake_script)()
+local function WGNIVI_fake_script() -- TextLabel_2.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_2)
 
 	script.Parent.Text = "@"..game.Players.LocalPlayer.Name
 end
-local function NNDMW_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.thold.home.user.TextLabel.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_TextLabel1"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(WGNIVI_fake_script)()
+local function KLCRBZQ_fake_script() -- TextLabel_2.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_2)
 
 	local text = script.Parent
 	local add = 10
@@ -1089,18 +987,9 @@ local function NNDMW_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.
 		end
 	end
 end
-local function SCNWJMW_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.thold.home.user.ImageLabel.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_ImageLabel"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(KLCRBZQ_fake_script)()
+local function FNXXH_fake_script() -- ImageLabel.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel)
 
 	imagelabel = script.Parent
 	
@@ -1116,18 +1005,9 @@ local function SCNWJMW_fake_script() -- Fake Script: Workspace.ScreenGui.mainhol
 	local imagelabel = script.Parent
 	imagelabel.Image = content
 end
-local function PUNFOB_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.thold.home.exec.TextLabel.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_TextLabel2"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(FNXXH_fake_script)()
+local function OAKNJSD_fake_script() -- TextLabel_3.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_3)
 
 	local text = script.Parent
 	local add = 10
@@ -1182,35 +1062,17 @@ local function PUNFOB_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold
 		end
 	end
 end
-local function URNP_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.thold.home.minimize.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_minimize"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(OAKNJSD_fake_script)()
+local function YZRSMDA_fake_script() -- minimize.LocalScript 
+	local script = Instance.new('LocalScript', minimize)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Parent.Parent.mainhold.Visible = false
 	end)
 end
-local function ODON_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.thold.home.minimize.color
-    local script = Instance.new("LocalScript")
-    script.Name = "color"
-    script.Parent = Converted["_minimize"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(YZRSMDA_fake_script)()
+local function KDXIFR_fake_script() -- minimize.color 
+	local script = Instance.new('LocalScript', minimize)
 
 	-- LocalScript inside the TextButton
 	
@@ -1272,18 +1134,9 @@ local function ODON_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.t
 	end)
 	
 end
-local function BSXIVYK_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.thold.home.destroy.color
-    local script = Instance.new("LocalScript")
-    script.Name = "color"
-    script.Parent = Converted["_destroy"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(KDXIFR_fake_script)()
+local function RJQCS_fake_script() -- destroy.color 
+	local script = Instance.new('LocalScript', destroy)
 
 	-- LocalScript inside the TextButton
 	
@@ -1345,35 +1198,17 @@ local function BSXIVYK_fake_script() -- Fake Script: Workspace.ScreenGui.mainhol
 	end)
 	
 end
-local function FBMPWFU_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.thold.home.destroy.destroyscript
-    local script = Instance.new("LocalScript")
-    script.Name = "destroyscript"
-    script.Parent = Converted["_destroy"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(RJQCS_fake_script)()
+local function TYSTTB_fake_script() -- destroy.destroyscript 
+	local script = Instance.new('LocalScript', destroy)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Parent.Parent:Destroy()
 	end)
 end
-local function DFFGQGY_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.thold.home.title.TextLabel.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_TextLabel4"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(TYSTTB_fake_script)()
+local function XGFEKJ_fake_script() -- TextLabel_5.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_5)
 
 	local text = script.Parent
 	local add = 10
@@ -1428,18 +1263,9 @@ local function DFFGQGY_fake_script() -- Fake Script: Workspace.ScreenGui.mainhol
 		end
 	end
 end
-local function HQYAS_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.thold.fun.back.backscript
-    local script = Instance.new("LocalScript")
-    script.Name = "backscript"
-    script.Parent = Converted["_back"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(XGFEKJ_fake_script)()
+local function NJSIMDF_fake_script() -- back.backscript 
+	local script = Instance.new('LocalScript', back)
 
 	--// put all of that in a mouse button click function
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1456,18 +1282,9 @@ local function HQYAS_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.
 		--                                /\ PUT TAB NAME THERE	
 	end)
 end
-local function CMJKJJU_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.thold.fun.fetitle.TextLabel.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_TextLabel5"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(NJSIMDF_fake_script)()
+local function EODVXC_fake_script() -- TextLabel_6.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_6)
 
 	local text = script.Parent
 	local add = 10
@@ -1522,18 +1339,9 @@ local function CMJKJJU_fake_script() -- Fake Script: Workspace.ScreenGui.mainhol
 		end
 	end
 end
-local function EGNUB_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.thold.fun.walkbox.walkscript
-    local script = Instance.new("LocalScript")
-    script.Name = "walkscript"
-    script.Parent = Converted["_walkbox"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(EODVXC_fake_script)()
+local function OYTSX_fake_script() -- walkbox.walkscript 
+	local script = Instance.new('LocalScript', walkbox)
 
 	local plr = game.Players.LocalPlayer
 	local char = plr.Character
@@ -1544,18 +1352,9 @@ local function EGNUB_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.
 		hum.WalkSpeed = script.Parent.Text
 	end)
 end
-local function PCTID_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.thold.fun.jumpbox.jumpscript
-    local script = Instance.new("LocalScript")
-    script.Name = "jumpscript"
-    script.Parent = Converted["_jumpbox"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(OYTSX_fake_script)()
+local function LAPMY_fake_script() -- jumpbox.jumpscript 
+	local script = Instance.new('LocalScript', jumpbox)
 
 	local plr = game.Players.LocalPlayer
 	local char = plr.Character
@@ -1566,18 +1365,9 @@ local function PCTID_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.
 		hum.JumpPower = script.Parent.Text
 	end)
 end
-local function RYKAF_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.thold.universal.back.backscript
-    local script = Instance.new("LocalScript")
-    script.Name = "backscript"
-    script.Parent = Converted["_back1"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(LAPMY_fake_script)()
+local function GSQZ_fake_script() -- back_2.backscript 
+	local script = Instance.new('LocalScript', back_2)
 
 	--// put all of that in a mouse button click function
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1594,18 +1384,9 @@ local function RYKAF_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.
 		--                                /\ PUT TAB NAME THERE	
 	end)
 end
-local function DWIQKTX_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.thold.universal.unititle.TextLabel.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_TextLabel6"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(GSQZ_fake_script)()
+local function PVVEUF_fake_script() -- TextLabel_7.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_7)
 
 	local text = script.Parent
 	local add = 10
@@ -1660,35 +1441,17 @@ local function DWIQKTX_fake_script() -- Fake Script: Workspace.ScreenGui.mainhol
 		end
 	end
 end
-local function BPKS_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.thold.universal.uniscroll.infinitey.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_infinitey"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(PVVEUF_fake_script)()
+local function QHSFFU_fake_script() -- infinitey.LocalScript 
+	local script = Instance.new('LocalScript', infinitey)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 	end)
 end
-local function RZMJM_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.thold.universal.uniscroll.infinitey.color
-    local script = Instance.new("LocalScript")
-    script.Name = "color"
-    script.Parent = Converted["_infinitey"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(QHSFFU_fake_script)()
+local function IPIC_fake_script() -- infinitey.color 
+	local script = Instance.new('LocalScript', infinitey)
 
 	-- LocalScript inside the TextButton
 	
@@ -1784,35 +1547,17 @@ local function RZMJM_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.
 	end)
 	
 end
-local function NJTEKGK_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.thold.universal.uniscroll.nexam.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_nexam"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(IPIC_fake_script)()
+local function GLWVUT_fake_script() -- nexam.LocalScript 
+	local script = Instance.new('LocalScript', nexam)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5ebefab5c68bfa67271dcbf6430d3c7d.lua"))
 	end)
 end
-local function UIBJ_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.thold.universal.uniscroll.nexam.color
-    local script = Instance.new("LocalScript")
-    script.Name = "color"
-    script.Parent = Converted["_nexam"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(GLWVUT_fake_script)()
+local function LEWYA_fake_script() -- nexam.color 
+	local script = Instance.new('LocalScript', nexam)
 
 	-- LocalScript inside the TextButton
 	
@@ -1908,35 +1653,17 @@ local function UIBJ_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.t
 	end)
 	
 end
-local function KBAKZUM_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.thold.universal.uniscroll.exware.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_exware"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(LEWYA_fake_script)()
+local function PVHQXPF_fake_script() -- exware.LocalScript 
+	local script = Instance.new('LocalScript', exware)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Tomskix/exware-public/main/loader"))()
 	end)
 end
-local function GWLYXWR_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.thold.universal.uniscroll.exware.color
-    local script = Instance.new("LocalScript")
-    script.Name = "color"
-    script.Parent = Converted["_exware"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(PVHQXPF_fake_script)()
+local function VPJI_fake_script() -- exware.color 
+	local script = Instance.new('LocalScript', exware)
 
 	-- LocalScript inside the TextButton
 	
@@ -2032,35 +1759,17 @@ local function GWLYXWR_fake_script() -- Fake Script: Workspace.ScreenGui.mainhol
 	end)
 	
 end
-local function QEIM_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.thold.universal.uniscroll.zuremod.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_zuremod"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(VPJI_fake_script)()
+local function GYTCLID_fake_script() -- zuremod.LocalScript 
+	local script = Instance.new('LocalScript', zuremod)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Actyrn/Scripts/main/AzureModded"))()
 	end)
 end
-local function ZZEDKOY_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.thold.universal.uniscroll.zuremod.color
-    local script = Instance.new("LocalScript")
-    script.Name = "color"
-    script.Parent = Converted["_zuremod"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(GYTCLID_fake_script)()
+local function MAPMO_fake_script() -- zuremod.color 
+	local script = Instance.new('LocalScript', zuremod)
 
 	-- LocalScript inside the TextButton
 	
@@ -2156,35 +1865,17 @@ local function ZZEDKOY_fake_script() -- Fake Script: Workspace.ScreenGui.mainhol
 	end)
 	
 end
-local function ROXO_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.thold.universal.uniscroll.prisonware.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_prisonware"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(MAPMO_fake_script)()
+local function GYPSRGI_fake_script() -- prisonware.LocalScript 
+	local script = Instance.new('LocalScript', prisonware)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))()
 	end)
 end
-local function TWTG_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.thold.universal.uniscroll.prisonware.color
-    local script = Instance.new("LocalScript")
-    script.Name = "color"
-    script.Parent = Converted["_prisonware"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(GYPSRGI_fake_script)()
+local function JRVRHSG_fake_script() -- prisonware.color 
+	local script = Instance.new('LocalScript', prisonware)
 
 	-- LocalScript inside the TextButton
 	
@@ -2280,35 +1971,17 @@ local function TWTG_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.t
 	end)
 	
 end
-local function UWMBP_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.thold.universal.uniscroll.zbloxfruits.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_zbloxfruits"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(JRVRHSG_fake_script)()
+local function CVRSMQ_fake_script() -- zbloxfruits.LocalScript 
+	local script = Instance.new('LocalScript', zbloxfruits)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua"))() 
 	end)
 end
-local function SZAJ_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.thold.universal.uniscroll.zbloxfruits.color
-    local script = Instance.new("LocalScript")
-    script.Name = "color"
-    script.Parent = Converted["_zbloxfruits"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(CVRSMQ_fake_script)()
+local function PDIW_fake_script() -- zbloxfruits.color 
+	local script = Instance.new('LocalScript', zbloxfruits)
 
 	-- LocalScript inside the TextButton
 	
@@ -2404,18 +2077,9 @@ local function SZAJ_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.t
 	end)
 	
 end
-local function FQXISE_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.thold.universal.searchscript
-    local script = Instance.new("LocalScript")
-    script.Name = "searchscript"
-    script.Parent = Converted["_universal"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(PDIW_fake_script)()
+local function LDFU_fake_script() -- universal.searchscript 
+	local script = Instance.new('LocalScript', universal)
 
 	local scroll = script.Parent.uniscroll
 	local textBox = script.Parent.bsearch
@@ -2444,18 +2108,9 @@ local function FQXISE_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold
 		end
 	end)
 end
-local function ZLHDGI_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.thold.universal.atitle.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_atitle"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(LDFU_fake_script)()
+local function ZKUU_fake_script() -- atitle.LocalScript 
+	local script = Instance.new('LocalScript', atitle)
 
 	local text = script.Parent
 	local add = 10
@@ -2510,18 +2165,9 @@ local function ZLHDGI_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold
 		end
 	end
 end
-local function GPISOF_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.taskbar.title.TextLabel.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_TextLabel7"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(ZKUU_fake_script)()
+local function QWLXTX_fake_script() -- TextLabel_8.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_8)
 
 	local text = script.Parent
 	local add = 10
@@ -2576,18 +2222,9 @@ local function GPISOF_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold
 		end
 	end
 end
-local function XPMR_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.taskbar.buttonhold.febutton.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_febutton"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(QWLXTX_fake_script)()
+local function OZME_fake_script() -- funbutton.LocalScript 
+	local script = Instance.new('LocalScript', funbutton)
 
 	--// put all of that in a mouse button click function
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2600,22 +2237,13 @@ local function XPMR_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.t
 		end
 	
 		--// shows tab u want
-		script.Parent.Parent.Parent.Parent.thold.FE.Visible = true
+		script.Parent.Parent.Parent.Parent.thold.fun.Visible = true
 		--                                /\ PUT TAB NAME THERE	
 	end)
 end
-local function HZNEQQY_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.taskbar.buttonhold.febutton.color
-    local script = Instance.new("LocalScript")
-    script.Name = "color"
-    script.Parent = Converted["_febutton"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(OZME_fake_script)()
+local function FGTWT_fake_script() -- funbutton.color 
+	local script = Instance.new('LocalScript', funbutton)
 
 	-- LocalScript inside the TextButton
 	
@@ -2711,18 +2339,9 @@ local function HZNEQQY_fake_script() -- Fake Script: Workspace.ScreenGui.mainhol
 	end)
 	
 end
-local function JSGM_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.taskbar.buttonhold.ahomebutton.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_ahomebutton"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(FGTWT_fake_script)()
+local function XSDLF_fake_script() -- ahomebutton.LocalScript 
+	local script = Instance.new('LocalScript', ahomebutton)
 
 	--// put all of that in a mouse button click function
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2739,18 +2358,9 @@ local function JSGM_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.t
 		--                                /\ PUT TAB NAME THERE	
 	end)
 end
-local function MKEZOJP_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.taskbar.buttonhold.ahomebutton.color
-    local script = Instance.new("LocalScript")
-    script.Name = "color"
-    script.Parent = Converted["_ahomebutton"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(XSDLF_fake_script)()
+local function TFJCHUB_fake_script() -- ahomebutton.color 
+	local script = Instance.new('LocalScript', ahomebutton)
 
 	-- LocalScript inside the TextButton
 	
@@ -2846,18 +2456,9 @@ local function MKEZOJP_fake_script() -- Fake Script: Workspace.ScreenGui.mainhol
 	end)
 	
 end
-local function CXKXOT_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.taskbar.buttonhold.unibutton.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_unibutton"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(TFJCHUB_fake_script)()
+local function CIUBPW_fake_script() -- unibutton.LocalScript 
+	local script = Instance.new('LocalScript', unibutton)
 
 	--// put all of that in a mouse button click function
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2874,18 +2475,9 @@ local function CXKXOT_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold
 		--                                /\ PUT TAB NAME THERE	
 	end)
 end
-local function EBPWX_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.taskbar.buttonhold.unibutton.color
-    local script = Instance.new("LocalScript")
-    script.Name = "color"
-    script.Parent = Converted["_unibutton"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(CIUBPW_fake_script)()
+local function SQCU_fake_script() -- unibutton.color 
+	local script = Instance.new('LocalScript', unibutton)
 
 	-- LocalScript inside the TextButton
 	
@@ -2981,18 +2573,9 @@ local function EBPWX_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.
 	end)
 	
 end
-local function NGPZEM_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold.drags
-    local script = Instance.new("LocalScript")
-    script.Name = "drags"
-    script.Parent = Converted["_mainhold"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(SQCU_fake_script)()
+local function BCSW_fake_script() -- mainhold.drags 
+	local script = Instance.new('LocalScript', mainhold)
 
 	spawn(function()
 		local UIS = game:GetService("UserInputService")
@@ -3034,35 +2617,17 @@ local function NGPZEM_fake_script() -- Fake Script: Workspace.ScreenGui.mainhold
 		normal_dragify(script.Parent)
 	end)
 end
-local function JOZNS_fake_script() -- Fake Script: Workspace.ScreenGui.open.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_open"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(BCSW_fake_script)()
+local function SBSBQWT_fake_script() -- open.LocalScript 
+	local script = Instance.new('LocalScript', open)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.mainhold.Visible = true
 	end)
 end
-local function DERTZXW_fake_script() -- Fake Script: Workspace.ScreenGui.open.color
-    local script = Instance.new("LocalScript")
-    script.Name = "color"
-    script.Parent = Converted["_open"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(SBSBQWT_fake_script)()
+local function AFRFMI_fake_script() -- open.color 
+	local script = Instance.new('LocalScript', open)
 
 	-- LocalScript inside the TextButton
 	
@@ -3158,18 +2723,9 @@ local function DERTZXW_fake_script() -- Fake Script: Workspace.ScreenGui.open.co
 	end)
 	
 end
-local function IJOQ_fake_script() -- Fake Script: Workspace.ScreenGui.keysys.title.TextLabel.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_TextLabel8"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(AFRFMI_fake_script)()
+local function KKMIHE_fake_script() -- TextLabel_9.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_9)
 
 	local text = script.Parent
 	local add = 10
@@ -3224,18 +2780,9 @@ local function IJOQ_fake_script() -- Fake Script: Workspace.ScreenGui.keysys.tit
 		end
 	end
 end
-local function FVUJF_fake_script() -- Fake Script: Workspace.ScreenGui.keysys.submit.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_submit"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(KKMIHE_fake_script)()
+local function VSWQFO_fake_script() -- submit.LocalScript 
+	local script = Instance.new('LocalScript', submit)
 
 	enterkey = script.Parent.Parent.keybox
 	submit = script.Parent
@@ -3261,18 +2808,9 @@ local function FVUJF_fake_script() -- Fake Script: Workspace.ScreenGui.keysys.su
 		end
 	end)
 end
-local function FETR_fake_script() -- Fake Script: Workspace.ScreenGui.keysys.clipboard.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_clipboard"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(VSWQFO_fake_script)()
+local function NLNYLKH_fake_script() -- clipboard.LocalScript 
+	local script = Instance.new('LocalScript', clipboard)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		setclipboard("https://discord.gg/HkjCCjnaPz")
@@ -3282,67 +2820,12 @@ local function FETR_fake_script() -- Fake Script: Workspace.ScreenGui.keysys.cli
 		})
 	end)
 end
-local function IJZIAVA_fake_script() -- Fake Script: Workspace.ScreenGui.keysys.exit2.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_exit2"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(NLNYLKH_fake_script)()
+local function DKRFRQX_fake_script() -- exit2.LocalScript 
+	local script = Instance.new('LocalScript', exit2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-
-coroutine.wrap(JWDZ_fake_script)()
-coroutine.wrap(OLGGSBB_fake_script)()
-coroutine.wrap(BQAQ_fake_script)()
-coroutine.wrap(BAAJ_fake_script)()
-coroutine.wrap(NNDMW_fake_script)()
-coroutine.wrap(SCNWJMW_fake_script)()
-coroutine.wrap(PUNFOB_fake_script)()
-coroutine.wrap(URNP_fake_script)()
-coroutine.wrap(ODON_fake_script)()
-coroutine.wrap(BSXIVYK_fake_script)()
-coroutine.wrap(FBMPWFU_fake_script)()
-coroutine.wrap(DFFGQGY_fake_script)()
-coroutine.wrap(HQYAS_fake_script)()
-coroutine.wrap(CMJKJJU_fake_script)()
-coroutine.wrap(EGNUB_fake_script)()
-coroutine.wrap(PCTID_fake_script)()
-coroutine.wrap(RYKAF_fake_script)()
-coroutine.wrap(DWIQKTX_fake_script)()
-coroutine.wrap(BPKS_fake_script)()
-coroutine.wrap(RZMJM_fake_script)()
-coroutine.wrap(NJTEKGK_fake_script)()
-coroutine.wrap(UIBJ_fake_script)()
-coroutine.wrap(KBAKZUM_fake_script)()
-coroutine.wrap(GWLYXWR_fake_script)()
-coroutine.wrap(QEIM_fake_script)()
-coroutine.wrap(ZZEDKOY_fake_script)()
-coroutine.wrap(ROXO_fake_script)()
-coroutine.wrap(TWTG_fake_script)()
-coroutine.wrap(UWMBP_fake_script)()
-coroutine.wrap(SZAJ_fake_script)()
-coroutine.wrap(FQXISE_fake_script)()
-coroutine.wrap(ZLHDGI_fake_script)()
-coroutine.wrap(GPISOF_fake_script)()
-coroutine.wrap(XPMR_fake_script)()
-coroutine.wrap(HZNEQQY_fake_script)()
-coroutine.wrap(JSGM_fake_script)()
-coroutine.wrap(MKEZOJP_fake_script)()
-coroutine.wrap(CXKXOT_fake_script)()
-coroutine.wrap(EBPWX_fake_script)()
-coroutine.wrap(NGPZEM_fake_script)()
-coroutine.wrap(JOZNS_fake_script)()
-coroutine.wrap(DERTZXW_fake_script)()
-coroutine.wrap(IJOQ_fake_script)()
-coroutine.wrap(FVUJF_fake_script)()
-coroutine.wrap(FETR_fake_script)()
-coroutine.wrap(IJZIAVA_fake_script)()
+coroutine.wrap(DKRFRQX_fake_script)()
