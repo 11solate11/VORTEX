@@ -80,6 +80,20 @@ local UICorner_17 = Instance.new("UICorner")
 local UIListLayout_2 = Instance.new("UIListLayout")
 local open = Instance.new("TextButton")
 local UICorner_18 = Instance.new("UICorner")
+local keysys = Instance.new("Frame")
+local UICorner_19 = Instance.new("UICorner")
+local titlebar = Instance.new("Frame")
+local UICorner_20 = Instance.new("UICorner")
+local Frame = Instance.new("Frame")
+local title_3 = Instance.new("TextLabel")
+local title_4 = Instance.new("TextLabel")
+local TextLabel_9 = Instance.new("TextLabel")
+local UIGradient_8 = Instance.new("UIGradient")
+local submit = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local keybox = Instance.new("TextBox")
+local UICorner_22 = Instance.new("UICorner")
+local clipboard = Instance.new("ImageButton")
 
 --Properties:
 
@@ -95,6 +109,7 @@ mainhold.BorderColor3 = Color3.fromRGB(0, 0, 0)
 mainhold.BorderSizePixel = 0
 mainhold.Position = UDim2.new(0.5, 50, 0.5, 0)
 mainhold.Size = UDim2.new(0, 342, 0, 285)
+mainhold.Visible = false
 
 thold.Name = "thold"
 thold.Parent = mainhold
@@ -309,7 +324,6 @@ FE.BorderColor3 = Color3.fromRGB(0, 0, 0)
 FE.BorderSizePixel = 0
 FE.Position = UDim2.new(0.00107793079, 0, 0, 0)
 FE.Size = UDim2.new(0, 342, 0, 285)
-FE.Visible = false
 
 back.Name = "back"
 back.Parent = FE
@@ -344,10 +358,10 @@ TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_6.BackgroundTransparency = 1.000
 TextLabel_6.BorderColor3 = Color3.fromRGB(27, 42, 53)
 TextLabel_6.BorderSizePixel = 0
-TextLabel_6.Position = UDim2.new(0.805494606, 0, 0, 0)
+TextLabel_6.Position = UDim2.new(0.829304159, 0, 0, 0)
 TextLabel_6.Size = UDim2.new(0, 40, 0, 32)
 TextLabel_6.Font = Enum.Font.GothamMedium
-TextLabel_6.Text = "FE"
+TextLabel_6.Text = "FUN"
 TextLabel_6.TextColor3 = Color3.fromRGB(0, 255, 234)
 TextLabel_6.TextSize = 14.000
 
@@ -387,7 +401,7 @@ fejump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 fejump.BackgroundTransparency = 1.000
 fejump.BorderColor3 = Color3.fromRGB(27, 42, 53)
 fejump.BorderSizePixel = 0
-fejump.Position = UDim2.new(0.0615130551, 0, 0.27719298, 0)
+fejump.Position = UDim2.new(0.0585891083, 0, 0.245614037, 0)
 fejump.Size = UDim2.new(0, 91, 0, 32)
 fejump.Font = Enum.Font.GothamMedium
 fejump.Text = "JUMP POWER"
@@ -399,7 +413,7 @@ jumpbox.Parent = FE
 jumpbox.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 jumpbox.BorderColor3 = Color3.fromRGB(0, 0, 0)
 jumpbox.BorderSizePixel = 0
-jumpbox.Position = UDim2.new(0.363636374, 0, 0.294736832, 0)
+jumpbox.Position = UDim2.new(0.363636404, 0, 0.263157904, 0)
 jumpbox.Size = UDim2.new(0, 200, 0, 23)
 jumpbox.Font = Enum.Font.Gotham
 jumpbox.Text = "50"
@@ -416,6 +430,7 @@ universal.BorderColor3 = Color3.fromRGB(0, 0, 0)
 universal.BorderSizePixel = 0
 universal.Position = UDim2.new(0.00107793079, 0, 0, 0)
 universal.Size = UDim2.new(0, 342, 0, 285)
+universal.Visible = false
 
 back_2.Name = "back"
 back_2.Parent = universal
@@ -658,7 +673,7 @@ febutton.BorderSizePixel = 0
 febutton.Position = UDim2.new(0.0462962948, 0, 0.1328125, 0)
 febutton.Size = UDim2.new(0, 100, 0, 28)
 febutton.Font = Enum.Font.GothamBold
-febutton.Text = "FE SCRIPTS"
+febutton.Text = "FUN SCRIPTS"
 febutton.TextColor3 = Color3.fromRGB(255, 255, 255)
 febutton.TextSize = 14.000
 
@@ -707,6 +722,7 @@ open.BorderColor3 = Color3.fromRGB(0, 0, 0)
 open.BorderSizePixel = 0
 open.Position = UDim2.new(0.5, 0, 0.0888337418, 0)
 open.Size = UDim2.new(0, 200, 0, 32)
+open.Visible = false
 open.Font = Enum.Font.Gotham
 open.Text = "OPEN VORTEX"
 open.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -715,21 +731,130 @@ open.TextSize = 14.000
 UICorner_18.CornerRadius = UDim.new(0, 4)
 UICorner_18.Parent = open
 
+keysys.Name = "keysys"
+keysys.Parent = ScreenGui
+keysys.AnchorPoint = Vector2.new(0.5, 0.5)
+keysys.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+keysys.BorderColor3 = Color3.fromRGB(0, 0, 0)
+keysys.BorderSizePixel = 0
+keysys.Position = UDim2.new(0.517347753, 0, 0.369727045, 0)
+keysys.Size = UDim2.new(0, 254, 0, 213)
+
+UICorner_19.CornerRadius = UDim.new(0, 4)
+UICorner_19.Parent = keysys
+
+titlebar.Name = "titlebar"
+titlebar.Parent = keysys
+titlebar.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+titlebar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+titlebar.BorderSizePixel = 0
+titlebar.Size = UDim2.new(0, 254, 0, 44)
+
+UICorner_20.CornerRadius = UDim.new(0, 4)
+UICorner_20.Parent = titlebar
+
+Frame.Parent = titlebar
+Frame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 0.859375, 0)
+Frame.Size = UDim2.new(0, 254, 0, 9)
+
+title_3.Name = "title"
+title_3.Parent = keysys
+title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title_3.BackgroundTransparency = 1.000
+title_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+title_3.BorderSizePixel = 0
+title_3.Position = UDim2.new(0, 0, 0.111005329, 0)
+title_3.Size = UDim2.new(0, 254, 0, 20)
+title_3.Font = Enum.Font.GothamMedium
+title_3.Text = "KEY SYSTEM"
+title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+title_3.TextSize = 14.000
+
+title_4.Name = "title"
+title_4.Parent = keysys
+title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title_4.BackgroundTransparency = 1.000
+title_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
+title_4.BorderSizePixel = 0
+title_4.Position = UDim2.new(0.375454158, 0, 0, 0)
+title_4.Size = UDim2.new(0, 40, 0, 32)
+title_4.Font = Enum.Font.GothamMedium
+title_4.Text = "VOR"
+title_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+title_4.TextSize = 14.000
+
+TextLabel_9.Parent = title_4
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(0.61428678, 0, 0, 0)
+TextLabel_9.Size = UDim2.new(0, 40, 0, 32)
+TextLabel_9.Font = Enum.Font.GothamMedium
+TextLabel_9.Text = "TEX"
+TextLabel_9.TextColor3 = Color3.fromRGB(0, 255, 234)
+TextLabel_9.TextSize = 14.000
+
+UIGradient_8.Parent = TextLabel_9
+
+submit.Name = "submit"
+submit.Parent = keysys
+submit.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+submit.BorderColor3 = Color3.fromRGB(0, 0, 0)
+submit.BorderSizePixel = 0
+submit.Position = UDim2.new(0.105845056, 0, 0.56807512, 0)
+submit.Size = UDim2.new(0, 200, 0, 28)
+submit.Font = Enum.Font.GothamBold
+submit.Text = "SUBMIT"
+submit.TextColor3 = Color3.fromRGB(255, 255, 255)
+submit.TextSize = 14.000
+
+UICorner_21.CornerRadius = UDim.new(0, 4)
+UICorner_21.Parent = submit
+
+keybox.Name = "keybox"
+keybox.Parent = keysys
+keybox.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+keybox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+keybox.BorderSizePixel = 0
+keybox.Position = UDim2.new(0.105845056, 0, 0.267605633, 0)
+keybox.Size = UDim2.new(0, 200, 0, 50)
+keybox.Font = Enum.Font.Gotham
+keybox.Text = "ENTER KEY HERE"
+keybox.TextColor3 = Color3.fromRGB(255, 255, 255)
+keybox.TextSize = 14.000
+
+UICorner_22.CornerRadius = UDim.new(0, 4)
+UICorner_22.Parent = keybox
+
+clipboard.Name = "clipboard"
+clipboard.Parent = keysys
+clipboard.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+clipboard.BackgroundTransparency = 1.000
+clipboard.BorderColor3 = Color3.fromRGB(0, 0, 0)
+clipboard.BorderSizePixel = 0
+clipboard.Position = UDim2.new(0.811023593, 0, 0.0281690136, 0)
+clipboard.Size = UDim2.new(0, 38, 0, 37)
+clipboard.Image = "rbxassetid://18401695661"
+
 -- Scripts:
 
-local function WWZT_fake_script() -- ScreenGui.welcome 
+local function XAJYUJI_fake_script() -- ScreenGui.welcome 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("Welcome to Vortex Premium, "..game.Players.LocalPlayer.Name..".")
 end
-coroutine.wrap(WWZT_fake_script)()
-local function UIIUY_fake_script() -- TextLabel.LocalScript 
+coroutine.wrap(XAJYUJI_fake_script)()
+local function QGMBLIZ_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	script.Parent.Text = "Welcome, "..game.Players.LocalPlayer.Name
 end
-coroutine.wrap(UIIUY_fake_script)()
-local function RVFCLAK_fake_script() -- TextLabel.LocalScript 
+coroutine.wrap(QGMBLIZ_fake_script)()
+local function ZPIZBUV_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	local text = script.Parent
@@ -785,14 +910,14 @@ local function RVFCLAK_fake_script() -- TextLabel.LocalScript
 		end
 	end
 end
-coroutine.wrap(RVFCLAK_fake_script)()
-local function DDERP_fake_script() -- TextLabel_2.LocalScript 
+coroutine.wrap(ZPIZBUV_fake_script)()
+local function ZOQT_fake_script() -- TextLabel_2.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	script.Parent.Text = "@"..game.Players.LocalPlayer.Name
 end
-coroutine.wrap(DDERP_fake_script)()
-local function AOCJABN_fake_script() -- TextLabel_2.LocalScript 
+coroutine.wrap(ZOQT_fake_script)()
+local function BOPPLAT_fake_script() -- TextLabel_2.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	local text = script.Parent
@@ -848,8 +973,8 @@ local function AOCJABN_fake_script() -- TextLabel_2.LocalScript
 		end
 	end
 end
-coroutine.wrap(AOCJABN_fake_script)()
-local function IINLK_fake_script() -- ImageLabel.LocalScript 
+coroutine.wrap(BOPPLAT_fake_script)()
+local function NAVWE_fake_script() -- ImageLabel.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel)
 
 	imagelabel = script.Parent
@@ -866,8 +991,8 @@ local function IINLK_fake_script() -- ImageLabel.LocalScript
 	local imagelabel = script.Parent
 	imagelabel.Image = content
 end
-coroutine.wrap(IINLK_fake_script)()
-local function GMPWA_fake_script() -- TextLabel_3.LocalScript 
+coroutine.wrap(NAVWE_fake_script)()
+local function MFYXV_fake_script() -- TextLabel_3.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_3)
 
 	local text = script.Parent
@@ -923,16 +1048,16 @@ local function GMPWA_fake_script() -- TextLabel_3.LocalScript
 		end
 	end
 end
-coroutine.wrap(GMPWA_fake_script)()
-local function YGLPJIE_fake_script() -- minimize.LocalScript 
+coroutine.wrap(MFYXV_fake_script)()
+local function KZBBFUU_fake_script() -- minimize.LocalScript 
 	local script = Instance.new('LocalScript', minimize)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Parent.Parent.mainhold.Visible = false
 	end)
 end
-coroutine.wrap(YGLPJIE_fake_script)()
-local function HJXXAK_fake_script() -- minimize.color 
+coroutine.wrap(KZBBFUU_fake_script)()
+local function FPDYKS_fake_script() -- minimize.color 
 	local script = Instance.new('LocalScript', minimize)
 
 	-- LocalScript inside the TextButton
@@ -995,8 +1120,8 @@ local function HJXXAK_fake_script() -- minimize.color
 	end)
 	
 end
-coroutine.wrap(HJXXAK_fake_script)()
-local function RRJYQU_fake_script() -- destroy.color 
+coroutine.wrap(FPDYKS_fake_script)()
+local function SVCJYVF_fake_script() -- destroy.color 
 	local script = Instance.new('LocalScript', destroy)
 
 	-- LocalScript inside the TextButton
@@ -1059,16 +1184,16 @@ local function RRJYQU_fake_script() -- destroy.color
 	end)
 	
 end
-coroutine.wrap(RRJYQU_fake_script)()
-local function XTPPZN_fake_script() -- destroy.destroyscript 
+coroutine.wrap(SVCJYVF_fake_script)()
+local function TVDLTRQ_fake_script() -- destroy.destroyscript 
 	local script = Instance.new('LocalScript', destroy)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(XTPPZN_fake_script)()
-local function KSNK_fake_script() -- TextLabel_5.LocalScript 
+coroutine.wrap(TVDLTRQ_fake_script)()
+local function JXEBBO_fake_script() -- TextLabel_5.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_5)
 
 	local text = script.Parent
@@ -1124,8 +1249,8 @@ local function KSNK_fake_script() -- TextLabel_5.LocalScript
 		end
 	end
 end
-coroutine.wrap(KSNK_fake_script)()
-local function RWGLS_fake_script() -- back.backscript 
+coroutine.wrap(JXEBBO_fake_script)()
+local function EJEVQVS_fake_script() -- back.backscript 
 	local script = Instance.new('LocalScript', back)
 
 	--// put all of that in a mouse button click function
@@ -1143,8 +1268,8 @@ local function RWGLS_fake_script() -- back.backscript
 		--                                /\ PUT TAB NAME THERE	
 	end)
 end
-coroutine.wrap(RWGLS_fake_script)()
-local function UGOOLD_fake_script() -- TextLabel_6.LocalScript 
+coroutine.wrap(EJEVQVS_fake_script)()
+local function WJDHU_fake_script() -- TextLabel_6.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_6)
 
 	local text = script.Parent
@@ -1200,8 +1325,8 @@ local function UGOOLD_fake_script() -- TextLabel_6.LocalScript
 		end
 	end
 end
-coroutine.wrap(UGOOLD_fake_script)()
-local function BYGZS_fake_script() -- walkbox.walkscript 
+coroutine.wrap(WJDHU_fake_script)()
+local function BJLWULI_fake_script() -- walkbox.walkscript 
 	local script = Instance.new('LocalScript', walkbox)
 
 	local plr = game.Players.LocalPlayer
@@ -1213,8 +1338,8 @@ local function BYGZS_fake_script() -- walkbox.walkscript
 		hum.WalkSpeed = script.Parent.Text
 	end)
 end
-coroutine.wrap(BYGZS_fake_script)()
-local function LHWD_fake_script() -- jumpbox.jumpscript 
+coroutine.wrap(BJLWULI_fake_script)()
+local function YQBVFH_fake_script() -- jumpbox.jumpscript 
 	local script = Instance.new('LocalScript', jumpbox)
 
 	local plr = game.Players.LocalPlayer
@@ -1226,8 +1351,8 @@ local function LHWD_fake_script() -- jumpbox.jumpscript
 		hum.JumpPower = script.Parent.Text
 	end)
 end
-coroutine.wrap(LHWD_fake_script)()
-local function RPJXX_fake_script() -- back_2.backscript 
+coroutine.wrap(YQBVFH_fake_script)()
+local function ORIP_fake_script() -- back_2.backscript 
 	local script = Instance.new('LocalScript', back_2)
 
 	--// put all of that in a mouse button click function
@@ -1245,8 +1370,8 @@ local function RPJXX_fake_script() -- back_2.backscript
 		--                                /\ PUT TAB NAME THERE	
 	end)
 end
-coroutine.wrap(RPJXX_fake_script)()
-local function QOWGSJE_fake_script() -- TextLabel_7.LocalScript 
+coroutine.wrap(ORIP_fake_script)()
+local function DLSWDNR_fake_script() -- TextLabel_7.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_7)
 
 	local text = script.Parent
@@ -1302,16 +1427,16 @@ local function QOWGSJE_fake_script() -- TextLabel_7.LocalScript
 		end
 	end
 end
-coroutine.wrap(QOWGSJE_fake_script)()
-local function QQHW_fake_script() -- infinitey.LocalScript 
+coroutine.wrap(DLSWDNR_fake_script)()
+local function AJLN_fake_script() -- infinitey.LocalScript 
 	local script = Instance.new('LocalScript', infinitey)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 	end)
 end
-coroutine.wrap(QQHW_fake_script)()
-local function MXSYERS_fake_script() -- infinitey.color 
+coroutine.wrap(AJLN_fake_script)()
+local function YIFO_fake_script() -- infinitey.color 
 	local script = Instance.new('LocalScript', infinitey)
 
 	-- LocalScript inside the TextButton
@@ -1408,16 +1533,16 @@ local function MXSYERS_fake_script() -- infinitey.color
 	end)
 	
 end
-coroutine.wrap(MXSYERS_fake_script)()
-local function LLSG_fake_script() -- nexam.LocalScript 
+coroutine.wrap(YIFO_fake_script)()
+local function ISKS_fake_script() -- nexam.LocalScript 
 	local script = Instance.new('LocalScript', nexam)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5ebefab5c68bfa67271dcbf6430d3c7d.lua"))
 	end)
 end
-coroutine.wrap(LLSG_fake_script)()
-local function QBUOBN_fake_script() -- nexam.color 
+coroutine.wrap(ISKS_fake_script)()
+local function SRTVQPL_fake_script() -- nexam.color 
 	local script = Instance.new('LocalScript', nexam)
 
 	-- LocalScript inside the TextButton
@@ -1514,16 +1639,16 @@ local function QBUOBN_fake_script() -- nexam.color
 	end)
 	
 end
-coroutine.wrap(QBUOBN_fake_script)()
-local function QZGTI_fake_script() -- exware.LocalScript 
+coroutine.wrap(SRTVQPL_fake_script)()
+local function FSQJB_fake_script() -- exware.LocalScript 
 	local script = Instance.new('LocalScript', exware)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Tomskix/exware-public/main/loader"))()
 	end)
 end
-coroutine.wrap(QZGTI_fake_script)()
-local function GSHG_fake_script() -- exware.color 
+coroutine.wrap(FSQJB_fake_script)()
+local function FAKQH_fake_script() -- exware.color 
 	local script = Instance.new('LocalScript', exware)
 
 	-- LocalScript inside the TextButton
@@ -1620,16 +1745,16 @@ local function GSHG_fake_script() -- exware.color
 	end)
 	
 end
-coroutine.wrap(GSHG_fake_script)()
-local function RGCQ_fake_script() -- zuremod.LocalScript 
+coroutine.wrap(FAKQH_fake_script)()
+local function MWCAKIJ_fake_script() -- zuremod.LocalScript 
 	local script = Instance.new('LocalScript', zuremod)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Actyrn/Scripts/main/AzureModded"))()
 	end)
 end
-coroutine.wrap(RGCQ_fake_script)()
-local function DPAFDPN_fake_script() -- zuremod.color 
+coroutine.wrap(MWCAKIJ_fake_script)()
+local function RWTDK_fake_script() -- zuremod.color 
 	local script = Instance.new('LocalScript', zuremod)
 
 	-- LocalScript inside the TextButton
@@ -1726,16 +1851,16 @@ local function DPAFDPN_fake_script() -- zuremod.color
 	end)
 	
 end
-coroutine.wrap(DPAFDPN_fake_script)()
-local function ZXNBVF_fake_script() -- prisonware.LocalScript 
+coroutine.wrap(RWTDK_fake_script)()
+local function XVLQ_fake_script() -- prisonware.LocalScript 
 	local script = Instance.new('LocalScript', prisonware)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))()
 	end)
 end
-coroutine.wrap(ZXNBVF_fake_script)()
-local function QKKEAOY_fake_script() -- prisonware.color 
+coroutine.wrap(XVLQ_fake_script)()
+local function FIGLF_fake_script() -- prisonware.color 
 	local script = Instance.new('LocalScript', prisonware)
 
 	-- LocalScript inside the TextButton
@@ -1832,16 +1957,16 @@ local function QKKEAOY_fake_script() -- prisonware.color
 	end)
 	
 end
-coroutine.wrap(QKKEAOY_fake_script)()
-local function BJXPA_fake_script() -- zbloxfruits.LocalScript 
+coroutine.wrap(FIGLF_fake_script)()
+local function CMBTNKB_fake_script() -- zbloxfruits.LocalScript 
 	local script = Instance.new('LocalScript', zbloxfruits)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua"))() 
 	end)
 end
-coroutine.wrap(BJXPA_fake_script)()
-local function WIXE_fake_script() -- zbloxfruits.color 
+coroutine.wrap(CMBTNKB_fake_script)()
+local function PDNXD_fake_script() -- zbloxfruits.color 
 	local script = Instance.new('LocalScript', zbloxfruits)
 
 	-- LocalScript inside the TextButton
@@ -1938,8 +2063,8 @@ local function WIXE_fake_script() -- zbloxfruits.color
 	end)
 	
 end
-coroutine.wrap(WIXE_fake_script)()
-local function AVXNNM_fake_script() -- universal.searchscript 
+coroutine.wrap(PDNXD_fake_script)()
+local function ARYNQRL_fake_script() -- universal.searchscript 
 	local script = Instance.new('LocalScript', universal)
 
 	local scroll = script.Parent.uniscroll
@@ -1969,8 +2094,8 @@ local function AVXNNM_fake_script() -- universal.searchscript
 		end
 	end)
 end
-coroutine.wrap(AVXNNM_fake_script)()
-local function VGSNH_fake_script() -- atitle.LocalScript 
+coroutine.wrap(ARYNQRL_fake_script)()
+local function TTLAL_fake_script() -- atitle.LocalScript 
 	local script = Instance.new('LocalScript', atitle)
 
 	local text = script.Parent
@@ -2026,8 +2151,8 @@ local function VGSNH_fake_script() -- atitle.LocalScript
 		end
 	end
 end
-coroutine.wrap(VGSNH_fake_script)()
-local function OJCYKYO_fake_script() -- TextLabel_8.LocalScript 
+coroutine.wrap(TTLAL_fake_script)()
+local function YRPR_fake_script() -- TextLabel_8.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_8)
 
 	local text = script.Parent
@@ -2083,8 +2208,8 @@ local function OJCYKYO_fake_script() -- TextLabel_8.LocalScript
 		end
 	end
 end
-coroutine.wrap(OJCYKYO_fake_script)()
-local function TVIDS_fake_script() -- febutton.LocalScript 
+coroutine.wrap(YRPR_fake_script)()
+local function JFPUIK_fake_script() -- febutton.LocalScript 
 	local script = Instance.new('LocalScript', febutton)
 
 	--// put all of that in a mouse button click function
@@ -2102,8 +2227,8 @@ local function TVIDS_fake_script() -- febutton.LocalScript
 		--                                /\ PUT TAB NAME THERE	
 	end)
 end
-coroutine.wrap(TVIDS_fake_script)()
-local function EHLSEI_fake_script() -- febutton.color 
+coroutine.wrap(JFPUIK_fake_script)()
+local function QWVAVY_fake_script() -- febutton.color 
 	local script = Instance.new('LocalScript', febutton)
 
 	-- LocalScript inside the TextButton
@@ -2200,8 +2325,8 @@ local function EHLSEI_fake_script() -- febutton.color
 	end)
 	
 end
-coroutine.wrap(EHLSEI_fake_script)()
-local function GNWMSP_fake_script() -- ahomebutton.LocalScript 
+coroutine.wrap(QWVAVY_fake_script)()
+local function BXMO_fake_script() -- ahomebutton.LocalScript 
 	local script = Instance.new('LocalScript', ahomebutton)
 
 	--// put all of that in a mouse button click function
@@ -2219,8 +2344,8 @@ local function GNWMSP_fake_script() -- ahomebutton.LocalScript
 		--                                /\ PUT TAB NAME THERE	
 	end)
 end
-coroutine.wrap(GNWMSP_fake_script)()
-local function DEOE_fake_script() -- ahomebutton.color 
+coroutine.wrap(BXMO_fake_script)()
+local function XZSO_fake_script() -- ahomebutton.color 
 	local script = Instance.new('LocalScript', ahomebutton)
 
 	-- LocalScript inside the TextButton
@@ -2317,8 +2442,8 @@ local function DEOE_fake_script() -- ahomebutton.color
 	end)
 	
 end
-coroutine.wrap(DEOE_fake_script)()
-local function TGVYZ_fake_script() -- unibutton.LocalScript 
+coroutine.wrap(XZSO_fake_script)()
+local function BZXZNB_fake_script() -- unibutton.LocalScript 
 	local script = Instance.new('LocalScript', unibutton)
 
 	--// put all of that in a mouse button click function
@@ -2336,8 +2461,8 @@ local function TGVYZ_fake_script() -- unibutton.LocalScript
 		--                                /\ PUT TAB NAME THERE	
 	end)
 end
-coroutine.wrap(TGVYZ_fake_script)()
-local function AOPMOZ_fake_script() -- unibutton.color 
+coroutine.wrap(BZXZNB_fake_script)()
+local function PPVVP_fake_script() -- unibutton.color 
 	local script = Instance.new('LocalScript', unibutton)
 
 	-- LocalScript inside the TextButton
@@ -2434,8 +2559,8 @@ local function AOPMOZ_fake_script() -- unibutton.color
 	end)
 	
 end
-coroutine.wrap(AOPMOZ_fake_script)()
-local function KVJOEQ_fake_script() -- mainhold.drags 
+coroutine.wrap(PPVVP_fake_script)()
+local function CWEG_fake_script() -- mainhold.drags 
 	local script = Instance.new('LocalScript', mainhold)
 
 	spawn(function()
@@ -2478,16 +2603,16 @@ local function KVJOEQ_fake_script() -- mainhold.drags
 		normal_dragify(script.Parent)
 	end)
 end
-coroutine.wrap(KVJOEQ_fake_script)()
-local function KYRIBJS_fake_script() -- open.LocalScript 
+coroutine.wrap(CWEG_fake_script)()
+local function SXGAFDX_fake_script() -- open.LocalScript 
 	local script = Instance.new('LocalScript', open)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.mainhold.Visible = true
 	end)
 end
-coroutine.wrap(KYRIBJS_fake_script)()
-local function JCNAL_fake_script() -- open.color 
+coroutine.wrap(SXGAFDX_fake_script)()
+local function KPSDMT_fake_script() -- open.color 
 	local script = Instance.new('LocalScript', open)
 
 	-- LocalScript inside the TextButton
@@ -2584,4 +2709,145 @@ local function JCNAL_fake_script() -- open.color
 	end)
 	
 end
-coroutine.wrap(JCNAL_fake_script)()
+coroutine.wrap(KPSDMT_fake_script)()
+local function LBOO_fake_script() -- keysys.drags 
+	local script = Instance.new('LocalScript', keysys)
+
+	spawn(function()
+		local UIS = game:GetService("UserInputService")
+		function normal_dragify(Frame)
+			ndragToggle = nil
+			local ndragSpeed = 0.125
+			ndragInput = nil
+			ndragStart = nil
+			local ndragPos = nil
+			function nupdateInput(input)
+				local nDelta = input.Position - ndragStart
+				local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + nDelta.X, startPos.Y.Scale, startPos.Y.Offset + nDelta.Y)
+				game:GetService("TweenService"):Create(Frame, TweenInfo.new(ndragSpeed), {Position = Position}):Play()
+			end
+			Frame.InputBegan:Connect(function(input)
+				if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+					ndragToggle = true
+					ndragStart = input.Position
+					startPos = Frame.Position
+					input.Changed:Connect(function()
+						if input.UserInputState == Enum.UserInputState.End then
+							ndragToggle = false
+						end
+					end)
+				end
+			end)
+			Frame.InputChanged:Connect(function(input)
+				if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+					ndragInput = input
+				end
+			end)
+			game:GetService("UserInputService").InputChanged:Connect(function(input)
+				if input == ndragInput and ndragToggle then
+					nupdateInput(input)
+				end
+			end)
+		end
+	
+		normal_dragify(script.Parent)
+	end)
+end
+coroutine.wrap(LBOO_fake_script)()
+local function ZCPF_fake_script() -- TextLabel_9.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_9)
+
+	local text = script.Parent
+	local add = 10
+	wait(1)
+	local k = 1
+	while k <= 255 do
+		text.TextColor3 = Color3.new(k/255,0/255,0/255)
+		k = k + add
+		wait()
+	end
+	while true do
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,k/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255,k/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(k/255,0/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
+			k = k + add
+			wait()
+		end
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
+			k = k + add
+			wait()
+		end
+	end
+end
+coroutine.wrap(ZCPF_fake_script)()
+local function MNNWR_fake_script() -- submit.LocalScript 
+	local script = Instance.new('LocalScript', submit)
+
+	enterkey = script.Parent.Parent.keybox
+	submit = script.Parent
+	keylogin = script.Parent.Parent.Parent.keysys
+	mainf = script.Parent.Parent.Parent.mainhold
+	open = script.Parent.Parent.Parent.open
+	
+	submit.MouseButton1Click:Connect(function()
+		if enterkey.Text == "VORTEX!lol" then
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "VORTEX KEY SYSTEM";
+				Text = "Correct Key."
+			})
+			keylogin.Visible = false
+			wait(0.5)
+			mainf.Visible = true
+			open.Visible = true
+		else
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "VORTEX KEY SYSTEM";
+				Text = "Incorrect Key."
+			})
+		end
+	end)
+end
+coroutine.wrap(MNNWR_fake_script)()
+local function QXEMUBW_fake_script() -- clipboard.LocalScript 
+	local script = Instance.new('LocalScript', clipboard)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		setclipboard("https://discord.gg/HkjCCjnaPz")
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "VORTEX KEY SYSTEM";0
+			Text = "Check your clipboard (WIN+V)"
+		})
+	end)
+end
+coroutine.wrap(QXEMUBW_fake_script)()
